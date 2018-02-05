@@ -1,10 +1,10 @@
-# PhotoBooth App
+# ME Wedding App
 
+Maxime & Elodie Wedding website.
 It's the beginning of the project.
 
 # Requierments
 
-* Raspberry Pi + Camera Module
 * NodeJS
 
 # Starting

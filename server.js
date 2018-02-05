@@ -6,17 +6,6 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
-var io = require('socket.io').listen(8081);
-var ss = require('socket.io-stream');
-var path = require('path');
-
-io.of('/video').on('connection', function(socket) {
-  ss(socket).on('profile-image', function(stream, data) {
-    var filename = path.basename(data.name);
-    stream.pipe(fs.createWriteStream(filename));
-  });
-});
-
 app.use(express.static('./public')); 		// set the static files location /public/img will be /img for users
 app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser.urlencoded({'extended': 'true'})); // parse application/x-www-form-urlencoded

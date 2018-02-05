@@ -1,24 +1,18 @@
 var path = require('path');
-var camera = require('camera');
+var gFactory = require('./guestFactory.js');
 
 module.exports = function (app) {
 
-    // GET ALL
-    app.get('/api/startCamera', function (req, res) {
-        // send video stream
-        var webcam = camera.createStream();
-
-        webcam.on('data', function(buffer){
-          console.log("data camera", buffer);
-        });
-
+    // GET ALL GUEST
+    app.get('/api/guest', function (req, res) {
+			console.log("/api/guest, getAll()", gFactory);
+      gFactory.getAll();
     });
 
-    // POST GET WITH QUERY PARAMS
-    app.post('/api/money', function (req, res) {
-
-      getMoneySpecific(res, req.body);
-    });
+		app.post('/api/guest', function(req, res){
+			console.log("/api/guest, addGuest()", gFactory);
+			gFactory.addGuest("Maxime", "Rose", "maxime.rose@hotmail.fr");
+		});
 
     // application -------------------------------------------------------------
     app.get('/*', function (req, res) {

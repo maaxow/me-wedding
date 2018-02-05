@@ -1,7 +1,7 @@
 {
-  "name": "photobooth",
+  "name": "me-wedding",
   "version": "1.0.0",
-  "description": "photobooth app",
+  "description": "Maxime & Elodie Wedding app",
   "main": "server.js",
   "scripts": {
     "prestart": "npm install",
@@ -9,23 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maaxow/photobooth.git"
+    "url": "git+https://github.com/maaxow/me-wedding.git"
   },
   "author": "maaxow",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maaxow/photobooth/issues"
+    "url": "https://github.com/maaxow/me-wedding/issues"
   },
-  "homepage": "https://github.com/maaxow/photobooth#readme",
+  "homepage": "https://github.com/maaxow/me-wedding#readme",
   "dependencies": {
+    "angular": "^1.6.9",
     "body-parser": "^1.18.2",
-    "camera": "0.0.5",
     "express": "^4.16.2",
     "jquery": "^3.3.1",
     "method-override": "^2.3.10",
     "morgan": "^1.9.0",
-    "socket.io": "^2.0.4",
-    "socket.io-client": "^2.0.4",
-    "socket.io-stream": "^0.9.1"
+    "mysql": "^2.15.0"
   }
 }
