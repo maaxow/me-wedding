@@ -1,0 +1,31 @@
+{
+  "name": "photobooth",
+  "version": "1.0.0",
+  "description": "photobooth app",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maaxow/photobooth.git"
+  },
+  "author": "maaxow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maaxow/photobooth/issues"
+  },
+  "homepage": "https://github.com/maaxow/photobooth#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "camera": "0.0.5",
+    "express": "^4.16.2",
+    "jquery": "^3.3.1",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4",
+    "socket.io-stream": "^0.9.1"
+  }
+}

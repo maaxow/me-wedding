@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>PhotoBooth</title>
+	<link rel="stylesheet" href="/css/main.css">
+	<script src="/vendor/socket.io-stream/socket.io-stream.js" charset="utf-8"></script>
+</head>
+<body>
+
+	<script type="text/javascript">
+		$(function() {
+			var socket = io.connect('/foo');
+
+			$('#file').change(function(e) {
+				var file = e.target.files[0];
+				var stream = ss.createStream();
+
+				// upload a file to the server.
+				ss(socket).emit('file', stream, {size: file.size});
+				ss.createBlobReadStream(file).pipe(stream);
+			});
+		});
+	</script>
+	<div class="video">
+		<span>Video here</span>
+		<!-- Video here, Canvas or html5 <video> ? -->
+	</div>
+	<div>
+			<a href="http://localhost:8080/api/startCamera"></a>
+	</div>
+
+</body>
+</html>
