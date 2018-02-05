@@ -5,13 +5,14 @@ module.exports = function (app) {
 
     // GET ALL GUEST
     app.get('/api/guest', function (req, res) {
-			console.log("/api/guest, getAll()", gFactory);
-      gFactory.getAll();
+			gFactory.getAll().then(function(data){
+				res.send(data);
+			});
     });
 
 		app.post('/api/guest', function(req, res){
-			console.log("/api/guest, addGuest()", gFactory);
-			gFactory.addGuest("Maxime", "Rose", "maxime.rose@hotmail.fr");
+			console.log("request", req.body);
+			// gFactory.addGuest("Maxime", "Rose", "maxime.rose@hotmail.fr");
 		});
 
     // application -------------------------------------------------------------

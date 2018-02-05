@@ -11,32 +11,48 @@ var connection = mysql.createConnection({
 module.exports = {
 
 	getAll : function(){
-		connection.connect();
-		connection.query('SELECT * FROM guest', function (error, results, fields) {
-		  if (error) throw error;
-		  console.log('The solution is: ', results);
-			return results;
+		connection.connect(function(err){
+			if(err) {
+				console.error('error connect()', err);
+				// throw err;
+			}
 		});
-		connection.end();
+		var promise = new Promise(function(resolve, reject){
+			connection.query('SELECT * FROM guest', function (error, results, fields) {
+				if (error) throw error;
+				//console.log('The solution is: ', results);
+				resolve(results);
+				connection.end(function(err){
+					if(err) {
+						console.error('error connect()', err);
+						// throw err;
+					}
+				});
+			});
+		});
+		return promise;
 	},
-	addGuest : function(first, last, email){
+	addGuest : function(guest){
 		var params = {
-			firstname: first,
-			lastname: last,
-			email: email,
-			phone_number: '000',
-			address: '13 rue machin',
-			post_code: '59000',
-			city: 'Lille',
-			country: 'France',
-			present: 1
+			firstname: guest.firstname,
+			lastname: guest.lastname,
+			email: guest.email,
+			phone_number: guest.phone_number,
+			address: guest.address,
+			post_code: guest.post_code,
+			city: guest.city,
+			country: guest.country,
+			present: guest.present
 		};
 		connection.connect();
-		connection.query('INSERT INTO guest SET ? ', params, function (error, results, fields) {
-		  if (error) throw error;
-		  console.log('The adding is: ', results);
-			return results;
+		var promise = new Promise(function(resolve, reject){
+			connection.query('INSERT INTO guest SET ? ', params, function (error, results, fields) {
+			  if (error) throw error;
+			  console.log('The adding is: ', results);
+				resolve(results);
+			});
+			connection.end();
 		});
-		connection.end();
+		return promise;
 	}
 }
