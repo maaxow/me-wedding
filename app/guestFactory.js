@@ -33,20 +33,20 @@ module.exports = {
 		return promise;
 	},
 	addGuest : function(guest){
-		var params = {
-			firstname: guest.firstname,
-			lastname: guest.lastname,
-			email: guest.email,
-			phone_number: guest.phone_number,
-			address: guest.address,
-			post_code: guest.post_code,
-			city: guest.city,
-			country: guest.country,
-			present: guest.present
-		};
+		// var params = {
+		// 	firstname: guest.firstname,
+		// 	lastname: guest.lastname,
+		// 	email: guest.email,
+		// 	phone_number: guest.phone_number,
+		// 	address: guest.address,
+		// 	post_code: guest.post_code,
+		// 	city: guest.city,
+		// 	country: guest.country,
+		// 	present: guest.present
+		// };
 		connection.connect();
 		var promise = new Promise(function(resolve, reject){
-			connection.query('INSERT INTO guest SET ? ', params, function (error, results, fields) {
+			connection.query('INSERT INTO guest SET ? ', guest, function (error, results, fields) {
 			  if (error) throw error;
 			  console.log('The adding is: ', results);
 				resolve(results);
