@@ -5,15 +5,23 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<script src="/vendor/angular/angular.min.js" charset="utf-8"></script>
 	<script src="/js/main.js" charset="utf-8"></script>
+	<script src="/js/timer.js" charset="utf-8"></script>
+	<script src="/js/constants.js" charset="utf-8"></script>
 </head>
 <body>
 
-
-
 	<div ng-app="app" ng-controller="AppController">
+		<maaxow:timer data-date="weddingDate"></maaxow:timer>
+		<br>
 		<div>
-			<span>{{couldown.days + ':' + couldown.hours +':' + couldown.minutes +':'+ couldown.seconds}}</span>
+			<span>Accueil</span>
+			<span>Notre Histoire</span>
+			<span>Planning</span>
+			<span>Invités</span>
+			<span>Hébergement</span>
+			<span>Contacts</span>
 		</div>
+		<br>
 		<button href="" ng-click="getAll()">Refresh</button>
 		<div>
 			<div>

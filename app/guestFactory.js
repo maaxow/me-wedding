@@ -13,41 +13,32 @@ module.exports = {
 	getAll : function(){
 		connection.connect(function(err){
 			if(err) {
-				console.error('error connect()', err);
-				// throw err;
+				console.error('Error connect()', err);
 			}
 		});
 		var promise = new Promise(function(resolve, reject){
 			connection.query('SELECT * FROM guest', function (error, results, fields) {
-				if (error) throw error;
-				//console.log('The solution is: ', results);
-				resolve(results);
+				if (error){
+					console.error("Error query()", error);
+					reject(error);
+				}
 				connection.end(function(err){
 					if(err) {
-						console.error('error connect()', err);
-						// throw err;
+						console.error('Error end()', err);
 					}
 				});
+				resolve(results);
 			});
 		});
 		return promise;
 	},
 	addGuest : function(guest){
-		// var params = {
-		// 	firstname: guest.firstname,
-		// 	lastname: guest.lastname,
-		// 	email: guest.email,
-		// 	phone_number: guest.phone_number,
-		// 	address: guest.address,
-		// 	post_code: guest.post_code,
-		// 	city: guest.city,
-		// 	country: guest.country,
-		// 	present: guest.present
-		// };
 		connection.connect();
 		var promise = new Promise(function(resolve, reject){
 			connection.query('INSERT INTO guest SET ? ', guest, function (error, results, fields) {
-			  if (error) throw error;
+			  if (error){
+					console.error("Error insert()", error);
+				}
 			  console.log('The adding is: ', results);
 				resolve(results);
 			});
