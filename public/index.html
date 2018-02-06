@@ -10,6 +10,9 @@
 
 
 	<div ng-app="app" ng-controller="AppController">
+		<div>
+			<span>{{couldown.days + ':' + couldown.hours +':' + couldown.minutes +':'+ couldown.seconds}}</span>
+		</div>
 		<button href="" ng-click="getAll()">Refresh</button>
 		<div>
 			<div>
@@ -80,7 +83,25 @@
 	</div>
 
 	<script type="text/javascript">
-		angular.module('app', []).controller('AppController', function($scope, $http){
+		angular.module('app', []).controller('AppController', function($scope, $http, $interval){
+
+			function dateDiff( date1, date2 ) {
+				var diff = date2 - date1;
+				return isNaN( diff ) ? NaN : {
+					diff : diff,
+						ms : Math.floor(diff % 1000),
+						seconds  : Math.floor(diff / 1000 % 60),
+						minutes  : Math.floor(diff / 60000 % 60),
+						hours  : Math.floor(diff / 3600000 % 24),
+						days  : Math.floor(diff / 86400000)
+				};
+			}
+			$interval(function(){
+				var weddingDate = Date.parse('06-29-2019'),
+				today = new Date();
+				var diff = dateDiff(today, weddingDate);
+				$scope.couldown = diff;
+			},1000);
 
 			$scope.guests = [];
 			$scope.newGuest = {
@@ -95,9 +116,7 @@
 				present: null
 			};
 			$scope.getAll = function(){
-				console.log("calling getAll() ...");
 				$http.get('/api/guest').then(function(data){
-					console.log("getAll() : ", data);
 					$scope.guests = data.data;
 				});
 			};
@@ -105,7 +124,6 @@
 
 			$scope.addGuest = function(){
 				$http.post('/api/guest', $scope.newGuest).then(function(data){
-					console.log("addguest() : ", data);
 					$scope.getAll();
 				});
 			};
