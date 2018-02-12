@@ -1,0 +1,21 @@
+<div class="background">
+
+	<div class="timer">
+		<table class="timerTable">
+			<tr>
+				<td ng-repeat="letter1 in daysString track by $index">{{letter1}}</td>
+				<td ng-repeat="letter2 in hoursString track by $index">{{letter2}}</td>
+				<td ng-repeat="letter3 in minutesString track by $index">{{letter3}}</td>
+				<td ng-repeat="letter4 in secondsString track by $index">{{letter4}}</td>
+			</tr>
+			<tr>
+				<td colspan="{{nbDigitDays}}">Jours</td>
+				<td colspan="{{nbDigitHours}}">Heures</td>
+				<td colspan="{{nbDigitMinutes}}">Minutes</td>
+				<td colspan="{{nbDigitSeconds}}">Secondes</td>
+			</tr>
+		</table>
+
+	</div>
+	<!-- {{timer.days + " jours " + timer.hours + " heures " +  timer.minutes + " minutes " +  timer.seconds + " secondes"}} -->
+</div>

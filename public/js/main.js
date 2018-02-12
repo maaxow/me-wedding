@@ -21,7 +21,7 @@ angular.module('app', []).controller('AppController', function($scope, $http, $i
 			$scope.guests = data.data;
 		});
 	};
-	$scope.getAll();
+	// $scope.getAll();
 
 	$scope.addGuest = function(){
 		console.log("new guest : ", $scope.newGuest);

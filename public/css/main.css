@@ -1,5 +1,38 @@
-.video {
-  width: 80%;
-  height: auto;
-  border: 1px solid black;
+
+.menu {
+	font-family: broadway;
+	/*text-align: center;*/
+	padding: 10px;
+	/*width: 50%;
+	margin-left: 25%;*/
+}
+
+.menuItem:hover {
+	/*font-size: 18px;*/
+	cursor: pointer;
+}
+
+.timerTable {
+	width: 100%;
+}
+
+table.timerTable > tbody > tr > td {
+	text-align: center;
+	border: 1px solid black;
+}
+
+.timer {
+	width: 30%;
+	margin-left: 35%
+}
+
+.background {
+	background-color: #00AA00;
+	padding: 1%
+}
+
+.img-responsive {
+	max-width: 50%;
+	height: auto;
+	display: block;
 }

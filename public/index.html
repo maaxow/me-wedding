@@ -3,6 +3,8 @@
 <head>
 	<title>Maxime & Elodie Wedding</title>
 	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+	<script src="/vendor/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
 	<script src="/vendor/angular/angular.min.js" charset="utf-8"></script>
 	<script src="/js/main.js" charset="utf-8"></script>
 	<script src="/js/timer.js" charset="utf-8"></script>
@@ -11,16 +13,28 @@
 <body>
 
 	<div ng-app="app" ng-controller="AppController">
-		<maaxow:timer data-date="weddingDate"></maaxow:timer>
-		<br>
-		<div>
-			<span>Accueil</span>
-			<span>Notre Histoire</span>
-			<span>Planning</span>
-			<span>Invités</span>
-			<span>Hébergement</span>
-			<span>Contacts</span>
+
+		<div class="row">
+
+			<div class="col"></div>
+			<div class="col-8">
+				<img class="img-responsive" src="/img/logo.png" alt="logo" width="360" height="260">
+			</div>
+			<div class="col"></div>
 		</div>
+
+		<div class="menu row">
+			<div class="col-lg-6 offset-lg-3 col-md-12">
+				<span class="menuitem">Accueil</span>
+				<span class="menuitem col">Notre Histoire</span>
+				<span class="menuitem col">Planning</span>
+				<span class="menuitem col">Invités</span>
+				<span class="menuitem col">Hébergement</span>
+				<span class="menuitem col">Contacts</span>
+		</div>
+		</div>
+
+		<maaxow:timer data-date="weddingDate"></maaxow:timer>
 		<br>
 		<button href="" ng-click="getAll()">Refresh</button>
 		<div>
@@ -89,8 +103,8 @@
 					<td>{{guest.present}}</td>
 				</tr>
 			</table>
-			
-			
+
+
 			<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnU3djY3YnVyN3ZzNHY1MXRuZ242OXJlNXMgdWk3MWUwdW5ybm0zaTZwZXVianRhMHU3bmdAZw&amp;tmsrc=ui71e0unrnm3i6peubjta0u7ng%40group.calendar.google.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_fr.gif"></a>
 	</div>
 </body>
