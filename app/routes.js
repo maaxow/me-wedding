@@ -1,18 +1,21 @@
 var path = require('path');
-var gFactory = require('./guestFactory.js');
+var Guest = require('./guestFactory.js');
 
 module.exports = function (app) {
 
     // GET ALL GUEST
     app.get('/api/guest', function (req, res) {
-			gFactory.getAll().then(function(data){
-				res.send(data);
-			});
+			Guest.getAll(res);
+			// console.log("response", toto)
+			// res.send(toto);
+			// Guest.getAll().then(function(data){
+			// 	res.send(data);
+			// });
     });
 
 		app.post('/api/guest', function(req, res){
 			console.log("request", req.body);
-			// gFactory.addGuest("Maxime", "Rose", "maxime.rose@hotmail.fr");
+			Guest.addGuest(req.body);
 		});
 
     // application -------------------------------------------------------------

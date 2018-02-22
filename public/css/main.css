@@ -1,14 +1,25 @@
-
+@font-face {
+    font-family: everAfter;
+    src: url('/fonts/EVERAFTE.TTF');
+}
+@font-face {
+    font-family: cacchampagne;
+    src: url('/fonts/Cac Champagne.ttf');
+}
 .menu {
-	font-family: broadway;
-	/*text-align: center;*/
+	font-family: everAfter;
+	text-align: center;
 	padding: 10px;
 	/*width: 50%;
 	margin-left: 25%;*/
 }
 
+.menuItem {
+	font-size: 30px;
+}
+
 .menuItem:hover {
-	/*font-size: 18px;*/
+	font-size: 38px;
 	cursor: pointer;
 }
 
@@ -18,21 +29,43 @@
 
 table.timerTable > tbody > tr > td {
 	text-align: center;
-	border: 1px solid black;
+	font-family: 'Comic Sans MS'
 }
 
+.cell-border {
+	border: 1px solid #00AA00;
+}
 .timer {
 	width: 30%;
 	margin-left: 35%
 }
-
+.cell-time {
+	font-size: 50px;
+	min-width: 20px;
+	width: 20px;
+}
+.uppercase{
+	text-transform: uppercase;
+}
 .background {
-	background-color: #00AA00;
-	padding: 1%
+	background: rgba(135, 233, 144, 0.37);
+	/*background-color: #87E990;*/
+	/*opacity: 0.37;*/
+	padding: 2%
 }
 
 .img-responsive {
 	max-width: 50%;
 	height: auto;
 	display: block;
+}
+
+.separator {
+	margin: 10px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	color: white;
+}
+hr {
+	border-color: black;
 }

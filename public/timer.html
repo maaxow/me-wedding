@@ -1,20 +1,41 @@
-<div class="background">
+<div class="background row">
 
-	<div class="timer">
+	<div class="timer col-md-6 offset-md-3">
 		<table class="timerTable">
 			<tr>
-				<td ng-repeat="letter1 in daysString track by $index">{{letter1}}</td>
-				<td ng-repeat="letter2 in hoursString track by $index">{{letter2}}</td>
-				<td ng-repeat="letter3 in minutesString track by $index">{{letter3}}</td>
-				<td ng-repeat="letter4 in secondsString track by $index">{{letter4}}</td>
+				<td class="cell-border cell-time" ng-repeat="letter1 in daysString track by $index">{{letter1}}</td>
+				<td class="cell-time"></td>
+				<td class="cell-border cell-time" ng-repeat="letter2 in hoursString track by $index">{{letter2}}</td>
+				<td class="cell-border cell-time"> : </td>
+				<td class="cell-border cell-time" ng-repeat="letter3 in minutesString track by $index">{{letter3}}</td>
+				<td class="cell-border cell-time"> : </td>
+				<td class="cell-border cell-time" ng-repeat="letter4 in secondsString track by $index">{{letter4}}</td>
 			</tr>
 			<tr>
-				<td colspan="{{nbDigitDays}}">Jours</td>
-				<td colspan="{{nbDigitHours}}">Heures</td>
-				<td colspan="{{nbDigitMinutes}}">Minutes</td>
-				<td colspan="{{nbDigitSeconds}}">Secondes</td>
+				<td class="uppercase" colspan="{{nbDigitDays}}">Jours</td>
+				<td></td>
+				<td class="uppercase" colspan="{{nbDigitHours}}">Heures</td>
+				<td></td>
+				<td class="uppercase" colspan="{{nbDigitMinutes}}">Minutes</td>
+				<td></td>
+				<td class="uppercase" colspan="{{nbDigitSeconds}}">Secondes</td>
 			</tr>
 		</table>
+
+		<!-- <div class="row">
+			<div class="col-md-2 offset-md-2">
+				{{timer.days}}
+			</div>
+			<div class="col-md-2">
+				{{timer.hours}}
+			</div>
+			<div class="col-md-2">
+				{{timer.minutes}}
+			</div>
+			<div class="col-md-2">
+				{{timer.seconds}}
+			</div>
+		</div> -->
 
 	</div>
 	<!-- {{timer.days + " jours " + timer.hours + " heures " +  timer.minutes + " minutes " +  timer.seconds + " secondes"}} -->
