@@ -1,4 +1,4 @@
-angular.module('app', ['ui.router'])
+angular.module('app', ['ui.router', 'app.controllers.admin'])
 
 .config(['$stateProvider','$locationProvider','$urlRouterProvider', function($stateProvider, $locationProvider,$urlRouterProvider){
 
@@ -52,43 +52,6 @@ angular.module('app', ['ui.router'])
 	$locationProvider.html5Mode(true);
 }])
 
-
-
-.controller('AdminController', function($scope, $http, $interval, CONSTANTS){
-	function Guest(){
-		this.firstname = '';
-		this.lastname= '';
-		this.email= '';
-		this.phone_number= '';
-		this.address= '';
-		this.post_code= '';
-		this.city= '';
-		this.country= '';
-		this.present= 0;
-	}
-
-
-	$scope.guests = [];
-	$scope.newGuest = new Guest();
-	$scope.getAll = function(){
-		$http.get('/api/guest').then(function(data){
-			$scope.guests = data.data;
-		});
-	};
-	$scope.getAll();
-
-	$scope.addGuest = function(){
-		console.log("new guest : ", $scope.newGuest);
-		$http.post('/api/guest', $scope.newGuest).then(function(data){
-			$scope.getAll();
-		});
-	};
-
-	$scope.changePresent = function(){
-		$scope.newGuest.present === 1 ? $scope.newGuest.present = 0 : $scope.newGuest.present = 1; 
-	}
-
-})
 .controller('AppController', function($scope){
 	$scope.message = "home page !";
 })

@@ -1,8 +1,9 @@
 
 <button href="" ng-click="getAll()">Refresh</button>
 
-<table>
+<table class="table">
 	<tr>
+		<th>Id</th>
 		<th>Prénom</th>
 		<th>Nom</th>
 		<th>Email</th>
@@ -12,8 +13,10 @@
 		<th>Ville</th>
 		<th>Pays</th>
 		<th>Présent</th>
+		<th>Actions</th>
 	</tr>
 	<tr ng-repeat="guest in guests">
+		<td>{{guest.id}}</td>
 		<td>{{guest.firstname}}</td>
 		<td>{{guest.lastname}}</td>
 		<td>{{guest.email}}</td>
@@ -23,6 +26,12 @@
 		<td>{{guest.city}}</td>
 		<td>{{guest.counrty}}</td>
 		<td>{{guest.present}}</td>
+		<td>
+			<button type="button" class="btn btn-primary" ng-click="edit(guest)">
+				<i class="material-icons">mode_edit</i>
+			</button>
+			<i class="material-icons" ng-click="remove(guest.id)">delete_forever</i>
+		</td>
 	</tr>
 </table>
 
@@ -71,4 +80,30 @@
 		</div>
 	</div>
 	<button ng-click="addGuest()">add</button> <!-- NEED ANGULAR TO USER http post -->
+</div>
+
+
+
+
+
+
+<!-- MODAL -->
+<div class="modal fade" id="updateGuestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
