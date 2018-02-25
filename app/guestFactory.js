@@ -77,7 +77,7 @@ module.exports = {
 					guest.country,
 					guest.present,
 					guest.id]
-			}, guest, function (error, results, fields) {
+			}, function (error, results, fields) {
 			  if (error){
 					console.error("Error update()", error);
 				}
@@ -88,6 +88,22 @@ module.exports = {
 		});
 		return promise;
 	},
-	remove : function(){
+	remove : function(id){
+		var connection = createConnection();
+		connection.connect();
+		var promise = new Promise(function(resolve, reject){
+			connection.query({
+				sql: 'DELETE FROM guest WHERE id = ?',
+				values: [id]
+			}, function (error, results, fields) {
+			  if (error){
+					console.error("Error delete()", error);
+				}
+			  console.log('The delete is: ', results);
+				resolve(results);
+			});
+			connection.end();
+		});
+		return promise;
 	}
 }

@@ -2,9 +2,11 @@ angular.module('app').directive('maaxowTimer', function(){
 
 return {
 	restrict: 'E',
-	templateUrl: 'timer.html',
+	templateUrl: '/js/directives/timer/timer.html',
 	scope : {
 		date : '='
+	},
+	link: function(scope, ele, attr){
 	},
 	controller: function($scope, $interval){
 		$scope.nbDigitDays = 1;

@@ -16,14 +16,18 @@ module.exports = function (app) {
 
 		// ADD GUEST
 		app.post('/api/guest', function(req, res){
-			Guest.addGuest(req.body);
+			res.send(Guest.add(req.body));
 		});
 
 		// UPDATE GUEST
-		app.post('/api/guest/:id', function(req, res){
-			console.log("body", req.body);
-			// Guest.update(req.body);
+		app.post('/api/guest/update', function(req, res){
+			console.log("updating .. ", req.body);
+			res.send(Guest.update(req.body));
 		});
+
+		app.post('/api/guest/delete/:id', function(req, res){
+			res.send(Guest.remove(req.params.id))
+		})
 
 
 		app.get('/server/health', function(req, res){

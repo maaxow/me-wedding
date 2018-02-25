@@ -104,3 +104,9 @@ body.background {
 .green {
 	color: green;
 }
+
+.timer-sticky {
+	position: sticky;
+	top: 0px;
+	z-index: 3;
+}
