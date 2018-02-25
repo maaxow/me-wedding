@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/material-icons/material-icons.css">
-	
+
 
 	<!-- FONTS -->
 	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
@@ -26,15 +26,19 @@
 	<script src="/vendor/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
 	<script src="/vendor/angular/angular.min.js" charset="utf-8"></script>
 	<script src="/vendor/angular-ui-router/angular-ui-router.min.js" charset="utf-8"></script>
+
 	<script src="/js/admin.controller.js" charset="utf-8"></script>
 	<script src="/js/main.js" charset="utf-8"></script>
 	<script src="/js/timer.js" charset="utf-8"></script>
 	<script src="/js/constants.js" charset="utf-8"></script>
+	<script src="/js/directives/serverHealth/serverHealth.js" charset="utf-8"></script>
+	<script src="/js/directives/progInfo/progInfo.js" charset="utf-8"></script>
 </head>
-<body>
+<body class="background">
 
 	<div ng-app="app" ng-controller="MainController">
 
+		<server:health></server:health>
 		<div class="row">
 			<!-- <div class="col"></div> -->
 			<div class="col-6 offset-4">
@@ -70,6 +74,10 @@
 			<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnU3djY3YnVyN3ZzNHY1MXRuZ242OXJlNXMgdWk3MWUwdW5ybm0zaTZwZXVianRhMHU3bmdAZw&amp;tmsrc=ui71e0unrnm3i6peubjta0u7ng%40group.calendar.google.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_fr.gif"></a>
 
 			<div ui-view></div>
+
+			<div class="col-12" style="text-align: center; padding: 20px">
+				Site entièrement réalisé avec <span style="color: red;">&hearts;</span> par &copy; Maxime & Elodie
+			</div>
 	</div>
 </body>
 </html>

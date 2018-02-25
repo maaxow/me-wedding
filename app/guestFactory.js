@@ -25,8 +25,7 @@ module.exports = {
 				return;
 			} else {
 				connection.query({
-					sql: 'SELECT * FROM guest',
-					timeout: 100
+					sql: 'SELECT * FROM guest'
 				}, function (error, results, fields) {
 					if (error){
 						console.error("Error query()", error.stack);
@@ -46,7 +45,7 @@ module.exports = {
 			}
 		});
 	},
-	addGuest : function(guest){
+	add : function(guest){
 		var connection = createConnection();
 		connection.connect();
 		var promise = new Promise(function(resolve, reject){
@@ -61,10 +60,34 @@ module.exports = {
 		});
 		return promise;
 	},
-	updateGuest : function(guest){
-
+	update : function(guest){
+		var connection = createConnection();
+		connection.connect();
+		var promise = new Promise(function(resolve, reject){
+			connection.query({
+				sql: 'UPDATE guest SET id=?, firstname=?, lastname=?, email=?, phone_number=?, address=?, post_code=?, city=?, country=?, present=? WHERE id = ?',
+				values: [guest.id,
+					guest.firstname,
+					guest.lastname,
+					guest.email,
+					guest.phone_number,
+					guest.address,
+					guest.post_code,
+					guest.city,
+					guest.country,
+					guest.present,
+					guest.id]
+			}, guest, function (error, results, fields) {
+			  if (error){
+					console.error("Error update()", error);
+				}
+			  console.log('The updated is: ', results);
+				resolve(results);
+			});
+			connection.end();
+		});
+		return promise;
 	},
-	endConnection : function(){
-		connection.destroy();
+	remove : function(){
 	}
 }

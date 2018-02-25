@@ -1,0 +1,15 @@
+<div class="border col-8 offset-2 card">
+
+	<h1 class="title">Le programme du Mariage</h1>
+
+<br>
+	<prog:info  ng-repeat="info in infos"
+							data-date="info.date"
+							data-hours="info.hours"
+							data-title="info.title"
+							data-place="info.place"
+							data-maps-link="info.mapsLink"
+							data-description="info.description"
+	></prog:info>
+
+</div>

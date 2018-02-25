@@ -21,7 +21,42 @@ angular.module('app', ['ui.router', 'app.controllers.admin'])
 	.state('info', {
 		url: "/info",
 		templateUrl: 'views/info.html',
-		// controller : 'AppController'
+		controller : function($scope){
+			$scope.infos = [
+				{
+					date: '29 Juin 2019',
+					hours: '14h00',
+					title: 'La Cérémonie Civile',
+					place: 'Mairie de Gamaches, Place du Maréchal Leclercq.',
+					mapsLink: 'https://www.google.fr/maps/place/Salle+de+permanence+de+la+mairie/@49.9856914,1.5598221,18.99z/data=!4m13!1m7!3m6!1s0x47e7563ccbb081db:0x40af13e81620bc0!2s80220+Gamaches!3b1!8m2!3d49.985833!4d1.559647!3m4!1s0x47e7566b1c010a41:0x3b917a7843935342!8m2!3d49.9857549!4d1.5598038?hl=fr',
+					description: 'La cérémonie civile se déroulera dans la ville où a grandi Elodie. Un grand parking se situe juste devant, alors pas de tracas pour se garer.'
+				},
+				{
+					date: '29 Juin 2019',
+					hours: '16h00',
+					title: 'La Cérémonie Religieuse',
+					place: 'Eglise de Gamaches, rue de Normandie',
+					mapsLink: 'https://www.google.fr/maps/place/Eglise+de+GAMACHES/@49.986051,1.55554,18.99z/data=!4m13!1m7!3m6!1s0x47e7563ccbb081db:0x40af13e81620bc0!2s80220+Gamaches!3b1!8m2!3d49.985833!4d1.559647!3m4!1s0x47e7566b1af8257f:0x762ce1bbfb397435!8m2!3d49.9860658!4d1.5554935?hl=fr',
+					description: ''
+				},
+				{
+					date: '29 Juin 2019',
+					hours: '18h00',
+					title: 'Le Vin d\'Honneur',
+					place: 'Quelque part',
+					mapsLink: 'https://www.google.fr/maps/place/Somme/@49.9676227,1.7309381,9z/data=!3m1!4b1!4m5!3m4!1s0x47e7873951d7aa9f:0x30af13e81612a80!8m2!3d49.914518!4d2.2707095',
+					description: ''
+				},
+				{
+					date: '29 Juin 2019',
+					hours: '20h00',
+					title: 'Le Diner',
+					place: 'Quelque part',
+					mapsLink: 'https://www.google.fr/maps/place/Somme/@49.9676227,1.7309381,9z/data=!3m1!4b1!4m5!3m4!1s0x47e7873951d7aa9f:0x30af13e81612a80!8m2!3d49.914518!4d2.2707095',
+					description: ''
+				}
+			];
+		}
 	})
 	.state('lodging', {
 		url: "/lodging",
@@ -55,6 +90,11 @@ angular.module('app', ['ui.router', 'app.controllers.admin'])
 .controller('AppController', function($scope){
 	$scope.message = "home page !";
 })
-.controller('MainController', function($scope, CONSTANTS){
+.controller('MainController', function($scope, CONSTANTS, $http, $interval){
 	$scope.weddingDate = Date.parse(CONSTANTS.weddingDate);
+})
+.filter('html',function($sce){
+    return function(input){
+        return $sce.trustAsHtml(input);
+    }
 });

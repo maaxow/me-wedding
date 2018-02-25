@@ -17,6 +17,14 @@
 .menuItem {
 	font-size: 30px;
 }
+.title {
+	font-family: cacchampagne;
+	font-size: 60px;
+	padding: 10px;
+}
+.title-info {
+	color: #87E990;
+}
 
 .menuItem:hover {
 	font-size: 38px;
@@ -66,6 +74,33 @@ table.timerTable > tbody > tr > td {
 	border-bottom: 1px solid black;
 	color: white;
 }
+
 hr {
-	border-color: black;
+	border-color: #CCCCCC;
+}
+hr.dotted {
+	border-top: 3px dotted;
+}
+.prog-date {
+	margin: 10px auto;
+	text-align: center;
+	font-size: 17px;
+	font-family: "Trebuchet MS"
+}
+.card {
+	background-color: white;
+}
+
+body.background {
+	background-color: #FFFAFA;
+}
+
+.orange {
+	color: orange;
+}
+.red {
+	color : red;
+}
+.green {
+	color: green;
 }

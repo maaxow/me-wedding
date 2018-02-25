@@ -1,4 +1,5 @@
 var path = require('path');
+var mysql = require('mysql');
 var Guest = require('./guestFactory.js');
 
 module.exports = function (app) {
@@ -13,9 +14,41 @@ module.exports = function (app) {
 			// });
     });
 
+		// ADD GUEST
 		app.post('/api/guest', function(req, res){
-			console.log("request", req.body);
 			Guest.addGuest(req.body);
+		});
+
+		// UPDATE GUEST
+		app.post('/api/guest/:id', function(req, res){
+			console.log("body", req.body);
+			// Guest.update(req.body);
+		});
+
+
+		app.get('/server/health', function(req, res){
+			var connection = mysql.createConnection({
+				host     : 'localhost',
+				user     : 'root',
+				password : '',
+				database : 'me_wedding'
+			});
+
+			connection.connect(function(errorConnect){
+				if(errorConnect){
+					res.status(400);
+					res.send(errorConnect);
+				} else {
+					connection.end(function(errorEnd){
+						if(errorEnd){
+							res.status(400);
+							res.send(errorEnd);
+						} else {
+							res.send({ok: true});
+						}
+					});
+				}
+			})
 		});
 
     // application -------------------------------------------------------------
