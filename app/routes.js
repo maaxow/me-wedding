@@ -1,9 +1,34 @@
 var path = require('path');
 var mysql = require('mysql');
 var Guest = require('./guestFactory.js');
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+
+
+passport.use(new LocalStrategy(
+  function(username, password, done) {
+    User.findOne({ username: username }, function(err, user) {
+      if (err) { return done(err); }
+      if (!user) {
+        return done(null, false, { message: 'Incorrect username.' });
+      }
+      if (!user.validPassword(password)) {
+        return done(null, false, { message: 'Incorrect password.' });
+      }
+      return done(null, user);
+    });
+  }
+));
+
 
 module.exports = function (app) {
 
+
+		app.post('/login', passport.authenticate('local', {
+			successRedirect: '/admin',
+			failureRedirect: '/login',
+			failureFlash: true
+		}));
     // GET ALL GUEST
     app.get('/api/guest', function (req, res) {
 			Guest.getAll(res);
@@ -15,7 +40,8 @@ module.exports = function (app) {
     });
 
 		// ADD GUEST
-		app.post('/api/guest', function(req, res){
+		app.post('/api/guest',
+			passport.authenticate('local', {session: false}), function(req, res){
 			res.send(Guest.add(req.body));
 		});
 
@@ -34,7 +60,7 @@ module.exports = function (app) {
 				host     : 'localhost',
         port     : '8889',
 				user     : 'root',
-				password : 'root',
+				password : 'yrv\'xrjbx',
 				database : 'me_wedding'
 			});
 

@@ -11,7 +11,11 @@ createConnection = function(){
 		host     : 'localhost',
 		port		 : '8889',
 		user     : 'root',
+<<<<<<< HEAD
+		password : 'yrv'xrjbx',
+=======
 		password : 'yrv\'xrjbx',
+>>>>>>> 24d7a63fa804cbfd20a138e02a6abd5eae2628d8
 		database : 'me_wedding'
 	});
 }
