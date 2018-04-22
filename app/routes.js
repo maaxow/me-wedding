@@ -21,7 +21,6 @@ module.exports = function (app) {
 
 		// UPDATE GUEST
 		app.post('/api/guest/update', function(req, res){
-			console.log("updating .. ", req.body);
 			res.send(Guest.update(req.body));
 		});
 
@@ -33,8 +32,9 @@ module.exports = function (app) {
 		app.get('/server/health', function(req, res){
 			var connection = mysql.createConnection({
 				host     : 'localhost',
+        port     : '8889',
 				user     : 'root',
-				password : '',
+				password : 'root',
 				database : 'me_wedding'
 			});
 

@@ -91,7 +91,7 @@ angular.module('app', ['ui.router', 'app.controllers.admin'])
 	$scope.message = "home page !";
 })
 .controller('MainController', function($scope, CONSTANTS, $http, $interval){
-	$scope.weddingDate = Date.parse(CONSTANTS.weddingDate);
+	$scope.weddingDate = new Date(2019,5,29); //Date.parse(CONSTANTS.weddingDate, 'MM-dd-yyyy');
 })
 .filter('html',function($sce){
     return function(input){

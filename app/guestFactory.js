@@ -9,8 +9,9 @@ var handleError = function(err){
 createConnection = function(){
 	return mysql.createConnection({
 		host     : 'localhost',
+		port		 : '8889',
 		user     : 'root',
-		password : '',
+		password : 'yrv'xrjbx',
 		database : 'me_wedding'
 	});
 }
@@ -53,7 +54,6 @@ module.exports = {
 			  if (error){
 					console.error("Error insert()", error);
 				}
-			  console.log('The adding is: ', results);
 				resolve(results);
 			});
 			connection.end();
@@ -81,7 +81,6 @@ module.exports = {
 			  if (error){
 					console.error("Error update()", error);
 				}
-			  console.log('The updated is: ', results);
 				resolve(results);
 			});
 			connection.end();
@@ -99,7 +98,6 @@ module.exports = {
 			  if (error){
 					console.error("Error delete()", error);
 				}
-			  console.log('The delete is: ', results);
 				resolve(results);
 			});
 			connection.end();
