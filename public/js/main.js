@@ -89,13 +89,16 @@ angular.module('app', ['ui.router', 'app.controllers.admin'])
 
 .controller('AppController', function($scope, $http){
 	$scope.message = "home page !";
-	$http.get('/server/version', function(version){
-			$scope.version = version;
-	})
+
 
 })
 .controller('MainController', function($scope, CONSTANTS, $http, $interval){
 	$scope.weddingDate = new Date(2019,5,29); //Date.parse(CONSTANTS.weddingDate, 'MM-dd-yyyy');
+	$scope.version = "gnee";
+	$http.get('/server/version').then(function(response){
+		console.log("version :", response.data);
+			$scope.version = response.data;
+	})
 })
 .filter('html',function($sce){
     return function(input){
