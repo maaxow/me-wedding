@@ -1,6 +1,6 @@
 //require the module
 var mysql = require('mysql');
-const DATABASE = require('./config/constants').database;
+const DATABASE = require('../config/constants').database;
 
 var handleError = function(err){
 	if(err){

@@ -1,5 +1,5 @@
 var path = require('path');
-var version = require('./package').version;
+var version = require('../package').version;
 var mysql = require('mysql');
 var Guest = require('./guestFactory.js');
 var passport = require('passport');
