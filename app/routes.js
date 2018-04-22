@@ -60,7 +60,7 @@ module.exports = function (app) {
 			var connection = mysql.createConnection({
 				host     : 'localhost',
 				user     : 'root',
-				password : '',
+				password : 'yrv\'xrjbx',
 				database : 'me_wedding'
 			});
 
