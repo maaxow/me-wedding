@@ -89,6 +89,7 @@ angular.module('app', ['ui.router', 'app.controllers.admin'])
 
 .controller('AppController', function($scope){
 	$scope.message = "home page !";
+	$scope.version = "0.0.0";
 })
 .controller('MainController', function($scope, CONSTANTS, $http, $interval){
 	$scope.weddingDate = new Date(2019,5,29); //Date.parse(CONSTANTS.weddingDate, 'MM-dd-yyyy');
