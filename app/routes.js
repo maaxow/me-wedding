@@ -1,4 +1,5 @@
 var path = require('path');
+var version = require('./package').version;
 var mysql = require('mysql');
 var Guest = require('./guestFactory.js');
 var passport = require('passport');
@@ -64,6 +65,7 @@ module.exports = function (app) {
 				database : 'me_wedding'
 			});
 
+
 			connection.connect(function(errorConnect){
 				if(errorConnect){
 					res.status(400);
@@ -81,6 +83,9 @@ module.exports = function (app) {
 			})
 		});
 
+    app.get('/server/version', function(req, res){
+      res.send(version);
+    });
     // application -------------------------------------------------------------
     app.get('/*', function (req, res) {
       res.sendFile(path.resolve(__dirname + '/../public/index.html')); // load the single view file (angular will handle the page changes on the front-end)

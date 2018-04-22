@@ -87,9 +87,12 @@ angular.module('app', ['ui.router', 'app.controllers.admin'])
 	$locationProvider.html5Mode(true);
 }])
 
-.controller('AppController', function($scope){
+.controller('AppController', function($scope, $http){
 	$scope.message = "home page !";
-	$scope.version = "0.0.0";
+	$http.get('/server/version', function(version){
+			$scope.version = version;
+	})
+
 })
 .controller('MainController', function($scope, CONSTANTS, $http, $interval){
 	$scope.weddingDate = new Date(2019,5,29); //Date.parse(CONSTANTS.weddingDate, 'MM-dd-yyyy');

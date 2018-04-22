@@ -1,5 +1,6 @@
 //require the module
 var mysql = require('mysql');
+const DATABASE = require('./config/constants').database;
 
 var handleError = function(err){
 	if(err){
@@ -10,9 +11,9 @@ createConnection = function(){
 	return mysql.createConnection({
 		host     : 'localhost',
 		port		 : '8889',
-		user     : 'root',
-		password : 'yrv\'xrjbx',
-		database : 'me_wedding'
+		user     : DATABASE.user,
+		password : DATABASE.password,
+		database : DATABASE.database
 	});
 }
 module.exports = {

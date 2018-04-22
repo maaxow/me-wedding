@@ -1,3 +1,7 @@
 module.exports = {
-  VAR : "No constant anymore"
+  database : {
+    user : 'root',
+    password : "yrv'xrjbx",
+    database : 'me_wedding'
+  }
 };
