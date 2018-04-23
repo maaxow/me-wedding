@@ -1,6 +1,6 @@
 {
   "name": "me-wedding",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Maxime & Elodie Wedding app",
   "main": "server.js",
   "scripts": {

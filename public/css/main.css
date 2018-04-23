@@ -121,3 +121,9 @@ body.background {
  ul > li.admin-link:hover {
 	 border-bottom: 2px solid red;
  }
+
+ .version {
+	 font-size: 10px;
+	 vertical-align: super;
+	 color: grey;
+ }
