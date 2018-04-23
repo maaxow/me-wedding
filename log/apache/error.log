@@ -1,0 +1,681 @@
+[Thu Apr 19 15:43:54.240821 2018] [proxy:debug] [pid 710] proxy_util.c(1771): AH00925: initializing worker http://127.0.0.1:8080 shared
+[Thu Apr 19 15:43:54.241201 2018] [proxy:debug] [pid 710] proxy_util.c(1813): AH00927: initializing worker http://127.0.0.1:8080 local
+[Thu Apr 19 15:43:54.241442 2018] [proxy:debug] [pid 710] proxy_util.c(1864): AH00931: initialized single connection worker in child 710 for (127.0.0.1)
+[Thu Apr 19 15:43:54.243905 2018] [proxy:debug] [pid 711] proxy_util.c(1771): AH00925: initializing worker http://127.0.0.1:8080 shared
+[Thu Apr 19 15:43:54.244139 2018] [proxy:debug] [pid 711] proxy_util.c(1813): AH00927: initializing worker http://127.0.0.1:8080 local
+[Thu Apr 19 15:43:54.244304 2018] [proxy:debug] [pid 711] proxy_util.c(1864): AH00931: initialized single connection worker in child 711 for (127.0.0.1)
+[Thu Apr 19 15:43:54.247229 2018] [proxy:debug] [pid 712] proxy_util.c(1771): AH00925: initializing worker http://127.0.0.1:8080 shared
+[Thu Apr 19 15:43:54.247445 2018] [proxy:debug] [pid 712] proxy_util.c(1813): AH00927: initializing worker http://127.0.0.1:8080 local
+[Thu Apr 19 15:43:54.247608 2018] [proxy:debug] [pid 712] proxy_util.c(1864): AH00931: initialized single connection worker in child 712 for (127.0.0.1)
+[Thu Apr 19 15:43:54.250781 2018] [proxy:debug] [pid 713] proxy_util.c(1771): AH00925: initializing worker http://127.0.0.1:8080 shared
+[Thu Apr 19 15:43:54.250997 2018] [proxy:debug] [pid 713] proxy_util.c(1813): AH00927: initializing worker http://127.0.0.1:8080 local
+[Thu Apr 19 15:43:54.251145 2018] [proxy:debug] [pid 713] proxy_util.c(1864): AH00931: initialized single connection worker in child 713 for (127.0.0.1)
+[Thu Apr 19 15:43:54.254142 2018] [proxy:debug] [pid 714] proxy_util.c(1771): AH00925: initializing worker http://127.0.0.1:8080 shared
+[Thu Apr 19 15:43:54.254304 2018] [proxy:debug] [pid 714] proxy_util.c(1813): AH00927: initializing worker http://127.0.0.1:8080 local
+[Thu Apr 19 15:43:54.254439 2018] [proxy:debug] [pid 714] proxy_util.c(1864): AH00931: initialized single connection worker in child 714 for (127.0.0.1)
+[Thu Apr 19 15:48:12.704749 2018] [proxy:debug] [pid 898] proxy_util.c(1771): AH00925: initializing worker http://127.0.0.1:8080 shared
+[Thu Apr 19 15:48:12.705056 2018] [proxy:debug] [pid 898] proxy_util.c(1813): AH00927: initializing worker http://127.0.0.1:8080 local
+[Thu Apr 19 15:48:12.705279 2018] [proxy:debug] [pid 898] proxy_util.c(1864): AH00931: initialized single connection worker in child 898 for (127.0.0.1)
+[Thu Apr 19 15:48:12.707946 2018] [proxy:debug] [pid 899] proxy_util.c(1771): AH00925: initializing worker http://127.0.0.1:8080 shared
+[Thu Apr 19 15:48:12.708206 2018] [proxy:debug] [pid 899] proxy_util.c(1813): AH00927: initializing worker http://127.0.0.1:8080 local
+[Thu Apr 19 15:48:12.708368 2018] [proxy:debug] [pid 899] proxy_util.c(1864): AH00931: initialized single connection worker in child 899 for (127.0.0.1)
+[Thu Apr 19 15:48:12.711496 2018] [proxy:debug] [pid 900] proxy_util.c(1771): AH00925: initializing worker http://127.0.0.1:8080 shared
+[Thu Apr 19 15:48:12.711748 2018] [proxy:debug] [pid 900] proxy_util.c(1813): AH00927: initializing worker http://127.0.0.1:8080 local
+[Thu Apr 19 15:48:12.711915 2018] [proxy:debug] [pid 900] proxy_util.c(1864): AH00931: initialized single connection worker in child 900 for (127.0.0.1)
+[Thu Apr 19 15:48:12.715004 2018] [proxy:debug] [pid 901] proxy_util.c(1771): AH00925: initializing worker http://127.0.0.1:8080 shared
+[Thu Apr 19 15:48:12.715276 2018] [proxy:debug] [pid 901] proxy_util.c(1813): AH00927: initializing worker http://127.0.0.1:8080 local
+[Thu Apr 19 15:48:12.715451 2018] [proxy:debug] [pid 901] proxy_util.c(1864): AH00931: initialized single connection worker in child 901 for (127.0.0.1)
+[Thu Apr 19 15:48:12.718324 2018] [proxy:debug] [pid 902] proxy_util.c(1771): AH00925: initializing worker http://127.0.0.1:8080 shared
+[Thu Apr 19 15:48:12.718503 2018] [proxy:debug] [pid 902] proxy_util.c(1813): AH00927: initializing worker http://127.0.0.1:8080 local
+[Thu Apr 19 15:48:12.718633 2018] [proxy:debug] [pid 902] proxy_util.c(1864): AH00931: initialized single connection worker in child 902 for (127.0.0.1)
+[Thu Apr 19 15:49:34.969070 2018] [proxy:debug] [pid 1035] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:49:34.969416 2018] [proxy:debug] [pid 1035] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:49:34.969647 2018] [proxy:debug] [pid 1035] proxy_util.c(1864): AH00931: initialized single connection worker in child 1035 for (localhost)
+[Thu Apr 19 15:49:34.972196 2018] [proxy:debug] [pid 1036] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:49:34.972446 2018] [proxy:debug] [pid 1036] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:49:34.972615 2018] [proxy:debug] [pid 1036] proxy_util.c(1864): AH00931: initialized single connection worker in child 1036 for (localhost)
+[Thu Apr 19 15:49:34.975639 2018] [proxy:debug] [pid 1037] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:49:34.975897 2018] [proxy:debug] [pid 1037] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:49:34.976059 2018] [proxy:debug] [pid 1037] proxy_util.c(1864): AH00931: initialized single connection worker in child 1037 for (localhost)
+[Thu Apr 19 15:49:34.979123 2018] [proxy:debug] [pid 1038] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:49:34.979375 2018] [proxy:debug] [pid 1038] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:49:34.979532 2018] [proxy:debug] [pid 1038] proxy_util.c(1864): AH00931: initialized single connection worker in child 1038 for (localhost)
+[Thu Apr 19 15:49:34.982588 2018] [proxy:debug] [pid 1039] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:49:34.982772 2018] [proxy:debug] [pid 1039] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:49:34.982906 2018] [proxy:debug] [pid 1039] proxy_util.c(1864): AH00931: initialized single connection worker in child 1039 for (localhost)
+[Thu Apr 19 15:52:29.206901 2018] [proxy:debug] [pid 1214] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:52:29.207217 2018] [proxy:debug] [pid 1214] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:52:29.207451 2018] [proxy:debug] [pid 1214] proxy_util.c(1864): AH00931: initialized single connection worker in child 1214 for (localhost)
+[Thu Apr 19 15:52:29.210022 2018] [proxy:debug] [pid 1215] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:52:29.210263 2018] [proxy:debug] [pid 1215] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:52:29.210427 2018] [proxy:debug] [pid 1215] proxy_util.c(1864): AH00931: initialized single connection worker in child 1215 for (localhost)
+[Thu Apr 19 15:52:29.213306 2018] [proxy:debug] [pid 1216] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:52:29.213670 2018] [proxy:debug] [pid 1216] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:52:29.213832 2018] [proxy:debug] [pid 1216] proxy_util.c(1864): AH00931: initialized single connection worker in child 1216 for (localhost)
+[Thu Apr 19 15:52:29.217049 2018] [proxy:debug] [pid 1217] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:52:29.217284 2018] [proxy:debug] [pid 1217] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:52:29.217452 2018] [proxy:debug] [pid 1217] proxy_util.c(1864): AH00931: initialized single connection worker in child 1217 for (localhost)
+[Thu Apr 19 15:52:29.220377 2018] [proxy:debug] [pid 1218] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:52:29.220607 2018] [proxy:debug] [pid 1218] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:52:29.220734 2018] [proxy:debug] [pid 1218] proxy_util.c(1864): AH00931: initialized single connection worker in child 1218 for (localhost)
+[Thu Apr 19 15:53:24.881562 2018] [proxy:debug] [pid 1364] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:53:24.881831 2018] [proxy:debug] [pid 1364] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:53:24.882066 2018] [proxy:debug] [pid 1364] proxy_util.c(1864): AH00931: initialized single connection worker in child 1364 for (localhost)
+[Thu Apr 19 15:53:24.884799 2018] [proxy:debug] [pid 1365] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:53:24.885047 2018] [proxy:debug] [pid 1365] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:53:24.885216 2018] [proxy:debug] [pid 1365] proxy_util.c(1864): AH00931: initialized single connection worker in child 1365 for (localhost)
+[Thu Apr 19 15:53:24.888147 2018] [proxy:debug] [pid 1366] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:53:24.888386 2018] [proxy:debug] [pid 1366] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:53:24.888558 2018] [proxy:debug] [pid 1366] proxy_util.c(1864): AH00931: initialized single connection worker in child 1366 for (localhost)
+[Thu Apr 19 15:53:24.891796 2018] [proxy:debug] [pid 1367] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:53:24.892030 2018] [proxy:debug] [pid 1367] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:53:24.892189 2018] [proxy:debug] [pid 1367] proxy_util.c(1864): AH00931: initialized single connection worker in child 1367 for (localhost)
+[Thu Apr 19 15:53:24.895313 2018] [proxy:debug] [pid 1368] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:53:24.895485 2018] [proxy:debug] [pid 1368] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:53:24.895613 2018] [proxy:debug] [pid 1368] proxy_util.c(1864): AH00931: initialized single connection worker in child 1368 for (localhost)
+[Thu Apr 19 15:55:54.465743 2018] [proxy:debug] [pid 1615] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:55:54.466024 2018] [proxy:debug] [pid 1615] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:55:54.466256 2018] [proxy:debug] [pid 1615] proxy_util.c(1864): AH00931: initialized single connection worker in child 1615 for (localhost)
+[Thu Apr 19 15:55:54.468912 2018] [proxy:debug] [pid 1616] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:55:54.469134 2018] [proxy:debug] [pid 1616] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:55:54.469320 2018] [proxy:debug] [pid 1616] proxy_util.c(1864): AH00931: initialized single connection worker in child 1616 for (localhost)
+[Thu Apr 19 15:55:54.472121 2018] [proxy:debug] [pid 1617] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:55:54.472345 2018] [proxy:debug] [pid 1617] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:55:54.472504 2018] [proxy:debug] [pid 1617] proxy_util.c(1864): AH00931: initialized single connection worker in child 1617 for (localhost)
+[Thu Apr 19 15:55:54.475733 2018] [proxy:debug] [pid 1618] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:55:54.475968 2018] [proxy:debug] [pid 1618] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:55:54.476128 2018] [proxy:debug] [pid 1618] proxy_util.c(1864): AH00931: initialized single connection worker in child 1618 for (localhost)
+[Thu Apr 19 15:55:54.479037 2018] [proxy:debug] [pid 1619] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 15:55:54.479184 2018] [proxy:debug] [pid 1619] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 15:55:54.479302 2018] [proxy:debug] [pid 1619] proxy_util.c(1864): AH00931: initialized single connection worker in child 1619 for (localhost)
+[Thu Apr 19 16:01:45.931907 2018] [proxy:debug] [pid 1919] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 16:01:45.932150 2018] [proxy:debug] [pid 1919] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 16:01:45.932359 2018] [proxy:debug] [pid 1919] proxy_util.c(1864): AH00931: initialized single connection worker in child 1919 for (localhost)
+[Thu Apr 19 16:01:45.935273 2018] [proxy:debug] [pid 1920] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 16:01:45.935495 2018] [proxy:debug] [pid 1920] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 16:01:45.935652 2018] [proxy:debug] [pid 1920] proxy_util.c(1864): AH00931: initialized single connection worker in child 1920 for (localhost)
+[Thu Apr 19 16:01:45.938889 2018] [proxy:debug] [pid 1921] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 16:01:45.939083 2018] [proxy:debug] [pid 1921] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 16:01:45.939239 2018] [proxy:debug] [pid 1921] proxy_util.c(1864): AH00931: initialized single connection worker in child 1921 for (localhost)
+[Thu Apr 19 16:01:45.942389 2018] [proxy:debug] [pid 1922] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 16:01:45.942587 2018] [proxy:debug] [pid 1922] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 16:01:45.942740 2018] [proxy:debug] [pid 1922] proxy_util.c(1864): AH00931: initialized single connection worker in child 1922 for (localhost)
+[Thu Apr 19 16:01:45.945976 2018] [proxy:debug] [pid 1923] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 16:01:45.946128 2018] [proxy:debug] [pid 1923] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 16:01:45.946256 2018] [proxy:debug] [pid 1923] proxy_util.c(1864): AH00931: initialized single connection worker in child 1923 for (localhost)
+[Thu Apr 19 16:04:25.910772 2018] [proxy:debug] [pid 2052] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 16:04:25.911011 2018] [proxy:debug] [pid 2052] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 16:04:25.911239 2018] [proxy:debug] [pid 2052] proxy_util.c(1864): AH00931: initialized single connection worker in child 2052 for (localhost)
+[Thu Apr 19 16:04:25.914101 2018] [proxy:debug] [pid 2053] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 16:04:25.914303 2018] [proxy:debug] [pid 2053] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 16:04:25.914460 2018] [proxy:debug] [pid 2053] proxy_util.c(1864): AH00931: initialized single connection worker in child 2053 for (localhost)
+[Thu Apr 19 16:04:25.917625 2018] [proxy:debug] [pid 2054] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 16:04:25.917818 2018] [proxy:debug] [pid 2054] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 16:04:25.917977 2018] [proxy:debug] [pid 2054] proxy_util.c(1864): AH00931: initialized single connection worker in child 2054 for (localhost)
+[Thu Apr 19 16:04:25.921225 2018] [proxy:debug] [pid 2055] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 16:04:25.921502 2018] [proxy:debug] [pid 2055] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 16:04:25.921681 2018] [proxy:debug] [pid 2055] proxy_util.c(1864): AH00931: initialized single connection worker in child 2055 for (localhost)
+[Thu Apr 19 16:04:25.924821 2018] [proxy:debug] [pid 2056] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Thu Apr 19 16:04:25.924994 2018] [proxy:debug] [pid 2056] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Thu Apr 19 16:04:25.925117 2018] [proxy:debug] [pid 2056] proxy_util.c(1864): AH00931: initialized single connection worker in child 2056 for (localhost)
+[Fri Apr 20 06:25:21.713573 2018] [proxy:debug] [pid 17999] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Fri Apr 20 06:25:21.713813 2018] [proxy:debug] [pid 17999] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Fri Apr 20 06:25:21.714023 2018] [proxy:debug] [pid 17999] proxy_util.c(1864): AH00931: initialized single connection worker in child 17999 for (localhost)
+[Fri Apr 20 06:25:21.716926 2018] [proxy:debug] [pid 18000] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Fri Apr 20 06:25:21.717140 2018] [proxy:debug] [pid 18000] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Fri Apr 20 06:25:21.717324 2018] [proxy:debug] [pid 18000] proxy_util.c(1864): AH00931: initialized single connection worker in child 18000 for (localhost)
+[Fri Apr 20 06:25:21.721955 2018] [proxy:debug] [pid 18001] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Fri Apr 20 06:25:21.722201 2018] [proxy:debug] [pid 18001] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Fri Apr 20 06:25:21.722405 2018] [proxy:debug] [pid 18001] proxy_util.c(1864): AH00931: initialized single connection worker in child 18001 for (localhost)
+[Fri Apr 20 06:25:21.724548 2018] [proxy:debug] [pid 18002] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Fri Apr 20 06:25:21.724749 2018] [proxy:debug] [pid 18002] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Fri Apr 20 06:25:21.724903 2018] [proxy:debug] [pid 18002] proxy_util.c(1864): AH00931: initialized single connection worker in child 18002 for (localhost)
+[Fri Apr 20 06:25:21.728056 2018] [proxy:debug] [pid 18003] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Fri Apr 20 06:25:21.728217 2018] [proxy:debug] [pid 18003] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Fri Apr 20 06:25:21.728345 2018] [proxy:debug] [pid 18003] proxy_util.c(1864): AH00931: initialized single connection worker in child 18003 for (localhost)
+[Sat Apr 21 06:25:07.349500 2018] [proxy:debug] [pid 12080] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 06:25:07.349760 2018] [proxy:debug] [pid 12080] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 06:25:07.349953 2018] [proxy:debug] [pid 12080] proxy_util.c(1864): AH00931: initialized single connection worker in child 12080 for (localhost)
+[Sat Apr 21 06:25:07.353588 2018] [proxy:debug] [pid 12082] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 06:25:07.353833 2018] [proxy:debug] [pid 12082] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 06:25:07.354019 2018] [proxy:debug] [pid 12082] proxy_util.c(1864): AH00931: initialized single connection worker in child 12082 for (localhost)
+[Sat Apr 21 06:25:07.357720 2018] [proxy:debug] [pid 12083] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 06:25:07.358177 2018] [proxy:debug] [pid 12083] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 06:25:07.358374 2018] [proxy:debug] [pid 12083] proxy_util.c(1864): AH00931: initialized single connection worker in child 12083 for (localhost)
+[Sat Apr 21 06:25:07.361681 2018] [proxy:debug] [pid 12084] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 06:25:07.361874 2018] [proxy:debug] [pid 12084] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 06:25:07.362029 2018] [proxy:debug] [pid 12084] proxy_util.c(1864): AH00931: initialized single connection worker in child 12084 for (localhost)
+[Sat Apr 21 06:25:07.365554 2018] [proxy:debug] [pid 12085] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 06:25:07.365737 2018] [proxy:debug] [pid 12085] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 06:25:07.365874 2018] [proxy:debug] [pid 12085] proxy_util.c(1864): AH00931: initialized single connection worker in child 12085 for (localhost)
+[Sat Apr 21 11:38:02.222101 2018] [proxy:debug] [pid 17816] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 11:38:02.222334 2018] [proxy:debug] [pid 17816] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 11:38:02.222479 2018] [proxy:debug] [pid 17816] proxy_util.c(1864): AH00931: initialized single connection worker in child 17816 for (localhost)
+[Sat Apr 21 11:38:03.226466 2018] [proxy:debug] [pid 17818] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 11:38:03.226695 2018] [proxy:debug] [pid 17818] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 11:38:03.226854 2018] [proxy:debug] [pid 17818] proxy_util.c(1864): AH00931: initialized single connection worker in child 17818 for (localhost)
+[Sat Apr 21 11:38:04.230795 2018] [proxy:debug] [pid 17833] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 11:38:04.231003 2018] [proxy:debug] [pid 17833] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 11:38:04.231139 2018] [proxy:debug] [pid 17833] proxy_util.c(1864): AH00931: initialized single connection worker in child 17833 for (localhost)
+[Sat Apr 21 11:38:05.235035 2018] [proxy:debug] [pid 17834] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 11:38:05.235246 2018] [proxy:debug] [pid 17834] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 11:38:05.235385 2018] [proxy:debug] [pid 17834] proxy_util.c(1864): AH00931: initialized single connection worker in child 17834 for (localhost)
+[Sat Apr 21 11:38:06.239228 2018] [proxy:debug] [pid 17835] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 11:38:06.239438 2018] [proxy:debug] [pid 17835] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 11:38:06.239585 2018] [proxy:debug] [pid 17835] proxy_util.c(1864): AH00931: initialized single connection worker in child 17835 for (localhost)
+[Sat Apr 21 11:42:13.448012 2018] [proxy:debug] [pid 18067] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 11:42:13.448244 2018] [proxy:debug] [pid 18067] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 11:42:13.448380 2018] [proxy:debug] [pid 18067] proxy_util.c(1864): AH00931: initialized single connection worker in child 18067 for (localhost)
+[Sat Apr 21 11:52:03.065105 2018] [proxy:debug] [pid 18424] proxy_util.c(1771): AH00925: initializing worker http://localhost:8080/ shared
+[Sat Apr 21 11:52:03.065352 2018] [proxy:debug] [pid 18424] proxy_util.c(1813): AH00927: initializing worker http://localhost:8080/ local
+[Sat Apr 21 11:52:03.065524 2018] [proxy:debug] [pid 18424] proxy_util.c(1864): AH00931: initialized single connection worker in child 18424 for (localhost)
+[Sat Apr 21 12:08:51.407486 2018] [proxy:error] [pid 19821] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 12:08:51.407799 2018] [proxy:error] [pid 19821] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 12:08:51.407855 2018] [proxy_http:error] [pid 19821] [client 192.168.0.13:52254] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:30:14.077394 2018] [proxy:error] [pid 19822] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:30:14.077728 2018] [proxy:error] [pid 19822] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:30:14.077807 2018] [proxy_http:error] [pid 19822] [client 192.168.0.13:49207] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:30:14.079555 2018] [proxy:error] [pid 19887] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:30:14.079769 2018] [proxy:error] [pid 19887] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:30:14.079841 2018] [proxy_http:error] [pid 19887] [client 192.168.0.13:49208] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:30:14.081921 2018] [proxy:error] [pid 19888] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:30:14.082135 2018] [proxy:error] [pid 19888] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:30:14.082208 2018] [proxy_http:error] [pid 19888] [client 192.168.0.13:49209] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:30:24.030482 2018] [proxy:error] [pid 19889] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:30:24.030832 2018] [proxy:error] [pid 19889] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:30:24.030914 2018] [proxy_http:error] [pid 19889] [client 192.168.0.13:49219] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:30:34.012830 2018] [proxy:error] [pid 19890] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:30:34.013152 2018] [proxy:error] [pid 19890] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:30:34.013232 2018] [proxy_http:error] [pid 19890] [client 192.168.0.13:49225] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:30:44.015343 2018] [proxy:error] [pid 19884] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:30:44.015678 2018] [proxy:error] [pid 19884] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:30:44.015756 2018] [proxy_http:error] [pid 19884] [client 192.168.0.13:49227] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:30:54.233957 2018] [proxy:error] [pid 19825] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:30:54.234367 2018] [proxy:error] [pid 19825] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:30:54.234451 2018] [proxy_http:error] [pid 19825] [client 192.168.0.13:49230] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:31:04.021273 2018] [proxy:error] [pid 19823] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:31:04.021604 2018] [proxy:error] [pid 19823] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:31:04.021684 2018] [proxy_http:error] [pid 19823] [client 192.168.0.13:49236] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:31:14.018961 2018] [proxy:error] [pid 19824] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:31:14.019293 2018] [proxy:error] [pid 19824] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:31:14.019361 2018] [proxy_http:error] [pid 19824] [client 192.168.0.13:49240] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:31:24.021329 2018] [proxy:error] [pid 19821] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:31:24.021553 2018] [proxy:error] [pid 19821] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:31:24.021616 2018] [proxy_http:error] [pid 19821] [client 192.168.0.13:49242] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:31:34.022773 2018] [proxy:error] [pid 19822] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:31:34.023014 2018] [proxy:error] [pid 19822] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:31:34.023085 2018] [proxy_http:error] [pid 19822] [client 192.168.0.13:49244] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:31:44.024968 2018] [proxy:error] [pid 19887] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:31:44.025266 2018] [proxy:error] [pid 19887] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:31:44.025337 2018] [proxy_http:error] [pid 19887] [client 192.168.0.13:49248] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:31:54.027100 2018] [proxy:error] [pid 19888] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:31:54.027320 2018] [proxy:error] [pid 19888] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:31:54.027388 2018] [proxy_http:error] [pid 19888] [client 192.168.0.13:49253] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:32:04.032205 2018] [proxy:error] [pid 19889] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:32:04.032440 2018] [proxy:error] [pid 19889] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:32:04.032513 2018] [proxy_http:error] [pid 19889] [client 192.168.0.13:49255] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:32:07.879028 2018] [proxy:error] [pid 19890] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:32:07.879027 2018] [proxy:error] [pid 19884] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:32:07.879259 2018] [proxy:error] [pid 19890] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:32:07.879302 2018] [proxy:error] [pid 19884] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:32:07.879342 2018] [proxy_http:error] [pid 19890] [client 192.168.0.13:49257] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Apr 21 18:32:07.879373 2018] [proxy_http:error] [pid 19884] [client 192.168.0.13:49259] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:32:07.881483 2018] [proxy:error] [pid 19825] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:32:07.881706 2018] [proxy:error] [pid 19825] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:32:07.881768 2018] [proxy_http:error] [pid 19825] [client 192.168.0.13:49261] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:32:07.941074 2018] [proxy:error] [pid 19823] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:32:07.941254 2018] [proxy:error] [pid 19823] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:32:07.941312 2018] [proxy_http:error] [pid 19823] [client 192.168.0.13:49263] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:32:08.718281 2018] [proxy:error] [pid 19824] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:32:08.912568 2018] [proxy:error] [pid 19821] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:42:32.464915 2018] [proxy_http:error] [pid 19823] (20014)Internal error: [client 192.168.0.13:49675] AH01102: error reading status line from remote server 127.0.0.1:8080, referer: http://192.168.0.18/
+[Sat Apr 21 18:42:32.471401 2018] [proxy:error] [pid 19884] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:42:32.471580 2018] [proxy:error] [pid 19884] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:42:32.471649 2018] [proxy_http:error] [pid 19884] [client 192.168.0.13:49696] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:42:41.602302 2018] [proxy:error] [pid 19822] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:42:41.602535 2018] [proxy:error] [pid 19822] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:42:41.602604 2018] [proxy_http:error] [pid 19822] [client 192.168.0.13:49698] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:42:51.600421 2018] [proxy:error] [pid 19887] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:42:51.600651 2018] [proxy:error] [pid 19887] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:42:51.600719 2018] [proxy_http:error] [pid 19887] [client 192.168.0.13:49702] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:43:01.601498 2018] [proxy:error] [pid 19824] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:43:01.601719 2018] [proxy:error] [pid 19824] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:43:01.601788 2018] [proxy_http:error] [pid 19824] [client 192.168.0.13:49704] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:43:11.605843 2018] [proxy:error] [pid 19821] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:43:11.606080 2018] [proxy:error] [pid 19821] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:43:11.606150 2018] [proxy_http:error] [pid 19821] [client 192.168.0.13:49706] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:43:21.604904 2018] [proxy:error] [pid 27380] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:43:21.605209 2018] [proxy:error] [pid 27380] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:43:21.605288 2018] [proxy_http:error] [pid 27380] [client 192.168.0.13:49710] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:43:31.606131 2018] [proxy:error] [pid 19888] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:43:31.606355 2018] [proxy:error] [pid 19888] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:43:31.606418 2018] [proxy_http:error] [pid 19888] [client 192.168.0.13:49712] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:43:52.389186 2018] [proxy:error] [pid 19890] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:43:52.389431 2018] [proxy:error] [pid 19890] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:43:52.389504 2018] [proxy_http:error] [pid 19890] [client 192.168.0.13:49716] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:44:04.398871 2018] [proxy:error] [pid 19889] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:44:04.399106 2018] [proxy:error] [pid 19889] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:44:04.399178 2018] [proxy_http:error] [pid 19889] [client 192.168.0.13:49718] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:44:14.478982 2018] [proxy:error] [pid 19823] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:44:14.479211 2018] [proxy:error] [pid 19823] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:44:14.479281 2018] [proxy_http:error] [pid 19823] [client 192.168.0.13:49746] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:44:32.131996 2018] [proxy:error] [pid 19884] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:44:32.132240 2018] [proxy:error] [pid 19884] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:44:32.132312 2018] [proxy_http:error] [pid 19884] [client 192.168.0.13:49810] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:44:53.664243 2018] [proxy:error] [pid 19822] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:44:53.664475 2018] [proxy:error] [pid 19822] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:44:53.664545 2018] [proxy_http:error] [pid 19822] [client 192.168.0.13:49846] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:45:22.848221 2018] [proxy:error] [pid 19887] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:45:22.848456 2018] [proxy:error] [pid 19887] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:45:22.848526 2018] [proxy_http:error] [pid 19887] [client 192.168.0.13:49852] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:46:30.640990 2018] [proxy:error] [pid 19824] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:46:30.641228 2018] [proxy:error] [pid 19824] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:46:30.641301 2018] [proxy_http:error] [pid 19824] [client 192.168.0.13:49858] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:46:58.623924 2018] [proxy:error] [pid 19821] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:46:58.624165 2018] [proxy:error] [pid 19821] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:46:58.624317 2018] [proxy_http:error] [pid 19821] [client 192.168.0.13:49866] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Apr 21 18:47:49.820336 2018] [proxy:error] [pid 27380] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:47:49.820577 2018] [proxy:error] [pid 27380] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:47:49.820650 2018] [proxy_http:error] [pid 27380] [client 192.168.0.13:49942] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:48:30.397081 2018] [proxy:error] [pid 19888] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:48:30.397322 2018] [proxy:error] [pid 19888] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:48:30.397392 2018] [proxy_http:error] [pid 19888] [client 192.168.0.13:49949] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:50:50.398134 2018] [proxy:error] [pid 19890] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:50:50.398388 2018] [proxy:error] [pid 19890] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:50:50.398458 2018] [proxy_http:error] [pid 19890] [client 192.168.0.13:50013] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:53:10.406581 2018] [proxy:error] [pid 19889] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:53:10.406827 2018] [proxy:error] [pid 19889] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:53:10.406899 2018] [proxy_http:error] [pid 19889] [client 192.168.0.13:50045] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:57:02.808917 2018] [proxy:error] [pid 27819] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:57:02.809240 2018] [proxy:error] [pid 27819] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:57:02.809320 2018] [proxy_http:error] [pid 27819] [client 192.168.0.13:50158] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Apr 21 18:57:06.601292 2018] [proxy:error] [pid 27820] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:57:06.601657 2018] [proxy:error] [pid 27820] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:57:06.601737 2018] [proxy_http:error] [pid 27820] [client 192.168.0.13:50162] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Apr 21 18:57:15.405711 2018] [proxy:error] [pid 27821] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:57:15.406008 2018] [proxy:error] [pid 27821] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:57:15.406083 2018] [proxy_http:error] [pid 27821] [client 192.168.0.13:50164] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Apr 21 18:57:15.409497 2018] [proxy:error] [pid 27823] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:57:15.409778 2018] [proxy:error] [pid 27823] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:57:15.409863 2018] [proxy_http:error] [pid 27823] [client 192.168.0.13:50166] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/phpmyadmin
+[Sat Apr 21 18:57:15.409876 2018] [proxy:error] [pid 27822] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:57:15.410114 2018] [proxy:error] [pid 27822] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:57:15.410183 2018] [proxy_http:error] [pid 27822] [client 192.168.0.13:50168] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/phpmyadmin
+[Sat Apr 21 18:57:25.026975 2018] [proxy:error] [pid 27819] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:57:29.866506 2018] [proxy:error] [pid 27820] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:57:36.473771 2018] [proxy:error] [pid 27821] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:57:49.838713 2018] [proxy:error] [pid 27823] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:57:51.083326 2018] [proxy:error] [pid 27822] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:57:53.407204 2018] [proxy:error] [pid 27819] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:57:53.925154 2018] [proxy:error] [pid 27820] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:57:54.122750 2018] [proxy:error] [pid 27821] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:57:54.339380 2018] [proxy:error] [pid 27823] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:57:54.527427 2018] [proxy:error] [pid 27822] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 18:58:42.493497 2018] [reqtimeout:info] [pid 27821] [client 192.168.0.13:50266] AH01382: Request header read timeout
+[Sat Apr 21 18:58:42.528523 2018] [reqtimeout:info] [pid 27819] [client 192.168.0.13:50268] AH01382: Request header read timeout
+[Sat Apr 21 18:58:44.154065 2018] [reqtimeout:info] [pid 27897] [client 192.168.0.13:50282] AH01382: Request header read timeout
+[Sat Apr 21 18:58:48.848037 2018] [proxy_http:error] [pid 27887] (20014)Internal error: [client 192.168.0.13:50247] AH01102: error reading status line from remote server 127.0.0.1:8080, referer: http://192.168.0.18/
+[Sat Apr 21 18:58:48.848696 2018] [proxy_http:error] [pid 27890] (20014)Internal error: [client 192.168.0.13:50251] AH01102: error reading status line from remote server 127.0.0.1:8080, referer: http://192.168.0.18/admin
+[Sat Apr 21 18:58:49.263277 2018] [proxy:error] [pid 27886] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:58:49.263743 2018] [proxy:error] [pid 27886] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:58:49.263822 2018] [proxy_http:error] [pid 27886] [client 192.168.0.13:50286] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:58:59.265208 2018] [proxy:error] [pid 27823] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:58:59.265442 2018] [proxy:error] [pid 27823] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:58:59.265513 2018] [proxy_http:error] [pid 27823] [client 192.168.0.13:50288] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:59:09.266148 2018] [proxy:error] [pid 27896] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:59:09.266404 2018] [proxy:error] [pid 27896] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:59:09.266463 2018] [proxy_http:error] [pid 27896] [client 192.168.0.13:50290] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:59:19.285849 2018] [proxy:error] [pid 27897] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:59:19.286122 2018] [proxy:error] [pid 27897] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:59:19.286193 2018] [proxy_http:error] [pid 27897] [client 192.168.0.13:50300] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:59:29.852921 2018] [proxy:error] [pid 27889] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:59:29.853245 2018] [proxy:error] [pid 27889] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:59:29.853319 2018] [proxy_http:error] [pid 27889] [client 192.168.0.13:50308] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:59:46.787004 2018] [proxy:error] [pid 27820] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:59:46.787223 2018] [proxy:error] [pid 27820] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:59:46.787285 2018] [proxy_http:error] [pid 27820] [client 192.168.0.13:50332] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 18:59:49.838989 2018] [proxy:error] [pid 27822] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 18:59:49.839202 2018] [proxy:error] [pid 27822] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 18:59:49.839267 2018] [proxy_http:error] [pid 27822] [client 192.168.0.13:50334] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 19:00:08.671105 2018] [proxy:error] [pid 27893] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:00:08.671436 2018] [proxy:error] [pid 27893] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:00:08.671564 2018] [proxy_http:error] [pid 27893] [client 192.168.0.13:50336] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 19:00:41.502495 2018] [proxy:error] [pid 27887] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:00:41.502804 2018] [proxy:error] [pid 27887] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:00:41.502879 2018] [proxy_http:error] [pid 27887] [client 192.168.0.13:50340] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 19:01:07.419521 2018] [proxy:error] [pid 27890] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:01:07.419916 2018] [proxy:error] [pid 27890] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:01:07.419988 2018] [proxy_http:error] [pid 27890] [client 192.168.0.13:50342] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 19:01:49.846913 2018] [proxy:error] [pid 27886] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:01:49.847147 2018] [proxy:error] [pid 27886] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:01:49.847217 2018] [proxy_http:error] [pid 27886] [client 192.168.0.13:50348] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 19:02:25.524343 2018] [proxy:error] [pid 27823] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:02:25.524605 2018] [proxy:error] [pid 27823] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:02:25.524682 2018] [proxy_http:error] [pid 27823] [client 192.168.0.13:50352] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 19:03:47.786965 2018] [proxy:error] [pid 27896] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:03:47.787311 2018] [proxy:error] [pid 27896] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:03:47.787377 2018] [proxy_http:error] [pid 27896] [client 192.168.0.13:50360] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 19:03:49.848224 2018] [proxy:error] [pid 27897] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:03:49.848438 2018] [proxy:error] [pid 27897] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:03:49.848501 2018] [proxy_http:error] [pid 27897] [client 192.168.0.13:50362] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 19:05:48.289876 2018] [proxy:error] [pid 27889] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:05:48.290118 2018] [proxy:error] [pid 27889] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:05:48.290227 2018] [proxy_http:error] [pid 27889] [client 192.168.0.13:50374] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 19:05:49.851835 2018] [proxy:error] [pid 27820] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:05:49.852052 2018] [proxy:error] [pid 27820] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:05:49.852123 2018] [proxy_http:error] [pid 27820] [client 192.168.0.13:50376] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 19:06:51.766884 2018] [proxy:error] [pid 28329] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:06:51.767162 2018] [proxy:error] [pid 28329] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:06:51.767226 2018] [proxy_http:error] [pid 28329] [client 192.168.0.13:50386] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 19:06:53.455353 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.461862 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.468274 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.475280 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.480882 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.486107 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.490883 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.495521 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.500983 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.506558 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.511537 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.517517 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.524674 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.529707 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.535169 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.539843 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.544833 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.674116 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.680069 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.684695 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.689559 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.695770 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.701815 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.707150 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.713430 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:53.720620 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:06:56.401860 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:07:01.652578 2018] [reqtimeout:info] [pid 28367] [client 192.168.0.13:50450] AH01382: Request header read timeout
+[Sat Apr 21 19:07:48.834278 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:25:28.492910 2018] [reqtimeout:info] [pid 28329] [client 192.168.0.13:50621] AH01382: Request header read timeout
+[Sat Apr 21 19:25:48.316950 2018] [reqtimeout:info] [pid 28718] [client 192.168.0.13:50742] AH01382: Request header read timeout
+[Sat Apr 21 19:25:51.240522 2018] [reqtimeout:info] [pid 28373] [client 192.168.0.13:50766] AH01382: Request header read timeout
+[Sat Apr 21 19:25:51.317414 2018] [reqtimeout:info] [pid 28329] [client 192.168.0.13:50762] AH01382: Request header read timeout
+[Sat Apr 21 19:25:51.544997 2018] [reqtimeout:info] [pid 28333] [client 192.168.0.13:50758] AH01382: Request header read timeout
+[Sat Apr 21 19:26:03.135198 2018] [reqtimeout:info] [pid 28719] [client 192.168.0.13:50784] AH01382: Request header read timeout
+[Sat Apr 21 19:26:45.495193 2018] [reqtimeout:info] [pid 28373] [client 192.168.0.13:50824] AH01382: Request header read timeout
+[Sat Apr 21 19:26:52.745328 2018] [reqtimeout:info] [pid 28770] [client 192.168.0.13:50867] AH01382: Request header read timeout
+[Sat Apr 21 19:26:52.747220 2018] [reqtimeout:info] [pid 28769] [client 192.168.0.13:50863] AH01382: Request header read timeout
+[Sat Apr 21 19:28:26.539472 2018] [proxy:error] [pid 28744] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:28:26.539805 2018] [proxy:error] [pid 28744] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:28:26.539886 2018] [proxy_http:error] [pid 28744] [client 192.168.0.13:50883] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/
+[Sat Apr 21 19:28:29.102031 2018] [proxy:error] [pid 28766] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:28:29.102279 2018] [proxy:error] [pid 28329] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:28:29.102359 2018] [proxy:error] [pid 28766] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:28:29.102402 2018] [proxy:error] [pid 28329] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:28:29.102473 2018] [proxy_http:error] [pid 28329] [client 192.168.0.13:50889] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:28:29.102450 2018] [proxy_http:error] [pid 28766] [client 192.168.0.13:50887] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Apr 21 19:28:29.104377 2018] [proxy:error] [pid 28770] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:28:29.104302 2018] [proxy:error] [pid 28767] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:28:29.104478 2018] [proxy:error] [pid 28769] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:28:29.104643 2018] [proxy:error] [pid 28770] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:28:29.104682 2018] [proxy:error] [pid 28767] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:28:29.104726 2018] [proxy:error] [pid 28769] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:28:29.104759 2018] [proxy_http:error] [pid 28770] [client 192.168.0.13:50893] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:28:29.104790 2018] [proxy_http:error] [pid 28767] [client 192.168.0.13:50891] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:28:29.104816 2018] [proxy_http:error] [pid 28769] [client 192.168.0.13:50897] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:28:29.106496 2018] [proxy:error] [pid 28373] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:28:29.106496 2018] [proxy:error] [pid 28771] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:28:29.106687 2018] [proxy:error] [pid 28373] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:28:29.106720 2018] [proxy:error] [pid 28771] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:28:29.106753 2018] [proxy_http:error] [pid 28373] [client 192.168.0.13:50895] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:28:29.106784 2018] [proxy_http:error] [pid 28771] [client 192.168.0.13:50899] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:28:29.124660 2018] [proxy:error] [pid 28768] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:28:29.124920 2018] [proxy:error] [pid 28768] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:28:29.124990 2018] [proxy_http:error] [pid 28768] [client 192.168.0.13:50901] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:28:29.140658 2018] [proxy:error] [pid 28768] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.141970 2018] [proxy:error] [pid 28766] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.143044 2018] [proxy:error] [pid 28744] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.144617 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.145270 2018] [proxy:error] [pid 28770] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.146996 2018] [proxy:error] [pid 28767] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.161687 2018] [proxy:error] [pid 28769] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.162804 2018] [proxy:error] [pid 28771] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.162943 2018] [proxy:error] [pid 28373] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.164659 2018] [proxy:error] [pid 28762] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:28:29.164933 2018] [proxy:error] [pid 28762] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:28:29.165003 2018] [proxy_http:error] [pid 28762] [client 192.168.0.13:50921] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:28:29.169211 2018] [proxy:error] [pid 28766] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.176495 2018] [proxy:error] [pid 28768] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.178985 2018] [proxy:error] [pid 28744] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.181111 2018] [proxy:error] [pid 28329] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:28:29.181631 2018] [proxy:error] [pid 28770] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:29:16.780307 2018] [proxy:error] [pid 28767] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:31:14.820699 2018] [proxy:error] [pid 28769] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:31:14.820931 2018] [proxy:error] [pid 28769] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:31:14.820982 2018] [proxy_http:error] [pid 28769] [client 192.168.0.13:50950] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Apr 21 19:31:21.635556 2018] [reqtimeout:info] [pid 28768] [client 192.168.0.13:50962] AH01382: Request header read timeout
+[Sat Apr 21 19:31:22.329993 2018] [reqtimeout:info] [pid 28766] [client 192.168.0.13:50958] AH01382: Request header read timeout
+[Sat Apr 21 19:31:27.641168 2018] [proxy:error] [pid 28769] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:31:43.327902 2018] [proxy_http:error] [pid 28771] (20014)Internal error: [client 192.168.0.13:50952] AH01102: error reading status line from remote server 127.0.0.1:8080, referer: http://local.pi/
+[Sat Apr 21 19:31:43.346830 2018] [proxy:error] [pid 28896] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:31:43.347117 2018] [proxy:error] [pid 28896] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:31:43.347195 2018] [proxy_http:error] [pid 28896] [client 192.168.0.13:50975] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:31:47.639070 2018] [proxy:error] [pid 28768] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:31:47.639289 2018] [proxy:error] [pid 28768] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:31:47.639363 2018] [proxy_http:error] [pid 28768] [client 192.168.0.13:50977] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:31:57.644097 2018] [proxy:error] [pid 28744] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:31:57.644299 2018] [proxy:error] [pid 28744] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:31:57.644354 2018] [proxy_http:error] [pid 28744] [client 192.168.0.13:50979] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:32:07.645642 2018] [proxy:error] [pid 28762] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:32:07.645879 2018] [proxy:error] [pid 28762] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:32:07.645950 2018] [proxy_http:error] [pid 28762] [client 192.168.0.13:50981] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:32:17.647657 2018] [proxy:error] [pid 28373] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:32:17.647890 2018] [proxy:error] [pid 28373] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:32:17.647961 2018] [proxy_http:error] [pid 28373] [client 192.168.0.13:50985] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:32:27.648389 2018] [proxy:error] [pid 28766] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:32:27.648618 2018] [proxy:error] [pid 28766] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:32:27.648680 2018] [proxy_http:error] [pid 28766] [client 192.168.0.13:50987] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:32:37.650620 2018] [proxy:error] [pid 28329] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:32:37.650858 2018] [proxy:error] [pid 28329] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:32:37.650929 2018] [proxy_http:error] [pid 28329] [client 192.168.0.13:50989] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:32:53.471250 2018] [proxy:error] [pid 28769] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:32:53.471473 2018] [proxy:error] [pid 28769] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:32:53.471545 2018] [proxy_http:error] [pid 28769] [client 192.168.0.13:50993] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:33:11.936623 2018] [proxy:error] [pid 28895] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:33:11.936941 2018] [proxy:error] [pid 28895] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:33:11.937019 2018] [proxy_http:error] [pid 28895] [client 192.168.0.13:50997] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:33:16.784510 2018] [proxy:error] [pid 28771] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:33:16.784750 2018] [proxy:error] [pid 28771] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:33:16.784821 2018] [proxy_http:error] [pid 28771] [client 192.168.0.13:50999] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 19:33:23.457160 2018] [proxy:error] [pid 28896] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:33:23.457404 2018] [proxy:error] [pid 28896] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:33:23.457473 2018] [proxy_http:error] [pid 28896] [client 192.168.0.13:51001] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:33:33.457920 2018] [proxy:error] [pid 28768] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:33:33.458151 2018] [proxy:error] [pid 28768] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:33:33.458221 2018] [proxy_http:error] [pid 28768] [client 192.168.0.13:51013] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:33:50.334459 2018] [proxy:error] [pid 29096] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:33:50.334780 2018] [proxy:error] [pid 29096] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:33:50.334867 2018] [proxy_http:error] [pid 29096] [client 192.168.0.13:51019] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:34:01.379069 2018] [proxy:error] [pid 29097] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:34:01.379535 2018] [proxy:error] [pid 29097] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:34:01.379614 2018] [proxy_http:error] [pid 29097] [client 192.168.0.13:51021] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:34:03.840018 2018] [proxy:error] [pid 29098] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:34:03.840300 2018] [proxy:error] [pid 29098] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:34:03.840372 2018] [proxy_http:error] [pid 29098] [client 192.168.0.13:51024] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Apr 21 19:34:04.064201 2018] [proxy:error] [pid 29099] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:34:04.064468 2018] [proxy:error] [pid 29099] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:34:04.064538 2018] [proxy_http:error] [pid 29099] [client 192.168.0.13:51027] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/admin
+[Sat Apr 21 19:34:04.433972 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.433972 2018] [proxy:error] [pid 29096] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.436937 2018] [proxy:error] [pid 29100] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:34:04.437067 2018] [proxy:error] [pid 29098] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.437169 2018] [proxy:error] [pid 29100] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:34:04.437247 2018] [proxy_http:error] [pid 29100] [client 192.168.0.13:51030] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Apr 21 19:34:04.438668 2018] [proxy:error] [pid 29099] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.438760 2018] [proxy:error] [pid 29096] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.440920 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.447646 2018] [proxy:error] [pid 29100] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.447696 2018] [proxy:error] [pid 29098] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.451327 2018] [proxy:error] [pid 29096] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.456846 2018] [proxy:error] [pid 29099] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.459720 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.461408 2018] [proxy:error] [pid 29098] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.461559 2018] [proxy:error] [pid 29096] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.462433 2018] [proxy:error] [pid 29100] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.466839 2018] [proxy:error] [pid 29099] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.471117 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.602476 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.603772 2018] [proxy:error] [pid 29100] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.605342 2018] [proxy:error] [pid 29098] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:34:04.606704 2018] [proxy:error] [pid 29113] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:34:04.606933 2018] [proxy:error] [pid 29113] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:34:04.607079 2018] [proxy_http:error] [pid 29113] [client 192.168.0.13:51068] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:34:07.984704 2018] [proxy:error] [pid 29099] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:35:16.791229 2018] [proxy:error] [pid 29096] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:35:16.791500 2018] [proxy:error] [pid 29096] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:35:16.791573 2018] [proxy_http:error] [pid 29096] [client 192.168.0.13:51084] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 19:37:26.797292 2018] [proxy:error] [pid 29097] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:37:26.797540 2018] [proxy:error] [pid 29097] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:37:26.797611 2018] [proxy_http:error] [pid 29097] [client 192.168.0.13:51109] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 19:38:05.573991 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:38:05.586020 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:38:05.597416 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:38:05.608686 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:38:05.633959 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:38:05.649552 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:38:08.252797 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:38:13.466073 2018] [reqtimeout:info] [pid 29096] [client 192.168.0.13:51127] AH01382: Request header read timeout
+[Sat Apr 21 19:38:14.222680 2018] [proxy:error] [pid 29097] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:38:16.256692 2018] [reqtimeout:info] [pid 29215] [client 192.168.0.13:51154] AH01382: Request header read timeout
+[Sat Apr 21 19:38:44.669116 2018] [proxy:error] [pid 29210] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:38:44.669440 2018] [proxy:error] [pid 29210] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:38:44.669519 2018] [proxy_http:error] [pid 29210] [client 192.168.0.13:51178] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:38:54.670272 2018] [proxy:error] [pid 29215] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:38:54.670547 2018] [proxy:error] [pid 29215] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:38:54.670619 2018] [proxy_http:error] [pid 29215] [client 192.168.0.13:51180] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:39:04.672010 2018] [proxy:error] [pid 29098] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:39:04.672244 2018] [proxy:error] [pid 29098] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:39:04.672315 2018] [proxy_http:error] [pid 29098] [client 192.168.0.13:51182] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:39:14.673937 2018] [proxy:error] [pid 29219] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:39:14.674270 2018] [proxy:error] [pid 29219] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:39:14.674423 2018] [proxy_http:error] [pid 29219] [client 192.168.0.13:51190] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sat Apr 21 19:39:16.795435 2018] [proxy:error] [pid 29218] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sat Apr 21 19:39:16.795739 2018] [proxy:error] [pid 29218] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sat Apr 21 19:39:16.795795 2018] [proxy_http:error] [pid 29218] [client 192.168.0.13:51192] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sat Apr 21 19:39:23.316948 2018] [proxy:error] [pid 29210] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.316948 2018] [proxy:error] [pid 29215] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.332241 2018] [proxy:error] [pid 29098] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.333730 2018] [proxy:error] [pid 29219] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.342791 2018] [proxy:error] [pid 29218] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.346075 2018] [proxy:error] [pid 29215] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.353033 2018] [proxy:error] [pid 29210] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.355910 2018] [proxy:error] [pid 29098] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.364306 2018] [proxy:error] [pid 29219] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.366793 2018] [proxy:error] [pid 29218] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.374942 2018] [proxy:error] [pid 29215] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.377820 2018] [proxy:error] [pid 29210] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.385500 2018] [proxy:error] [pid 29098] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.388524 2018] [proxy:error] [pid 29219] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.397561 2018] [proxy:error] [pid 29218] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:23.696992 2018] [proxy:error] [pid 29215] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:27.861163 2018] [proxy:error] [pid 29210] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:27.862439 2018] [proxy:error] [pid 29098] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:27.882656 2018] [proxy:error] [pid 29219] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:27.887325 2018] [proxy:error] [pid 29218] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:27.900937 2018] [proxy:error] [pid 29215] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:27.911022 2018] [proxy:error] [pid 29210] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:38.412367 2018] [proxy:error] [pid 29098] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:48.288554 2018] [proxy:error] [pid 29219] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 19:39:58.293665 2018] [proxy:error] [pid 29218] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sat Apr 21 23:26:47.684824 2018] [reqtimeout:info] [pid 29218] [client 192.168.0.13:53320] AH01382: Request header read timeout
+[Sun Apr 22 11:15:20.173074 2018] [proxy:error] [pid 8898] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sun Apr 22 11:15:20.176259 2018] [proxy:error] [pid 8902] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sun Apr 22 11:15:20.176659 2018] [proxy:error] [pid 8898] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sun Apr 22 11:15:20.176765 2018] [proxy:error] [pid 8902] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sun Apr 22 11:15:20.176820 2018] [proxy_http:error] [pid 8898] [client 192.168.0.13:49451] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sun Apr 22 11:15:20.176261 2018] [proxy:error] [pid 8900] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sun Apr 22 11:15:20.176932 2018] [proxy_http:error] [pid 8902] [client 192.168.0.13:49452] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sun Apr 22 11:15:20.177033 2018] [proxy:error] [pid 8900] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sun Apr 22 11:15:20.176270 2018] [proxy:error] [pid 8901] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sun Apr 22 11:15:20.177107 2018] [proxy_http:error] [pid 8900] [client 192.168.0.13:49458] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sun Apr 22 11:15:20.177175 2018] [proxy:error] [pid 8901] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sun Apr 22 11:15:20.177251 2018] [proxy_http:error] [pid 8901] [client 192.168.0.13:49457] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sun Apr 22 11:15:20.176322 2018] [proxy:error] [pid 8899] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sun Apr 22 11:15:20.177961 2018] [proxy:error] [pid 8899] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sun Apr 22 11:15:20.178046 2018] [proxy_http:error] [pid 8899] [client 192.168.0.13:49454] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://192.168.0.18/admin
+[Sun Apr 22 11:15:20.182080 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.195455 2018] [proxy:error] [pid 8901] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.195454 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.196600 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.196600 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.197273 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.200406 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.207741 2018] [proxy:error] [pid 8901] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.208925 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.209774 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.210321 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.211791 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.228002 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.228626 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.228743 2018] [proxy:error] [pid 8901] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.237031 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.237031 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.237970 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.249132 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.249427 2018] [proxy:error] [pid 8901] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.251058 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.259629 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.260973 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.260973 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.268006 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.271043 2018] [proxy:error] [pid 8901] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:20.377187 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.331630 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.331630 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.375584 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.403735 2018] [proxy:error] [pid 8901] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.424665 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.441958 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.457429 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.481127 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.511073 2018] [proxy:error] [pid 8901] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.529691 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.556865 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.571426 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.688632 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.691249 2018] [proxy:error] [pid 8901] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.836200 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.838388 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.840228 2018] [proxy:error] [pid 8901] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.841256 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.841766 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.842521 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.865644 2018] [proxy:error] [pid 8901] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.865961 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.877474 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.878481 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.879584 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.902742 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.953663 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.955518 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.956609 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 11:15:21.957463 2018] [proxy:error] [pid 8901] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 21:31:27.798620 2018] [proxy:error] [pid 8898] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sun Apr 22 21:31:27.798956 2018] [proxy:error] [pid 8898] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sun Apr 22 21:31:27.799024 2018] [proxy_http:error] [pid 8898] [client 192.168.0.13:50179] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sun Apr 22 21:31:27.800529 2018] [proxy:error] [pid 8899] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sun Apr 22 21:31:27.800659 2018] [proxy:error] [pid 8899] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sun Apr 22 21:31:27.800720 2018] [proxy_http:error] [pid 8899] [client 192.168.0.13:50181] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sun Apr 22 21:31:27.802246 2018] [proxy:error] [pid 8900] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sun Apr 22 21:31:27.802520 2018] [proxy:error] [pid 8900] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sun Apr 22 21:31:27.802582 2018] [proxy_http:error] [pid 8900] [client 192.168.0.13:50183] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sun Apr 22 21:31:27.855844 2018] [proxy:error] [pid 8902] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sun Apr 22 21:31:27.856023 2018] [proxy:error] [pid 8902] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sun Apr 22 21:31:27.856082 2018] [proxy_http:error] [pid 8902] [client 192.168.0.13:50185] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sun Apr 22 21:31:27.857498 2018] [proxy:error] [pid 8901] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:8080 (127.0.0.1) failed
+[Sun Apr 22 21:31:27.857625 2018] [proxy:error] [pid 8901] AH00959: ap_proxy_connect_backend disabling worker for (127.0.0.1) for 60s
+[Sun Apr 22 21:31:27.857681 2018] [proxy_http:error] [pid 8901] [client 192.168.0.13:50187] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: http://local.pi/
+[Sun Apr 22 21:31:28.031894 2018] [proxy:error] [pid 8898] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 21:31:28.032033 2018] [proxy:error] [pid 8899] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 21:31:28.047924 2018] [proxy:error] [pid 8900] AH00940: HTTP: disabled connection for (127.0.0.1)
+[Sun Apr 22 21:31:28.138019 2018] [proxy:error] [pid 8902] AH00940: HTTP: disabled connection for (127.0.0.1)

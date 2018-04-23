@@ -10,10 +10,10 @@ handleConnection = function(err){
 },
 createConnection = function(){
 	return mysql.createConnection({
-		host     : CONSTANTS.BDD.HOST,
-		user     : CONSTANTS.BDD.USER,
-		password : CONSTANTS.BDD.PWD,
-		database : CONSTANTS.BDD.DATABASE
+		host     : CONSTANTS.DATABASE.HOST,
+		user     : CONSTANTS.DATABASE.USER,
+		password : CONSTANTS.DATABASE.PWD,
+		database : CONSTANTS.DATABASE.DATABASE
 	});
 }
 module.exports = {

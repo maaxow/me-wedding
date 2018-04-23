@@ -1,4 +1,5 @@
 var path = require('path');
+var version = require('../package').version;
 var mysql = require('mysql');
 var Guest = require('./guestFactory.js');
 var passport = require('passport');
@@ -58,7 +59,7 @@ module.exports = function (app) {
 		});
 
 		// UPDATE GUEST
-		app.post('/guest/update', function(req, res){
+		app.post('/api/guest/update', function(req, res){
 			Guest.update(req.body).then(function(response){
 				res.send(response);
 			})
@@ -73,11 +74,12 @@ module.exports = function (app) {
 
 		app.get('/server/health', function(req, res){
 			var connection = mysql.createConnection({
-				host     : CONSTANTS.BDD.HOST,
-				user     : CONSTANTS.BDD.USER,
-				password : CONSTANTS.BDD.PWD,
-				database : CONSTANTS.BDD.DATABASE
+				host     : CONSTANTS.DATABASE.HOST,
+				user     : CONSTANTS.DATABASE.USER,
+				password : CONSTANTS.DATABASE.PWD,
+				database : CONSTANTS.DATABASE.DATABASE
 			});
+
 
 			connection.connect(function(errorConnect){
 				if(errorConnect){
@@ -96,6 +98,9 @@ module.exports = function (app) {
 			})
 		});
 
+    app.get('/server/version', function(req, res){
+      res.send(version);
+    });
     // application -------------------------------------------------------------
     app.get('/*', function (req, res) {
       res.sendFile(path.resolve(__dirname + '/../public/index.html')); // load the single view file (angular will handle the page changes on the front-end)

@@ -1,5 +1,5 @@
 module.exports = {
-	BDD: {
+  DATABASE : {
 		HOST: 'localhost',
 		USER: 'root',
 		PWD: '',

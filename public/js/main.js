@@ -97,11 +97,18 @@ angular.module('app', ['ui.router', 'app.controllers.admin', 'app.controllers.ad
 	$locationProvider.html5Mode(true);
 }])
 
-.controller('AppController', function($scope){
+.controller('AppController', function($scope, $http){
 	$scope.message = "home page !";
+
+
 })
 .controller('MainController', function($scope, CONSTANTS, $http, $interval){
-	$scope.weddingDate = Date.parse(CONSTANTS.weddingDate);
+	$scope.weddingDate = new Date(2019,5,29); //Date.parse(CONSTANTS.weddingDate, 'MM-dd-yyyy');
+	$scope.version = "gnee";
+	$http.get('/server/version').then(function(response){
+		console.log("version :", response.data);
+			$scope.version = response.data;
+	})
 })
 .filter('html',function($sce){
     return function(input){
