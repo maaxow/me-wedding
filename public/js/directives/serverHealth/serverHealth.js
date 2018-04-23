@@ -21,8 +21,6 @@ return {
 			}
 		}
 
-
-
 		function setGreen(){
 			$scope.green = true;
 			$scope.orange = false;
@@ -52,7 +50,7 @@ return {
 		getServerStatus();
 		$interval(function(){
 			getServerStatus();
-		},10000);
+		},60000);
 	}
 }
 

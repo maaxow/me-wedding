@@ -1,4 +1,4 @@
-angular.module('app', ['ui.router', 'app.controllers.admin'])
+angular.module('app', ['ui.router', 'app.controllers.admin', 'app.controllers.admin.guest', 'app.controllers.admin.family'])
 
 .config(['$stateProvider','$locationProvider','$urlRouterProvider', function($stateProvider, $locationProvider,$urlRouterProvider){
 
@@ -37,7 +37,7 @@ angular.module('app', ['ui.router', 'app.controllers.admin'])
 					title: 'La Cérémonie Religieuse',
 					place: 'Eglise de Gamaches, rue de Normandie',
 					mapsLink: 'https://www.google.fr/maps/place/Eglise+de+GAMACHES/@49.986051,1.55554,18.99z/data=!4m13!1m7!3m6!1s0x47e7563ccbb081db:0x40af13e81620bc0!2s80220+Gamaches!3b1!8m2!3d49.985833!4d1.559647!3m4!1s0x47e7566b1af8257f:0x762ce1bbfb397435!8m2!3d49.9860658!4d1.5554935?hl=fr',
-					description: ''
+					description: 'C\'est naturellement dans l\'église de Gamaches qui nous voulons ...'
 				},
 				{
 					date: '29 Juin 2019',
@@ -45,7 +45,7 @@ angular.module('app', ['ui.router', 'app.controllers.admin'])
 					title: 'Le Vin d\'Honneur',
 					place: 'Quelque part',
 					mapsLink: 'https://www.google.fr/maps/place/Somme/@49.9676227,1.7309381,9z/data=!3m1!4b1!4m5!3m4!1s0x47e7873951d7aa9f:0x30af13e81612a80!8m2!3d49.914518!4d2.2707095',
-					description: ''
+					description: 'Dès que nous avons découvert ce lieu, nous avons eu un déclique, c\'est ici que nous avons décidé de partager ce moment avec vous. Ce lieu vous sera dévoilé prochainement ...'
 				},
 				{
 					date: '29 Juin 2019',
@@ -63,8 +63,8 @@ angular.module('app', ['ui.router', 'app.controllers.admin'])
 		templateUrl: 'views/lodging.html',
 		// controller : 'AppController'
 	})
-	.state('guest', {
-		url: "/guest",
+	.state('invite', {
+		url: "/invite",
 		templateUrl: 'views/guest.html',
 		// controller : 'AppController'
 	})
@@ -80,6 +80,16 @@ angular.module('app', ['ui.router', 'app.controllers.admin'])
 		/* OnEnter : function()
 			authent
 		*/
+	})
+	.state('admin.guest', {
+		url: '/admin/guest',
+		templateUrl: 'views/admin/guest.admin.html',
+		controller: 'AdminGuestController'
+	})
+	.state('admin.family', {
+		url: '/admin/family',
+		templateUrl: 'views/admin/family.admin.html',
+		controller: 'AdminFamilyController'
 	})
 
 

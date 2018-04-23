@@ -1,0 +1,186 @@
+<div class="container">
+
+	<br>
+	<div class="row">
+		<div class="col-6 offset-3" style="text-align: center">
+			<h2>Gestion des familles</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-3">
+			<button class="btn btn-primary" ng-click="openAddModal()">Add</button>
+			<button class="btn btn-primary" ng-click="getAll()">Refresh</button>
+		</div>
+		<input type="text" class="form-control col-4 offset-1" placeholder="Entrez un nom de famille" ng-change="findByLastName()" ng-model="searchLastName">
+	</div>
+	<br>
+	<table class="table">
+		<tr>
+			<th>Id</th>
+			<th>Nom de la famille</th>
+			<th>Mot de passe</th>
+			<th>Mot de passe temporaire</th>
+			<th>Membres de la famille</th>
+		</tr>
+		<tr ng-repeat="family in families">
+			<td>{{family.id}}</td>
+			<td>{{family.familyName}}</td>
+			<td>{{family.passowrd}}</td>
+			<td>{{family.passwod_tmp}}</td>
+			<td>{{family.phone_number}}</td>
+
+			<td>
+				<button type="button" class="btn btn-primary" ng-click="openEditModal(family)">
+					<i class="material-icons">mode_edit</i>
+				</button>
+				<button class="btn btn-danger" ng-click="openRemoveModal(family.id)">
+					<i class="material-icons">delete_forever</i>
+				</button>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<!-- MODAL UPDATE -->
+<div class="modal fade" id="updateFamilyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modifier {{ editGuest.firstname }} {{ editGuest.lastname }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+				<form class="container-fluid">
+					<!-- LIGNE PRENOM + NOM -->
+					<div class="row">
+						<div class="form-group col-6 offset-3">
+							<label for="first">Nom de la famille</label>
+							<input type="text" class="form-control" name="first" ng-model="editGuest.firstname"/>
+						</div>
+					</div>
+					<!-- LIGNE EMAIL + TEL  -->
+					<div class="row">
+						<div class="form-group col-8">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" name="email" ng-model="editGuest.email"/>
+						</div>
+						<div class="form-group col-4">
+							<label for="phone">Telephone</label>
+							<input type="tel" class="form-control" name="phone" ng-model="editGuest.phone_number"/>
+						</div>
+					</div>
+					<!-- LIGNE ADRESSE + CODE POSTALE -->
+					<div class="row">
+						<div class="form-group col-8">
+							<label for="address">Adresse</label>
+							<input type="text" class="form-control" name="address" ng-model="editGuest.address"/>
+						</div>
+						<div class="form-group col-4">
+							<label for="code">Code postale</label>
+							<input type="text" class="form-control" name="code" ng-model="editGuest.post_code"/>
+						</div>
+					</div>
+					<!-- LIGNE VILLE + PAYS  -->
+					<div class="row">
+						<div class="form-group col-6">
+							<label for="city">Ville</label>
+							<input type="text" class="form-control"name="city" ng-model="editGuest.city"/>
+						</div>
+						<div class="form-group col-6">
+							<label for="country">Pays</label>
+							<input type="text" class="form-control"name="country" ng-model="editGuest.country"/>
+						</div>
+					</div>
+					<!-- LIGNE PRESENT -->
+					<div class="row justify-content-center">
+						<div class="col-4">
+							<label for="present">Présent ?</label>
+							<div class="form-check">
+								<input type="radio" id="yes" name="present" ng-checked="editGuest.present === 1" ng-click="changePresent(editGuest)"/>
+								<label for="yes" class="form-check-label">Oui</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" id="no" name="present" ng-checked="editGuest.present === 0" ng-click="changePresent(editGuest)"/>
+								<label for="no" class="form-check-label">Non</label>
+							</div>
+						</div>
+					</div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary" ng-click="edit(editGuest)">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL CREATE  -->
+<div class="modal fade" id="createFamilyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Ajouter un invité</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="container-fluid">
+					<!-- LIGNE PRENOM + NOM -->
+					<div class="row">
+						<div class="form-group col-6 offset-3">
+							<label for="first">Nom de la famille</label>
+							<input type="text" class="form-control" name="first" ng-model="newFamily.name"/>
+						</div>
+					</div>
+					<!-- LIGNE VILLE + PAYS  -->
+					<div class="row">
+						<div class="form-group col-6 offset-3">
+							<label for="city">Entrez le nom d'un invité</label>
+							<input type="text" class="form-control"name="city" ng-model="searchGuest"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<ul>
+								<li ng-repeat="guest in guests">{{ guest.firstname + ' ' + guest.lastname }}</li>
+							</ul>
+						</div>
+						<div class="col-6">
+							<ul>
+								<li ng-reapeat="select in guestSelected">{{select.firstname + ' ' + select.lastname }}</li>
+							</ul>
+						</div>
+					</div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary" ng-click="addFamily()">Ajouter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL REMOVE  -->
+<div class="modal fade" id="removeFamilyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Supprimer une famille ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
+        <button type="button" class="btn btn-primary" ng-click="remove(removeId)">Oui</button>
+      </div>
+    </div>
+  </div>
+</div>

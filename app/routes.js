@@ -3,6 +3,7 @@ var mysql = require('mysql');
 var Guest = require('./guestFactory.js');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var CONSTANTS = require('../config/constants');
 
 
 passport.use(new LocalStrategy(
@@ -23,45 +24,59 @@ passport.use(new LocalStrategy(
 
 module.exports = function (app) {
 
-
 		app.post('/login', passport.authenticate('local', {
 			successRedirect: '/admin',
 			failureRedirect: '/login',
 			failureFlash: true
 		}));
     // GET ALL GUEST
-    app.get('/api/guest', function (req, res) {
-			Guest.getAll(res);
-			// console.log("response", toto)
-			// res.send(toto);
-			// Guest.getAll().then(function(data){
-			// 	res.send(data);
-			// });
+    app.get('/guest', function (req, res) {
+			Guest.getAll().then(function(data){
+				res.send(data);
+			})
     });
 
+		// GET BY ID
+		app.get('/guest/:id', function (req, res) {
+			Guest.findById(req.params.id).then(function(data){
+				res.send(data);
+			});
+		});
+
+		app.post('/guest/find', function(req, res){
+			Guest.findByLastName(req.body.lastname).then(function(response){
+				res.send(response);
+			});
+		});
+
 		// ADD GUEST
-		app.post('/api/guest',
-			passport.authenticate('local', {session: false}), function(req, res){
-			res.send(Guest.add(req.body));
+		app.post('/guest',
+			/*passport.authenticate('local', {session: false}),*/ function(req, res){
+				Guest.add(req.body).then(function(response){
+					res.send(response);
+				})
 		});
 
 		// UPDATE GUEST
-		app.post('/api/guest/update', function(req, res){
-			console.log("updating .. ", req.body);
-			res.send(Guest.update(req.body));
+		app.post('/guest/update', function(req, res){
+			Guest.update(req.body).then(function(response){
+				res.send(response);
+			})
 		});
 
-		app.post('/api/guest/delete/:id', function(req, res){
-			res.send(Guest.remove(req.params.id))
+		app.post('/guest/:id/_delete', function(req, res){
+			Guest.remove(req.params.id).then(function(response){
+				res.send(response);
+			});
 		})
 
 
 		app.get('/server/health', function(req, res){
 			var connection = mysql.createConnection({
-				host     : 'localhost',
-				user     : 'root',
-				password : '',
-				database : 'me_wedding'
+				host     : CONSTANTS.BDD.HOST,
+				user     : CONSTANTS.BDD.USER,
+				password : CONSTANTS.BDD.PWD,
+				database : CONSTANTS.BDD.DATABASE
 			});
 
 			connection.connect(function(errorConnect){
