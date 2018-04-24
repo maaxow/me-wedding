@@ -47,10 +47,10 @@ return {
 			});
 		}
 
-		// getServerStatus();
-		// $interval(function(){
-		// 	getServerStatus();
-		// },10000);
+		getServerStatus();
+		$interval(function(){
+			getServerStatus();
+		},60000);
 	}
 }
 

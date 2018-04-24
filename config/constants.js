@@ -1,7 +1,8 @@
 module.exports = {
-  database : {
-    user : 'root',
-    password : "yrv'xrjbx",
-    database : 'me_wedding'
-  }
+  DATABASE : {
+		HOST: 'localhost',
+		USER: 'root',
+		PWD: '',
+		DATABASE: 'me_wedding'
+	}
 };

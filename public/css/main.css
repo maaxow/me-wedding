@@ -23,7 +23,7 @@
 	padding: 10px;
 }
 .title-info {
-	color: #87E990;
+	color: #75C97D;
 }
 
 .menuItem:hover {
@@ -110,3 +110,20 @@ body.background {
 	top: 0px;
 	z-index: 3;
 }
+
+ ul > li.admin-link {
+	 cursor: pointer;
+ }
+ ul > li.admin-link.active {
+	 cursor: pointer;
+	 border-bottom: 2px solid red;
+ }
+ ul > li.admin-link:hover {
+	 border-bottom: 2px solid red;
+ }
+
+ .version {
+	 font-size: 10px;
+	 vertical-align: super;
+	 color: grey;
+ }

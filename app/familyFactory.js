@@ -1,6 +1,6 @@
 //require the module
 var mysql = require('mysql');
-var CONSTANTS = require('../config/constants')
+var CONSTANTS = require('../config/constants');
 
 var handleEnd = function(err){
 	if(err) console.error("MySQLEndingError :", err);
@@ -10,10 +10,10 @@ handleConnection = function(err){
 },
 createConnection = function(){
 	return mysql.createConnection({
-		host     : CONSTANTS.DATABASE.HOST,
-		user     : CONSTANTS.DATABASE.USER,
-		password : CONSTANTS.DATABASE.PWD,
-		database : CONSTANTS.DATABASE.DATABASE
+		host     : CONSTANTS.BDD.HOST,
+		user     : CONSTANTS.BDD.USER,
+		password : CONSTANTS.BDD.PWD,
+		database : CONSTANTS.BDD.DATABASE
 	});
 }
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'SELECT * FROM guest'
+				sql: 'SELECT * FROM family'
 			}, function (error, results, fields) {
 				if (error){
 					console.error("MySQLQueryError :", error);
@@ -36,13 +36,13 @@ module.exports = {
 		});
 		return promise;
 	},
-	findById : function(guestId){
+	findById : function(familyId){
 		var connection = createConnection();
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'SELECT * FROM guest WHERE id = ?',
-				values : [guestId]
+				sql: 'SELECT * FROM family WHERE id = ?',
+				values : [familyId]
 			}, function (error, results, fields) {
 				if (error){
 					console.error("MySQLQueryError :", error);
@@ -55,13 +55,13 @@ module.exports = {
 		});
 		return promise;
 	},
-	findByLastName : function(guestLastName){
+	findByLastName : function(familyName){
 		var connection = createConnection();
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'SELECT * FROM guest WHERE lastname LIKE ?',
-				values : ["%" + guestLastName + "%"]
+				sql: 'SELECT * FROM family WHERE lastname LIKE ?',
+				values : ["%" + familyName + "%"]
 			}, function (error, results, fields) {
 				if (error){
 					console.error("MySQLQueryError :", error);
@@ -74,11 +74,11 @@ module.exports = {
 		});
 		return promise;
 	},
-	add : function(guest){
+	add : function(family){
 		var connection = createConnection();
-		connection.connect();
+		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
-			connection.query('INSERT INTO guest SET ? ', guest, function (error, results, fields) {
+			connection.query('INSERT INTO family SET ? ', family, function (error, results, fields) {
 			  if (error){
 					console.error("MySQLInsertError :", error);
 					reject(error);
@@ -86,27 +86,19 @@ module.exports = {
 				}
 				resolve(results);
 			});
-			connection.end();
+			connection.end(handleEnd);
 		});
 		return promise;
 	},
-	update : function(guest){
+	update : function(family){
 		var connection = createConnection();
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'UPDATE guest SET id=?, firstname=?, lastname=?, email=?, phone_number=?, address=?, post_code=?, city=?, country=?, present=? WHERE id = ?',
-				values: [guest.id,
-					guest.firstname,
-					guest.lastname,
-					guest.email,
-					guest.phone_number,
-					guest.address,
-					guest.post_code,
-					guest.city,
-					guest.country,
-					guest.present,
-					guest.id]
+				sql: 'UPDATE family SET id=? WHERE id = ?',
+				values: [family.id,
+					//TODO finish
+					family.id]
 			}, function (error, results, fields) {
 			  if (error){
 					console.error("MySQLUpdateError :", error);
@@ -124,7 +116,7 @@ module.exports = {
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'DELETE FROM guest WHERE id = ?',
+				sql: 'DELETE FROM family WHERE id = ?',
 				values: [id]
 			}, function (error, results, fields) {
 			  if (error){
