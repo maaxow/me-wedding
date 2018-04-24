@@ -73,6 +73,48 @@ angular.module('app', ['ui.router', 'app.controllers.admin'])
 		templateUrl: 'views/contact.html',
 		// controller : 'AppController'
 	})
+	.state('giftList', {
+		url: '/giftList',
+		templateUrl: 'views/giftList.html',
+		controller: function($scope){
+
+			$scope.calculRest = function(gift){
+				var payed = 0;
+				for(index in gift.participants){
+					payed += gift.participants[index].amount;
+				}
+				var rest = gift.total-payed;
+				var percent = (payed*100)/gift.total;
+				$scope.progressWidth = 	{width: percent+'%'};
+				return rest;
+			};
+			$scope.progressWidth = 	{width: '10%'};
+			$scope.gifts = [
+				{
+					name : 'Drone DJI Mavic Air',
+					description: 'On aimerait acheter un drone, pour faire de tres belle images lors de notre voyage de noces.',
+					total: 1200,
+					participants : [
+						{
+							name: 'Christine Rose',
+							amount: 10
+						}
+					]
+				},
+				{
+					name : 'Set de couvert',
+					description: 'Des beaux sets de couverts',
+					total : 150,
+					participants: [
+						{
+							name: 'Marie-Agnes Traulet',
+							amount: 100
+						}
+					]
+				}
+			]
+		}
+	})
 	.state('admin', {
 		url: '/admin',
 		templateUrl: 'views/admin.html',
