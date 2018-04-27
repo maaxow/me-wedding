@@ -19,20 +19,21 @@ require('./app/routes.js')(app);
 var server = require('http').createServer(app);
 
 // logger ======================================================================
-const log4js = require('log4js');
-log4js.configure({
-	appenders: {
-		rollingFile: { type: 'file', filename: 'app.log', maxLogSize: 5000 }
-	},
-	categories: {
-		default: { appenders : ['rollingFile'], level: 'debug' }
-	}
-});
-var logger = log4js.getLogger('rollingFile');
-logger.level = 'debug';
-logger.debug("Some debug trace !");
+// const log4js = require('log4js');
+// log4js.configure({
+// 	appenders: {
+// 		rollingFile: { type: 'file', filename: 'app.log', maxLogSize: 5000 }
+// 	},
+// 	categories: {
+// 		default: { appenders : ['rollingFile'], level: 'debug' }
+// 	}
+// });
+// var logger = log4js.getLogger('rollingFile');
+// logger.level = 'debug';
+// logger.debug("Some debug trace !");
 
 // listen (start app with node server.js) ======================================
 server.listen(port);
 
-logger.info("App listening on port " + port);
+console.log("App listening on port " + port);
+// logger.info("App listening on port " + port);

@@ -1,0 +1,6 @@
+[2018-04-25T21:17:58.684] [DEBUG] rollingFile - Some debug trace !
+[2018-04-25T21:17:58.688] [INFO] rollingFile - App listening on port 8282
+[2018-04-25T21:19:21.598] [DEBUG] rollingFile - Some debug trace !
+[2018-04-25T21:19:21.601] [INFO] rollingFile - App listening on port 8282
+[2018-04-25T21:21:36.029] [DEBUG] rollingFile - Some debug trace !
+[2018-04-25T21:21:36.033] [INFO] rollingFile - App listening on port 8282

@@ -1,0 +1,149 @@
+<div class="container">
+
+	<br>
+	<div class="row">
+		<div class="col-6 offset-3" style="text-align: center">
+			<h2>Gestion des cadeaux</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-3">
+			<button class="btn btn-primary" ng-click="openAddModal()">Add</button>
+			<button class="btn btn-primary" ng-click="getAll()">Refresh</button>
+		</div>
+		<input type="text" class="form-control col-4 offset-1" placeholder="Entrez un nom de cadeau" ng-change="findByLastName()" ng-model="searchLastName">
+	</div>
+	<br>
+	<table class="table">
+		<tr>
+			<th>Id</th>
+			<th>Nom du cadeau</th>
+			<th>Descritpion</th>
+			<th>Total</th>
+			<th>Participants</th>
+		</tr>
+		<tr ng-repeat="gift in gifts">
+			<td>{{gift.gift_id}}</td>
+			<td>{{gift.gift_name}}</td>
+			<td>{{gift.gift_description}}</td>
+			<td>{{gift.gift_total}}</td>
+			<td>{{gift.participants}}</td>
+
+			<td>
+				<button type="button" class="btn btn-primary" ng-click="openEditModal(gift)">
+					<i class="material-icons">mode_edit</i>
+				</button>
+				<button class="btn btn-danger" ng-click="openRemoveModal(gift.gift_id)">
+					<i class="material-icons">delete_forever</i>
+				</button>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<!-- MODAL UPDATE -->
+<div class="modal fade" id="updateGiftModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modifier {{ editGift.name }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+				<form class="container-fluid">
+					<!-- LIGNE NOM -->
+					<div class="row">
+						<div class="form-group col-6 offset-3">
+							<label for="name">Nom du cadeau</label>
+							<input type="text" class="form-control" name="name" ng-model="editGift.name"/>
+						</div>
+					</div>
+					<!-- LIGNE DESCRIPTION  -->
+					<div class="row">
+						<div class="form-group col-8">
+							<label for="description">Description</label>
+							<input type="text" class="form-control" name="description" ng-model="editGift.description"/>
+						</div>
+					</div>
+					<!-- LIGNE TOTAL  -->
+					<div class="row">
+						<div class="form-group col-6 offset-3">
+							<label for="total">Entrez le montant total</label>
+							<input type="number" class="form-control"name="total" ng-model="newGift.total"/>
+						</div>
+					</div>
+					<!-- LIGNE PARTICIPANTS  -->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary" ng-click="edit(editGift)">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL CREATE  -->
+<div class="modal fade" id="createGiftModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Ajouter un cadeau</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="container-fluid">
+					<!-- LIGNE NOM -->
+					<div class="row">
+						<div class="form-group col-6 offset-3">
+							<label for="name">Nom du cadeau</label>
+							<input type="text" class="form-control" name="name" ng-model="newGift.name"/>
+						</div>
+					</div>
+					<!-- LIGNE DESCRIPTION  -->
+					<div class="row">
+						<div class="form-group col-6 offset-3">
+							<label for="description">Entrez la description</label>
+							<input type="text" class="form-control"name="description" ng-model="newGift.description"/>
+						</div>
+					</div>
+					<!-- LIGNE TOTAL  -->
+					<div class="row">
+						<div class="form-group col-6 offset-3">
+							<label for="total">Entrez le montant total</label>
+							<input type="number" class="form-control"name="total" ng-model="newGift.total"/>
+						</div>
+					</div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary" ng-click="addGift()">Ajouter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL REMOVE  -->
+<div class="modal fade" id="removeGiftModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Supprimer un cadeau ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
+        <button type="button" class="btn btn-primary" ng-click="remove(removeId)">Oui</button>
+      </div>
+    </div>
+  </div>
+</div>

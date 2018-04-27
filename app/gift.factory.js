@@ -14,7 +14,7 @@ createConnection = function(){
 		user     : CONSTANTS.DATABASE.USER,
 		password : CONSTANTS.DATABASE.PWD,
 		database : CONSTANTS.DATABASE.DATABASE,
-		port		 : CONSTANTS.DATABASE.PORT
+		port 		 : CONSTANTS.DATABASE.PORT
 	});
 }
 module.exports = {
@@ -24,7 +24,7 @@ module.exports = {
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'SELECT * FROM guest'
+				sql: 'SELECT * FROM gift'
 			}, function (error, results, fields) {
 				if (error){
 					console.error("MySQLQueryError :", error);
@@ -37,13 +37,13 @@ module.exports = {
 		});
 		return promise;
 	},
-	findById : function(guestId){
+	findById : function(giftId){
 		var connection = createConnection();
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'SELECT * FROM guest WHERE id = ?',
-				values : [guestId]
+				sql: 'SELECT * FROM gift WHERE gift_id = ?',
+				values : [ giftId ]
 			}, function (error, results, fields) {
 				if (error){
 					console.error("MySQLQueryError :", error);
@@ -56,13 +56,13 @@ module.exports = {
 		});
 		return promise;
 	},
-	findByLastName : function(guestLastName){
+	findByName : function(giftName){
 		var connection = createConnection();
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'SELECT * FROM guest WHERE lastname LIKE ?',
-				values : ["%" + guestLastName + "%"]
+				sql: 'SELECT * FROM gift WHERE gift_name LIKE ?',
+				values : ["%" + giftName + "%"]
 			}, function (error, results, fields) {
 				if (error){
 					console.error("MySQLQueryError :", error);
@@ -75,11 +75,12 @@ module.exports = {
 		});
 		return promise;
 	},
-	add : function(guest){
+	add : function(gift){
 		var connection = createConnection();
 		connection.connect();
 		var promise = new Promise(function(resolve, reject){
-			connection.query('INSERT INTO guest SET ? ', guest, function (error, results, fields) {
+			connection.query('INSERT INTO gift(gift_name, gift_description, gift_total) VALUES ("'+gift.name+'", "'+gift.description+'", '+gift.total+') ',
+			function (error, results, fields) {
 			  if (error){
 					console.error("MySQLInsertError :", error);
 					reject(error);
@@ -91,23 +92,17 @@ module.exports = {
 		});
 		return promise;
 	},
-	update : function(guest){
+	update : function(gift){
 		var connection = createConnection();
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'UPDATE guest SET id=?, firstname=?, lastname=?, email=?, phone_number=?, address=?, post_code=?, city=?, country=?, present=? WHERE id = ?',
-				values: [guest.id,
-					guest.firstname,
-					guest.lastname,
-					guest.email,
-					guest.phone_number,
-					guest.address,
-					guest.post_code,
-					guest.city,
-					guest.country,
-					guest.present,
-					guest.id]
+				sql: 'UPDATE gift SET gift_id=?, gift_name=?, gift_description=?, gift_total=? WHERE gift_id = ?',
+				values: [gift.gift_id,
+					gift.gift_name,
+					gift.gift_description,
+					gift.gift_total,
+					gift.id]
 			}, function (error, results, fields) {
 			  if (error){
 					console.error("MySQLUpdateError :", error);
@@ -120,13 +115,13 @@ module.exports = {
 		});
 		return promise;
 	},
-	remove : function(id){
+	remove : function(giftId){
 		var connection = createConnection();
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'DELETE FROM guest WHERE id = ?',
-				values: [id]
+				sql: 'DELETE FROM guest WHERE gift_id = ?',
+				values: [ giftId ]
 			}, function (error, results, fields) {
 			  if (error){
 					console.error("MySQLDeleteError :", error);

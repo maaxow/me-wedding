@@ -1,8 +1,9 @@
 module.exports = {
   DATABASE : {
 		HOST: 'localhost',
-		USER: 'root',
-		PWD: '',
-		DATABASE: 'me_wedding'
+		USER: 'me_wedding',
+		PWD: 'mew',
+		DATABASE: 'me_wedding',
+    PORT: 8889
 	}
 };

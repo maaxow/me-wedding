@@ -1,4 +1,8 @@
-angular.module('app', ['ui.router', 'app.controllers.admin', 'app.controllers.admin.guest', 'app.controllers.admin.family'])
+angular.module('app', ['ui.router',
+			'app.controllers.admin',
+			'app.controllers.admin.guest',
+			'app.controllers.admin.family',
+			'app.controllers.admin.gift'])
 
 .config(['$stateProvider','$locationProvider','$urlRouterProvider', function($stateProvider, $locationProvider,$urlRouterProvider){
 
@@ -132,6 +136,11 @@ angular.module('app', ['ui.router', 'app.controllers.admin', 'app.controllers.ad
 		url: '/admin/family',
 		templateUrl: 'views/admin/family.admin.html',
 		controller: 'AdminFamilyController'
+	})
+	.state('admin.gift', {
+		url: '/admin/gift',
+		templateUrl: 'views/admin/gift.admin.html',
+		controller: 'AdminGiftController'
 	})
 
 
