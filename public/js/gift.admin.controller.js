@@ -14,9 +14,7 @@ angular.module('app.controllers.admin.gift', [])
 	$scope.removeId = null;
 	$scope.searchName = "";
 	$scope.getAll = function(){
-		console.log("get all()");
 		$http.get('/gift').then(function(data){
-			console.log(data.data);
 			$scope.gifts = data.data;
 		});
 	};
@@ -39,7 +37,7 @@ angular.module('app.controllers.admin.gift', [])
 
 	$scope.openEditModal = function(gift){
 		$scope.editGift = gift;
-		$("#updateGifttModal").modal('show');
+		$("#updateGiftModal").modal('show');
 	};
 	var closeEditModal = function(){
 		$("#updateGiftModal").modal('hide');
@@ -48,6 +46,7 @@ angular.module('app.controllers.admin.gift', [])
 
 	$scope.edit = function(gift){
 		$http.post('/api/gift/update', gift).then(function(data){
+			console.log("on a fini upadte");
 			$scope.getAll();
 			closeEditModal();
 		});
@@ -61,7 +60,7 @@ angular.module('app.controllers.admin.gift', [])
 		$("#removeGiftModal").modal('hide');
 	};
 	$scope.remove = function(giftId){
-		$http.post('/api/gift/delete/'+giftId).then(function(response){
+		$http.post('/gift/'+giftId+'/_delete').then(function(response){
 			$scope.getAll();
 			closeRemoveModal();
 		});
@@ -78,4 +77,9 @@ angular.module('app.controllers.admin.gift', [])
 		} else $scope.getAll();
 	};
 
+	$scope.getParticipants = function(giftId){
+		$http.get('/participants/'+giftId).then(function(response){
+			return response;
+		});
+	};
 })

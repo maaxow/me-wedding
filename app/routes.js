@@ -128,6 +128,12 @@ module.exports = function (app) {
 			});
 		});
 
+    // GET PARTICIPANTS BY GIFT ID
+    app.get('/participants/:giftId', function (req, res) {
+			Gift.findById(req.params.id).then(function(data){
+				res.send(data);
+			});
+		});
 
 		app.get('/server/health', function(req, res){
 			var connection = mysql.createConnection({

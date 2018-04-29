@@ -97,12 +97,11 @@ module.exports = {
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'UPDATE gift SET gift_id=?, gift_name=?, gift_description=?, gift_total=? WHERE gift_id = ?',
-				values: [gift.gift_id,
-					gift.gift_name,
+				sql: 'UPDATE gift SET gift_name=?, gift_description=?, gift_total=? WHERE gift_id = ?',
+				values: [	gift.gift_name,
 					gift.gift_description,
 					gift.gift_total,
-					gift.id]
+					gift.gift_id]
 			}, function (error, results, fields) {
 			  if (error){
 					console.error("MySQLUpdateError :", error);
@@ -120,7 +119,7 @@ module.exports = {
 		connection.connect(handleConnection);
 		var promise = new Promise(function(resolve, reject){
 			connection.query({
-				sql: 'DELETE FROM guest WHERE gift_id = ?',
+				sql: 'DELETE FROM gift WHERE gift_id = ?',
 				values: [ giftId ]
 			}, function (error, results, fields) {
 			  if (error){

@@ -26,8 +26,12 @@
 			<td>{{gift.gift_id}}</td>
 			<td>{{gift.gift_name}}</td>
 			<td>{{gift.gift_description}}</td>
-			<td>{{gift.gift_total}}</td>
-			<td>{{gift.participants}}</td>
+			<td>{{gift.gift_total}} €</td>
+			<td>
+				<ul>
+					<li ng-repeat="participant in getParticipants(gift.gift_id)"></li>
+				</ul>
+			</td>
 
 			<td>
 				<button type="button" class="btn btn-primary" ng-click="openEditModal(gift)">
@@ -55,23 +59,23 @@
 				<form class="container-fluid">
 					<!-- LIGNE NOM -->
 					<div class="row">
-						<div class="form-group col-6 offset-3">
+						<div class="form-group col-8 offset-3">
 							<label for="name">Nom du cadeau</label>
-							<input type="text" class="form-control" name="name" ng-model="editGift.name"/>
+							<input type="text" class="form-control" name="name" ng-model="editGift.gift_name"/>
 						</div>
 					</div>
 					<!-- LIGNE DESCRIPTION  -->
 					<div class="row">
-						<div class="form-group col-8">
+						<div class="form-group col-8 offset-3">
 							<label for="description">Description</label>
-							<input type="text" class="form-control" name="description" ng-model="editGift.description"/>
+							<input type="text" class="form-control" name="description" ng-model="editGift.gift_description"/>
 						</div>
 					</div>
 					<!-- LIGNE TOTAL  -->
 					<div class="row">
-						<div class="form-group col-6 offset-3">
+						<div class="form-group col-8 offset-3">
 							<label for="total">Entrez le montant total</label>
-							<input type="number" class="form-control"name="total" ng-model="newGift.total"/>
+							<input type="number" class="form-control" name="total" ng-model="editGift.gift_total"/>
 						</div>
 					</div>
 					<!-- LIGNE PARTICIPANTS  -->
