@@ -29,7 +29,7 @@
 			<td>{{gift.gift_total}} €</td>
 			<td>
 				<ul>
-					<li ng-repeat="participant in getParticipants(gift.gift_id)"></li>
+					<li ng-repeat="participant in gift.participants">{{participant.participant_name}} : {{participant.participant_amount}}€</li>
 				</ul>
 			</td>
 

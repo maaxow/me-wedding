@@ -16,6 +16,15 @@ angular.module('app.controllers.admin.gift', [])
 	$scope.getAll = function(){
 		$http.get('/gift').then(function(data){
 			$scope.gifts = data.data;
+
+			for(var index in $scope.gifts){
+				console.log($scope.gifts[index]);
+				var giftId = $scope.gifts[index].gift_id;
+				$scope.getParticipants(giftId).then(function(responseParticipants){
+					console.log("responseParticipants.data", responseParticipants.data);
+					setParticipantsToGift(responseParticipants.data, giftId);
+				})
+			}
 		});
 	};
 	$scope.getAll();
@@ -78,8 +87,15 @@ angular.module('app.controllers.admin.gift', [])
 	};
 
 	$scope.getParticipants = function(giftId){
-		$http.get('/participants/'+giftId).then(function(response){
-			return response;
-		});
+		return $http.get('/participants/'+giftId);
 	};
+
+	var setParticipantsToGift = function(participants, giftId){
+		for(var index in $scope.gifts){
+			if($scope.gifts[index].gift_id === giftId){
+				$scope.gifts[index].participants = participants;
+				return;
+			}
+		}
+	}
 })

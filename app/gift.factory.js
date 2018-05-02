@@ -132,5 +132,24 @@ module.exports = {
 			connection.end(handleEnd);
 		});
 		return promise;
-	}
+	},
+	getAllParticipants : function(giftId){
+		var connection = createConnection();
+		connection.connect(handleConnection);
+		var promise = new Promise(function(resolve, reject){
+			connection.query({
+				sql: 'SELECT * FROM gift_participant WHERE gift_id = ?',
+				values : [ giftId ]
+			}, function (error, results, fields) {
+				if (error){
+					console.error("MySQLQueryError :", error);
+					reject(error);
+					return;
+				}
+				resolve(results);
+			});
+			connection.end(handleEnd);
+		});
+		return promise;
+	},
 }
