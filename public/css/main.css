@@ -127,3 +127,11 @@ body.background {
 	 vertical-align: super;
 	 color: grey;
  }
+
+ .gift-img{
+	 border: 1px solid green;
+	 border-radius: 10px;
+	 width: 250px;
+	 height: 200px;
+	 margin: 15px;
+ }

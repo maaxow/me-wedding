@@ -31,6 +31,7 @@
 	<script src="/js/guest.admin.controller.js" charset="utf-8"></script>
 	<script src="/js/family.admin.controller.js" charset="utf-8"></script>
 	<script src="/js/gift.admin.controller.js" charset="utf-8"></script>
+	<script src="/components/giftList/gift.js" charset="utf-8"></script>
 	<script src="/js/main.js" charset="utf-8"></script>
 	<script src="/js/constants.js" charset="utf-8"></script>
 	<script src="/js/directives/timer/timer.js" charset="utf-8"></script>
@@ -40,7 +41,7 @@
 <body class="background">
 
 	<div ng-app="app" ng-controller="MainController">
-		<server:health></server:health>
+		<!-- <server:health></server:health> -->
 		<div class="row">
 			<!-- <div class="col"></div> -->
 			<div class="col-6 offset-4">
@@ -56,10 +57,11 @@
 				<span class="menuitem col" ui-sref="article">Articles</span>
 				<span class="menuitem col" ui-sref="info">Informations Pratiques</span>
 				<span class="menuitem col" ui-sref="lodging">Hebergement</span>
-				<span class="menuitem col" ui-sref="guest">Invites</span>
+				<!-- <span class="menuitem col" ui-sref="guest">Invites</span> -->
 				<span class="menuitem col" ui-sref="giftList">Liste de Cadeaux</span>
 				<span class="menuitem col" ui-sref="contact">Contacts</span>
-				<span class="menuitem col" ui-sref="admin">Admin</span>
+				<span class="menuitem col" ui-sref="rsvp">RSVP</span>
+				<!-- <span class="menuitem col" ui-sref="admin">Admin</span> -->
 			</div>
 		</div>
 
