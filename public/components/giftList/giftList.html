@@ -5,27 +5,27 @@
 <br>
 	<div class="container" data-ng-repeat="gift in gifts" style="over-flow: hidden;">
 
-    <div class="row">
+		<div class="row">
 
 			<img class="gift-img col-4" src="../img/gifts/{{gift.meta.img}}" alt="image">
 
-      <div class="col-7">
-        <div class="row">
-          <h4 class="title-info col-10">{{gift.name}}</h4>
-          <span class="col-2">{{gift.amount}} / {{gift.total}} €</span>
-        </div>
-        <div class="row col-12">
+			<div class="col-7 row">
+				<div class="row col-lg-12 align-items-center">
+					<h4 class="title-info col-9">{{gift.name}}</h4>
+					<span class="col-3">{{gift.amount}} / {{gift.total}} €</span>
+				</div>
+        <div class="col-12 align-items-start">
           <span>{{gift.description}}</span>
         </div>
-        <div class="progress">
+        <div class="progress col-lg-12">
           <div class="progress-bar progress-bar-striped bg-success" style="width: {{calculWidthProgress(gift)}}px" role="progressbar" aria-valuenow="{{gift.total - gift.amount}}" aria-valuemin="0" aria-valuemax="{{gift.total}}"></div>
         </div>
 
-      </div>
+			</div>
 
-      </div>
+		</div>
 
-    <hr data-ng-if="!$last" class="dotted col-3">
+		<hr data-ng-if="!$last" class="dotted col-3">
   </div>
 
 </div>

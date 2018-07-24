@@ -8,7 +8,8 @@ angular.module('app.controllers.gift', [])
 	});
 
 	$scope.calculWidthProgress = function(gift){
-		
-	}
+		// console.log("gift", gift);
+
+	};
 
 });
