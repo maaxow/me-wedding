@@ -8,8 +8,8 @@ angular.module('app.controllers.gift', [])
 	});
 
 	$scope.calculWidthProgress = function(gift){
-		// console.log("gift", gift);
-
+		var percent = (gift.amount*100) / gift.total;
+		return percent * 518.6 / 100;
 	};
 
 });

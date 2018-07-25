@@ -131,7 +131,7 @@ body.background {
  .gift-img{
 	 border: 1px solid green;
 	 border-radius: 10px;
-	 width: 250px;
-	 height: 200px;
-	 margin: 15px;
+	 width: 18em	;
+	 height: auto;
+	 /* margin: 15px; */
  }

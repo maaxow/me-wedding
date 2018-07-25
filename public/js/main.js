@@ -84,7 +84,7 @@ angular.module('app', ['ui.router',
 		controller: 'GiftController'
 	})
 	.state('rsvp', {
-		url: 'rsvp',
+		url: '/rsvp',
 		templateUrl: 'views/rsvp.html',
 		controller: 'RSVPController'
 	})

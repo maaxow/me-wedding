@@ -3,12 +3,10 @@
 		"name" : "Billet d'avion",
 		"description": "Billet d'avion Paris - San Fransisco A/R",
 		"total": 2000,
-		"amount" : 150,
+		"amount" : 0,
 		"meta" : {
 			"img" : "passport.jpg",
-			"type" : "logistique",
-			"width" : 1920,
-			"height" : 1280
+			"type" : "logistique"
 		}
 	},
 	{
@@ -83,7 +81,7 @@
 	},
 	{
 		"name" : "Nuit à Las Vegas",
-		"description": "Une nuit au Ceasar Palace à Las Vegas",
+		"description": "Une nuit au Caesars Palace à Las Vegas",
 		"total": 200,
 		"amount" : 0,
 		"meta" : {
