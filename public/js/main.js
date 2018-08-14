@@ -86,7 +86,7 @@ angular.module('app', ['ui.router',
 	.state('rsvp', {
 		url: '/rsvp',
 		templateUrl: 'views/rsvp.html',
-		controller: 'RSVPController'
+		// controller: 'RSVPController'
 	})
 	.state('admin', {
 		url: '/admin',
@@ -128,7 +128,7 @@ angular.module('app', ['ui.router',
 	$http.get('/server/version').then(function(response){
 		console.log("version :", response.data);
 			$scope.version = response.data;
-	})
+	});
 })
 .filter('html',function($sce){
     return function(input){
