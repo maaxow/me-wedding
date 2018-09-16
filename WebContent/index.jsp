@@ -1,8 +1,8 @@
 <!DOCTYPE>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Maxime & Elodie Wedding</title>
-	<base href="/">
 	<!-- FAVICON -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -37,6 +37,8 @@
 	<script src="js/directives/timer/timer.js" charset="utf-8"></script>
 	<script src="js/directives/serverHealth/serverHealth.js" charset="utf-8"></script>
 	<script src="js/directives/progInfo/progInfo.js" charset="utf-8"></script>
+	
+	<base href="${pageContext.request.contextPath}/" />
 </head>
 <jsp:include page="index.html" />
 </html>

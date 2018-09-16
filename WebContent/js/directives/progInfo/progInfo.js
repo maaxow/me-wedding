@@ -2,7 +2,7 @@ angular.module('app').directive('progInfo', function(){
 
 return {
 	restrict: 'E',
-	templateUrl: '/js/directives/progInfo/progInfo.html',
+	templateUrl: 'js/directives/progInfo/progInfo.html',
 	scope: {
 		date: '=',
 		hours: '=',

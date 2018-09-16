@@ -2,7 +2,7 @@ angular.module('app').directive('serverHealth', function(){
 
 return {
 	restrict: 'E',
-	templateUrl: '/js/directives/serverHealth/serverHealth.html',
+	templateUrl: 'js/directives/serverHealth/serverHealth.html',
 	controller: function($scope, $http, $interval){
 
 		$scope.orange = true;

@@ -30,7 +30,7 @@ angular.module('app', ['ui.router',
 			$scope.infos = [
 				{
 					date: '29 Juin 2019',
-					hours: '14h00',
+					hours: '14h15',
 					title: 'La Cérémonie Civile',
 					place: 'Mairie de Gamaches, Place du Maréchal Leclercq.',
 					mapsLink: 'https://www.google.fr/maps/place/Salle+de+permanence+de+la+mairie/@49.9856914,1.5598221,18.99z/data=!4m13!1m7!3m6!1s0x47e7563ccbb081db:0x40af13e81620bc0!2s80220+Gamaches!3b1!8m2!3d49.985833!4d1.559647!3m4!1s0x47e7566b1c010a41:0x3b917a7843935342!8m2!3d49.9857549!4d1.5598038?hl=fr',
@@ -38,7 +38,7 @@ angular.module('app', ['ui.router',
 				},
 				{
 					date: '29 Juin 2019',
-					hours: '16h00',
+					hours: '15h00',
 					title: 'La Cérémonie Religieuse',
 					place: 'Eglise de Gamaches, rue de Normandie',
 					mapsLink: 'https://www.google.fr/maps/place/Eglise+de+GAMACHES/@49.986051,1.55554,18.99z/data=!4m13!1m7!3m6!1s0x47e7563ccbb081db:0x40af13e81620bc0!2s80220+Gamaches!3b1!8m2!3d49.985833!4d1.559647!3m4!1s0x47e7566b1af8257f:0x762ce1bbfb397435!8m2!3d49.9860658!4d1.5554935?hl=fr',
@@ -48,7 +48,7 @@ angular.module('app', ['ui.router',
 					date: '29 Juin 2019',
 					hours: '18h00',
 					title: 'Le Vin d\'Honneur',
-					place: 'Quelque part',
+					place: 'Lieu secret pour le moment',
 					mapsLink: 'https://www.google.fr/maps/place/Somme/@49.9676227,1.7309381,9z/data=!3m1!4b1!4m5!3m4!1s0x47e7873951d7aa9f:0x30af13e81612a80!8m2!3d49.914518!4d2.2707095',
 					description: 'Dès que nous avons découvert ce lieu, nous avons eu un déclique, c\'est ici que nous avons décidé de partager ce moment avec vous. Ce lieu vous sera dévoilé prochainement ...'
 				},
@@ -56,7 +56,7 @@ angular.module('app', ['ui.router',
 					date: '29 Juin 2019',
 					hours: '20h00',
 					title: 'Le Diner',
-					place: 'Quelque part',
+					place: 'Lieu secret pour le moment',
 					mapsLink: 'https://www.google.fr/maps/place/Somme/@49.9676227,1.7309381,9z/data=!3m1!4b1!4m5!3m4!1s0x47e7873951d7aa9f:0x30af13e81612a80!8m2!3d49.914518!4d2.2707095',
 					description: ''
 				}
@@ -124,7 +124,7 @@ angular.module('app', ['ui.router',
 })
 .controller('MainController', function($scope, CONSTANTS, $http, $interval){
 	$scope.weddingDate = new Date(2019,5,29); //Date.parse(CONSTANTS.weddingDate, 'MM-dd-yyyy');
-	$scope.version = "gnee";
+	$scope.version = "0.0.1-SNAPSHOT";
 	$http.get('/server/version').then(function(response){
 		console.log("version :", response.data);
 			$scope.version = response.data;

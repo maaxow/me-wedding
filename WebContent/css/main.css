@@ -1,10 +1,10 @@
 @font-face {
     font-family: everAfter;
-    src: url('/fonts/EVERAFTE.TTF');
+    src: url('../fonts/EVERAFTE.TTF');
 }
 @font-face {
     font-family: cacchampagne;
-    src: url('/fonts/Cac Champagne.ttf');
+    src: url('../fonts/Cac Champagne.ttf');
 }
 .menu {
 	font-family: everAfter;

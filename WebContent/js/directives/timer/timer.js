@@ -2,7 +2,7 @@ angular.module('app').directive('maaxowTimer', function(){
 
 return {
 	restrict: 'E',
-	templateUrl: '/js/directives/timer/timer.html',
+	templateUrl: 'js/directives/timer/timer.html',
 	scope : {
 		date : '='
 	},

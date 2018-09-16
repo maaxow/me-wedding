@@ -32,12 +32,40 @@
 
 	<servlet-mapping>
 		<servlet-name>StaticServlet</servlet-name>
+		<url-pattern>/info/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StaticServlet</servlet-name>
+		<url-pattern>/story/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StaticServlet</servlet-name>
+		<url-pattern>/article/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StaticServlet</servlet-name>
+		<url-pattern>/lodging/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StaticServlet</servlet-name>
+		<url-pattern>/invite/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StaticServlet</servlet-name>
+		<url-pattern>/contact/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StaticServlet</servlet-name>
+		<url-pattern>/giftList/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StaticServlet</servlet-name>
+		<url-pattern>/rsvp/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StaticServlet</servlet-name>
 		<url-pattern>/admin/*</url-pattern>
 	</servlet-mapping>
-<!-- 	<servlet-mapping> -->
-<!-- 		<servlet-name>StaticServlet</servlet-name> -->
-<!-- 		<url-pattern>/user/*</url-pattern> -->
-<!-- 	</servlet-mapping> -->
 	
 	<servlet>
 		<servlet-name>jersey-servlet</servlet-name>
