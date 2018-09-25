@@ -17,7 +17,7 @@ public class RestApplication extends Application {
 	/**
 	 * Default package for OF rest services.
 	 */
-	private final static String DEFAULT_REST_SERVICE_PACKAGE = "pronostics.rest";
+	private final static String DEFAULT_REST_SERVICE_PACKAGE = "me_wedding.rest";
 
 	@Override
 	public Set<Class<?>> getClasses() {

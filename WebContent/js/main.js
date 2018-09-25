@@ -3,7 +3,9 @@ angular.module('app', ['ui.router',
 			'app.controllers.admin.guest',
 			'app.controllers.admin.family',
 			'app.controllers.admin.gift',
-			'app.controllers.gift'])
+			'app.controllers.gift',
+			'app.controllers.rsvp'
+		])
 
 .config(['$stateProvider','$locationProvider','$urlRouterProvider', function($stateProvider, $locationProvider,$urlRouterProvider){
 
@@ -85,8 +87,8 @@ angular.module('app', ['ui.router',
 	})
 	.state('rsvp', {
 		url: '/rsvp',
-		templateUrl: 'views/rsvp.html',
-		// controller: 'RSVPController'
+		templateUrl: 'components/rsvp/rsvp.html',
+		 controller: 'RSVPController'
 	})
 	.state('admin', {
 		url: '/admin',
@@ -125,10 +127,13 @@ angular.module('app', ['ui.router',
 .controller('MainController', function($scope, CONSTANTS, $http, $interval){
 	$scope.weddingDate = new Date(2019,5,29); //Date.parse(CONSTANTS.weddingDate, 'MM-dd-yyyy');
 	$scope.version = "0.0.1-SNAPSHOT";
-	$http.get('/server/version').then(function(response){
-		console.log("version :", response.data);
+	$http.get('rest/server/version').then(
+		function(response){
+			console.log("version :", response);
 			$scope.version = response.data;
-	});
+		}, function(err){
+			console.log("version : ",  err);
+		});
 })
 .filter('html',function($sce){
     return function(input){
