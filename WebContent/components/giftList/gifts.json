@@ -30,6 +30,46 @@
 		}
 	},
 	{
+		"name" : "Nuit à Las Vegas",
+		"description": "Une nuit au Caesars Palace à Las Vegas",
+		"total": 200,
+		"amount" : 0,
+		"meta" : {
+			"img" : "las-vegas.jpg",
+			"type" : "hebergement"
+		}
+	},
+	{
+		"name" : "Fast Food",
+		"description": "",
+		"total": 150,
+		"amount" : 0,
+		"meta" : {
+			"img" : "burger.jpg",
+			"type" : "tourisme"
+		}
+	},
+	{
+		"name" : "Prison Alcatraz",
+		"description": "",
+		"total": 60,
+		"amount" : 0,
+		"meta" : {
+			"img" : "prison-alcatraz.jpg",
+			"type" : "tourisme"
+		}
+	},
+	{
+		"name" : "Drone DJI Mavic Air",
+		"description": "On aimerait acheter un drone, pour faire de tres belle images lors de notre voyage de noces.",
+		"total": 1200,
+		"amount" : 0,
+		"meta" : {
+			"img" : "drone.jpg",
+			"type" : "logistique"
+		}
+	},
+	{
 		"name" : "Nuit motel 1",
 		"description": "",
 		"total": 50,
@@ -77,46 +117,6 @@
 		"meta" : {
 			"img" : "motel.jpg",
 			"type" : "hebergement"
-		}
-	},
-	{
-		"name" : "Nuit à Las Vegas",
-		"description": "Une nuit au Caesars Palace à Las Vegas",
-		"total": 200,
-		"amount" : 0,
-		"meta" : {
-			"img" : "las-vegas.jpg",
-			"type" : "hebergement"
-		}
-	},
-	{
-		"name" : "Fast Food",
-		"description": "",
-		"total": 150,
-		"amount" : 0,
-		"meta" : {
-			"img" : "burger.jpg",
-			"type" : "tourisme"
-		}
-	},
-	{
-		"name" : "Prison Alcatraz",
-		"description": "",
-		"total": 60,
-		"amount" : 0,
-		"meta" : {
-			"img" : "prison-alcatraz.jpg",
-			"type" : "tourisme"
-		}
-	},
-	{
-		"name" : "Drone DJI Mavic Air",
-		"description": "On aimerait acheter un drone, pour faire de tres belle images lors de notre voyage de noces.",
-		"total": 1200,
-		"amount" : 0,
-		"meta" : {
-			"img" : "drone.jpg",
-			"type" : "logistique"
 		}
 	}
 ]

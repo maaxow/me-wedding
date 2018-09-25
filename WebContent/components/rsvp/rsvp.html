@@ -1,11 +1,14 @@
-
-<div class="card col-lg-5 offset-lg-3">
+<div class="card col-lg-8 offset-lg-2">
 	<h1 class="title">Une Réponse s'il vous plait.</h1>
 	<form class="">
 
 		<div class="form-group">
 			<label for="">Nom de la famille : <i class="material-icons" style="font-size: 18px; color: green;" title="ou expression habituellement utilisé pour reconnaitre votre famille">info</i> </label>
 			<input class="form-control" type="text" name="name" placeholder="Nom de Famille">
+		</div>
+		<div class="form-group">
+			<label for="">Email de la famille : <i class="material-icons" style="font-size: 18px; color: green;" title="email du membre de la famille le plus actif">info</i> </label>
+			<input class="form-control" type="text" name="name" placeholder="Email">
 		</div>
 
 		<div class="row justify-content-between">
@@ -38,7 +41,7 @@
 		</div>
 
 		<div class="row">
-			<button class="col-lg-2 offset-lg-9 btn btn-success" type="button" name="button">Confirmer</button>
+			<button class="col-lg-2 offset-lg-9 btn btn-success" type="button" name="button" data-ng-click="test()">Confirmer</button>
 		</div>
 	</form>
 </div>
