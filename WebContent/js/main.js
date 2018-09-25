@@ -120,20 +120,43 @@ angular.module('app', ['ui.router',
 }])
 
 .controller('AppController', function($scope, $http){
-	$scope.message = "home page !";
-
 
 })
-.controller('MainController', function($scope, CONSTANTS, $http, $interval){
+
+.controller('MainController', function($scope, CONSTANTS, $http, $interval, $location){
 	$scope.weddingDate = new Date(2019,5,29); //Date.parse(CONSTANTS.weddingDate, 'MM-dd-yyyy');
 	$scope.version = "0.0.1-SNAPSHOT";
 	$http.get('rest/server/version').then(
 		function(response){
-			console.log("version :", response);
 			$scope.version = response.data;
 		}, function(err){
 			console.log("version : ",  err);
 		});
+	$scope.state = '';
+	
+	var initMenuItem = function(){
+		if($location.url() === '/'){
+			$scope.state = 'home';
+		}
+		else if($location.url() === '/info'){
+			$scope.state = 'info';
+		}
+		else if($location.url() === '/lodging'){
+			$scope.state = 'lodging';
+		}
+		else if($location.url() === '/giftList'){
+			$scope.state = 'giftList';
+		}
+		else if($location.url() === '/rsvp'){
+			$scope.state = 'rsvp';
+		}
+	};
+	initMenuItem();
+	$scope.clickMenu = function(item){
+		if(item){
+			$scope.state = item;
+		}
+	};
 })
 .filter('html',function($sce){
     return function(input){

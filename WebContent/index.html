@@ -13,15 +13,15 @@
 		</div>
 		<div class="menu row">
 			<div class="col-12">
-				<span class="menuitem" ui-sref="home">Accueil</span>
-				<span class="menuitem col" ui-sref="story">Notre Histoire</span>
-				<span class="menuitem col" ui-sref="article">Articles</span>
-				<span class="menuitem col" ui-sref="info">Informations Pratiques</span>
-				<span class="menuitem col" ui-sref="lodging">Hebergement</span>
+				<span class="menuitem" data-ng-class="{selected: state=='home'}" data-ui-sref="home" data-ng-click="clickMenu('home')">Accueil</span>
+<!-- 				<span class="menuitem col" ui-sref="story">Notre Histoire</span> -->
+<!-- 				<span class="menuitem col" ui-sref="article">Articles</span> -->
+				<span class="menuitem col" data-ng-class="{selected: state=='info'}" data-ui-sref="info" data-ng-click="clickMenu('info')">Informations Pratiques</span>
+				<span class="menuitem col" data-ng-class="{selected: state=='lodging'}" data-ui-sref="lodging" data-ng-click="clickMenu('lodging')">Hebergement</span>
 				<!-- <span class="menuitem col" ui-sref="guest">Invites</span> -->
-				<span class="menuitem col" ui-sref="giftList">Liste de Cadeaux</span>
-				<span class="menuitem col" ui-sref="contact">Contacts</span>
-				<span class="menuitem col" ui-sref="rsvp">RSVP</span>
+				<span class="menuitem col" data-ng-class="{selected: state=='giftList'}" data-ui-sref="giftList" data-ng-click="clickMenu('giftList')">Liste de Cadeaux</span>
+<!-- 				<span class="menuitem col" ui-sref="contact">Contacts</span> -->
+				<span class="menuitem col" data-ng-class="{selected: state=='rsvp'}" data-ui-sref="rsvp" data-ng-click="clickMenu('rsvp')">RSVP</span>
 				<!-- <span class="menuitem col" ui-sref="admin">Admin</span> -->
 			</div>
 		</div>
