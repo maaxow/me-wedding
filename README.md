@@ -5,11 +5,22 @@ It's the beginning of the project.
 
 # Requierments
 
-* NodeJS
+* Tomcat
+* Create the file `spring-datasource.xml` and add this in the `src/main/resources/spring` and add a bean like this 
+
+```xml
+	<bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/me_wedding?useSSL=false" />
+		<property name="username" value="user" />
+		<property name="password" value="password" />
+	</bean>
+```
+	
+# Building
+
+Build the project with Maven `mvn clean install -DskipTests` (to test is to doubt)
 
 # Starting
 
-Run the command `npm start` (prestart command : `npm install` and then, it run `node server.js`)
-
-If already is fine you must be have the message :
-`App listening on port 8080`
+Add the War in the Tomcat Webapps folder. And run Tomcat.
