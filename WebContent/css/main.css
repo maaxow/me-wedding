@@ -40,7 +40,7 @@
 
 table.timerTable>tbody>tr>td {
 	text-align: center;
-	font-family: 'Comic Sans MS'
+	font-family: 'Comic Sans MS';
 }
 
 .cell-border {
@@ -48,7 +48,6 @@ table.timerTable>tbody>tr>td {
 }
 
 #timer{
-/* 	background: rgba(135, 233, 144, 0.37); */
 	background: rgba(135, 233, 144, 0.40);
 	overflow: hidden;
 	width: 100%;
