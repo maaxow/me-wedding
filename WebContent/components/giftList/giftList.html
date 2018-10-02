@@ -10,15 +10,20 @@
 			forc&eacute;ment retourner &agrave; Lille   apr&egrave;s le mariage et nous ne 
 			voudrions pas les ab&icirc;mer).   Sachez qu&rsquo;une urne nuptiale sera pr&eacute;sente le jour j.
 		</p>
-		<div class="col-lg-1 offset-lg-10">
-			<span>{{totalAmount()}} €</span>
+		<div class="row">
+			<div class="col-lg-1">
+				<span>{{currentAmount}} €</span>
+			</div>
+			<div class="col-lg-1 offset-lg-10">
+				<span>{{totalAmount}} €</span>
+			</div>
 		</div>
 		<div class="col-lg-12">
 			<div class="progress">
 				<div class="progress-bar progress-bar-striped bg-success"
-					style="width: 1%" role="progressbar"
+					ng-style="progressBarStyle" role="progressbar"
 					aria-valuenow="0" aria-valuemin="0"
-					aria-valuemax="{{totalAmount()}}"></div>
+					aria-valuemax="{{totalAmount}}"></div>
 			</div>
 		</div>
 	</div>

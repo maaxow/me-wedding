@@ -58,7 +58,6 @@ table.timerTable>tbody>tr>td {
 }
 .timer {
 	padding: 1%
-	
 }
 
 .cell-time {
@@ -71,9 +70,9 @@ table.timerTable>tbody>tr>td {
 	text-transform: uppercase;
 }
 
-/* .background { */
-
-/* } */
+.background {
+	width: 99%
+}
 
 .img-responsive {
 	max-width: 50%;
