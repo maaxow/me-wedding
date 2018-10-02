@@ -2,3 +2,9 @@ node_modules/
 npm-debug.log
 app.log
 package-lock\.json
+/build/
+.project
+.classpath
+.settings/
+/target/
+/src/main/resources/spring/spring-datasource.xml

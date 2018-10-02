@@ -1,0 +1,47 @@
+<div class="card col-lg-8 offset-lg-2">
+	<h1 class="title">Une Réponse s'il vous plait.</h1>
+	<form class="">
+
+		<div class="form-group">
+			<label for="">Nom de la famille : <i class="material-icons" style="font-size: 18px; color: green;" title="ou expression habituellement utilisé pour reconnaitre votre famille">info</i> </label>
+			<input class="form-control" type="text" name="name" placeholder="Nom de Famille">
+		</div>
+		<div class="form-group">
+			<label for="">Email de la famille : <i class="material-icons" style="font-size: 18px; color: green;" title="email du membre de la famille le plus actif">info</i> </label>
+			<input class="form-control" type="text" name="name" placeholder="Email">
+		</div>
+
+		<div class="row justify-content-between">
+			<div class="form-check col-5 offset-1">
+				<input id="isPresent" class="form-check-input" type="radio" name="isPresent" value="present">
+				<label for="isPresent">Présent</label>
+			</div>
+			<div class="form-check col-6">
+				<input id="isNotPresent" class="form-check-input" type="radio" name="isPresent" value="notPresent">
+				<label for="isNotPresent">Absent</label>
+			</div>
+		</div>
+
+		<div class="row justify-content-around align-items-end">
+			<p>
+				Attention, ne pas tenir compte de l'&acirc;ge, mais plut&ocirc;t de l'ap&eacute;tit de la personne.
+			</p>
+			<div class="form-group col-3">
+				<label for="">Nombre d'adultes</label>
+				<input class="form-control" type="number" name="nbPerson" value="1">
+			</div>
+			<div class="form-group col-3">
+				<label for="">Nombre d'adolescents <i class="material-icons" style="font-size: 18px; color: green;" title="Menu Adulte avec plus petite portion">info</i> </label>
+				<input class="form-control" type="number" name="nbPerson" value="0">
+			</div>
+			<div class="form-group col-3">
+				<label for="">Nombre d'enfants<i class="material-icons" style="font-size: 18px; color: green;" title="menu enfant sp�cifique">info</i> </label>
+				<input class="form-control" type="number" name="nbPerson" value="0">
+			</div>
+		</div>
+
+		<div class="row">
+			<button class="col-lg-2 offset-lg-9 btn btn-success" type="button" name="button" data-ng-click="test()">Confirmer</button>
+		</div>
+	</form>
+</div>
