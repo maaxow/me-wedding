@@ -70,49 +70,9 @@
 		}
 	},
 	{
-		"name" : "Nuit motel 1",
-		"description": "",
-		"total": 50,
-		"amount" : 0,
-		"meta" : {
-			"img" : "motel.jpg",
-			"type" : "hebergement"
-		}
-	},
-	{
-		"name" : "Nuit motel 2",
-		"description": "",
-		"total": 50,
-		"amount" : 0,
-		"meta" : {
-			"img" : "motel.jpg",
-			"type" : "hebergement"
-		}
-	},
-	{
-		"name" : "Nuit motel 3",
-		"description": "",
-		"total": 50,
-		"amount" : 0,
-		"meta" : {
-			"img" : "motel.jpg",
-			"type" : "hebergement"
-		}
-	},
-	{
-		"name" : "Nuit motel 4",
-		"description": "",
-		"total": 50,
-		"amount" : 0,
-		"meta" : {
-			"img" : "motel.jpg",
-			"type" : "hebergement"
-		}
-	},
-	{
-		"name" : "Nuit motel 5",
-		"description": "",
-		"total": 50,
+		"name" : "Nuit motel (x5)",
+		"description": "Nous allons passer plusieurs nuits dans des motels, le prix est d'environ 50€ par motel",
+		"total": 500,
 		"amount" : 0,
 		"meta" : {
 			"img" : "motel.jpg",
