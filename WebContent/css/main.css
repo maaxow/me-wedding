@@ -47,13 +47,20 @@ table.timerTable>tbody>tr>td {
 	border: 1px solid #00AA00;
 }
 
+#timer{
+	background: rgba(135, 233, 144, 0.40);
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 50;
+}
 .timer {
-	width: 30%;
-	margin-left: 35%;
+	padding: 1%
 }
 
 .cell-time {
-	font-size: 50px;
+	font-size: 20px;
 	min-width: 20px;
 	width: 20px;
 }
@@ -63,10 +70,7 @@ table.timerTable>tbody>tr>td {
 }
 
 .background {
-	background: rgba(135, 233, 144, 0.37);
-	/*background-color: #87E990;*/
-	/*opacity: 0.37;*/
-	padding: 2%
+	width: 99%
 }
 
 .img-responsive {

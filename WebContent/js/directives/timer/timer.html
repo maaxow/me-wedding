@@ -1,6 +1,5 @@
-<div id="timer" class="background row">
-
-	<div class="timer col-md-6 offset-md-3">
+<div id="timer">
+	<div class="timer col-md-6">
 		<table class="timerTable">
 			<tr>
 				<td class="cell-border cell-time" ng-repeat="letter1 in daysString track by $index">{{letter1}}</td>
@@ -21,22 +20,5 @@
 				<td class="uppercase" colspan="{{nbDigitSeconds}}">Secondes</td>
 			</tr>
 		</table>
-
-		<!-- <div class="row">
-			<div class="col-md-2 offset-md-2">
-				{{timer.days}}
-			</div>
-			<div class="col-md-2">
-				{{timer.hours}}
-			</div>
-			<div class="col-md-2">
-				{{timer.minutes}}
-			</div>
-			<div class="col-md-2">
-				{{timer.seconds}}
-			</div>
-		</div> -->
-
 	</div>
-	<!-- {{timer.days + " jours " + timer.hours + " heures " +  timer.minutes + " minutes " +  timer.seconds + " secondes"}} -->
 </div>

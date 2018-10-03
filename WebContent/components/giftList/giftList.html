@@ -10,6 +10,22 @@
 			forc&eacute;ment retourner &agrave; Lille   apr&egrave;s le mariage et nous ne 
 			voudrions pas les ab&icirc;mer).   Sachez qu&rsquo;une urne nuptiale sera pr&eacute;sente le jour j.
 		</p>
+		<div class="row">
+			<div class="col-lg-1">
+				<span>{{currentAmount}} €</span>
+			</div>
+			<div class="col-lg-1 offset-lg-10">
+				<span>{{totalAmount}} €</span>
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped bg-success"
+					ng-style="progressBarStyle" role="progressbar"
+					aria-valuenow="0" aria-valuemin="0"
+					aria-valuemax="{{totalAmount}}"></div>
+			</div>
+		</div>
 	</div>
 	<br>
 	<div class="container" data-ng-repeat="gift in gifts"
@@ -18,25 +34,17 @@
 		<div class="row">
 
 			<div class="col-lg-4">
-				<img class="gift-img mr-4" src="img/gifts/{{gift.meta.img}}"
+				<img class="gift-img mr-4" ng-if="gift != null" src="img/gifts/{{gift.meta.img}}"
 					alt="image">
 			</div>
 
 			<div class="row col-lg-7">
 				<div class="row col-lg-12 align-items-center">
 					<h4 class="title-info col-lg-9 col-sm-6">{{gift.name}}</h4>
-					<span class="col-lg-3">{{gift.amount}} / {{gift.total}} €</span>
+					<span class="col-lg-3">Prix : {{gift.total}} €</span>
 				</div>
 				<div class="col-lg-12 align-items-start">
 					<span>{{gift.description}}</span>
-				</div>
-				<div class="col-lg-12">
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped bg-success"
-							style="width: {{calculWidthProgress(gift)" role="progressbar"
-							aria-valuenow="{{gift.total - gift.amount}}" aria-valuemin="0"
-							aria-valuemax="{{gift.total}}"></div>
-					</div>
 				</div>
 
 			</div>
