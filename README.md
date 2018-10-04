@@ -6,6 +6,7 @@ It's the beginning of the project.
 # Requierments
 
 * Tomcat
+* MySQL Database, with a database named `me_wedding`
 * Create the file `spring-datasource.xml` and add this in the `src/main/resources/spring` and add a bean like this 
 
 ```xml
