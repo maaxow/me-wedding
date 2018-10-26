@@ -2,16 +2,17 @@
 <body class="background">
 
 	<div ng-app="app" ng-controller="MainController">
+	
 		<maaxow:timer data-date="weddingDate"></maaxow:timer>
-		<!-- <server:health></server:health> -->
+<!-- 		LOGO -->
 		<div class="row" style="margin-top: 5%">
-			<!-- <div class="col"></div> -->
-			<div class="col-lg-6 offset-lg-4">
-				<!-- <span class="title">La belle et le Barbu</span> -->
+			<div class="col-lg-6 offset-lg-4 col-xs-6 offset-xs-1">
 				<img class="img-responsive" src="img/logo_titre.png" alt="logo" width="360" height="260">
 			</div>
-			<!-- <div class="col"></div> -->
 		</div>
+		
+		
+<!-- 		MENU -->
 		<div class="menu row">
 			<div class="col-12">
 				<span class="menuitem" data-ng-class="{selected: state=='home'}" data-ui-sref="home" data-ng-click="clickMenu('home')">Accueil</span>
@@ -27,9 +28,10 @@
 			</div>
 		</div>
 
+
+<!-- 		SEPARATOR -->
 		<div class="row">
 			<div class="col-3 offset-4">
-				<!-- <div class="separator">On va se marié, c'est fou !</div> -->
 				<hr>
 				<hr>
 			</div>

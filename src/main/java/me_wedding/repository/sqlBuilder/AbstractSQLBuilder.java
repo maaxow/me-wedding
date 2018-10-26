@@ -89,7 +89,6 @@ public abstract class AbstractSQLBuilder<T> {
 				+ tableName 
 				+ "` WHERE "
 				+ columnPKName + "=?;";
-//		System.out.println("buildDeleteQuery() : \n" + query);
 		return query;
 	}
 }
