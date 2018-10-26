@@ -1,0 +1,99 @@
+
+[
+{
+	name: "Ibis Abbeville",
+	city: "Abbeville",
+	address: "https://www.google.fr/maps/place/Ibis/@50.0976058,1.8580587,17z/data=!3m1!4b1!4m7!3m6!1s0x47dd8c8f34ff29cd:0xc669957f7890a003!5m1!1s2018-10-30!8m2!3d50.0976058!4d1.8602474",
+	link: "https://www.booking.com/hotel/fr/ibis-abbeville.fr.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGhNiAEBmAENwgEKd2luZG93cyAxMMgBDNgBAegBAfgBC5ICAXmoAgM;sid=89410e24cef36d86d21b0b674c03a2b8;all_sr_blocks=38334705_94453832_0_2_0;checkin=2019-06-29;checkout=2019-06-30;dest_id=-1406504;dest_type=city;dist=0;group_adults=2;hapos=1;highlighted_blocks=38334705_94453832_0_2_0;hpos=1;room1=A%2CA;sb_price_type=total;srepoch=1539087331;srfid=b52d39c6ed8e0cd81c96427191d21c8ed676f29aX1;srpvid=a7315631fd660187;type=total;ucfs=1&#hotelTmpl",
+	distance: 16,
+	price: 74.0
+},
+{
+	name: "",
+	city: "",
+	address: "",
+	link: "",
+	distance: 0.0,
+	price: 0.0
+},
+{
+	name: "",
+	city: "",
+	address: "",
+	link: "",
+	distance: 0.0,
+	price: 0.0
+},
+{
+	name: "",
+	city: "",
+	address: "",
+	link: "",
+	distance: 0.0,
+	price: 0.0
+},
+{
+	name: "",
+	city: "",
+	address: "",
+	link: "",
+	distance: 0.0,
+	price: 0.0
+},
+{
+	name: "",
+	city: "",
+	address: "",
+	link: "",
+	distance: 0.0,
+	price: 0.0
+},
+{
+	name: "",
+	city: "",
+	address: "",
+	link: "",
+	distance: 0.0,
+	price: 0.0
+},
+{
+	name: "",
+	city: "",
+	address: "",
+	link: "",
+	distance: 0.0,
+	price: 0.0
+},
+{
+	name: "",
+	city: "",
+	address: "",
+	link: "",
+	distance: 0.0,
+	price: 0.0
+},
+{
+	name: "",
+	city: "",
+	address: "",
+	link: "",
+	distance: 0.0,
+	price: 0.0
+},
+{
+	name: "",
+	city: "",
+	address: "",
+	link: "",
+	distance: 0.0,
+	price: 0.0
+},
+{
+	name: "",
+	city: "",
+	address: "",
+	link: "",
+	distance: 0.0,
+	price: 0.0
+}
+]

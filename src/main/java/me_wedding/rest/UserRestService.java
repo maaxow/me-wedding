@@ -27,8 +27,6 @@ public class UserRestService {
 
 	@Inject
 	private UserRepository userRepository;
-//	@Inject
-//	private AuthService authService;
 
 	@GET
 	@Produces(value = {MediaType.APPLICATION_JSON_VALUE})
