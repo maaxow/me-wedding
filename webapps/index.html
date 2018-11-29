@@ -44,6 +44,15 @@
 			<div ui-view></div>
 
 			<div class="col-12" style="text-align: center; padding: 20px">
+				<div class="col-4 offset-4 input-group input-group-sm">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="inputGroup-sizing-sm">S'abonner aux news @</span>
+					</div>
+					<input data-ng-model="mail" type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+					<div class="input-group-append">
+						<button data-ng-click="addMail()" class="btn btn-outline-secondary" type="button" id="button-addon2">Valider</button>
+					</div>
+				</div>
 				Site entièrement réalisé avec <span style="color: red;">&hearts;</span> par &copy; Maxime & Elodie
 				<span class="version">v{{version}}</span>
 			</div>

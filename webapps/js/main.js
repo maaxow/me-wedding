@@ -125,6 +125,7 @@ angular.module('app', ['ui.router',
 
 .controller('MainController', function($scope, CONSTANTS, $http, $interval, $location){
 	$scope.weddingDate = new Date(2019,5,29); //Date.parse(CONSTANTS.weddingDate, 'MM-dd-yyyy');
+	
 	$scope.version = "0.0.1-SNAPSHOT";
 	$http.get('rest/server/version').then(
 		function(response){
@@ -157,6 +158,20 @@ angular.module('app', ['ui.router',
 			$scope.state = item;
 		}
 	};
+	$scope.mail="";
+	$http.get("rest/mailing/maxime.rose@hotmail.fr").then(function(response){
+		console.log("toto", response);
+	});
+	$scope.addMail = function(){
+		$http.get("rest/mailing").then(function(data){
+			console.log("all mails : ", data);
+		});
+		if($scope.mail){
+			$http.get("rest/mailing/" + $scope.mail).then(function(response){
+				console.log("toto", response);
+			});
+		}
+	}
 })
 .filter('html',function($sce){
     return function(input){

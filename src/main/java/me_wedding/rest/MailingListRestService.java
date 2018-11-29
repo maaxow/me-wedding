@@ -11,6 +11,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import me_wedding.model.Mailing;
@@ -20,6 +22,8 @@ import me_wedding.repository.MailingListRepository;
 @Path("/mailing")
 public class MailingListRestService {
 
+	private static final Logger logger = LoggerFactory.getLogger(MailingListRestService.class);
+	
 	@Inject
 	private MailingListRepository mailListRepository;
 	
@@ -33,6 +37,7 @@ public class MailingListRestService {
 	@Path("/add/{email}")
 	@Produces(value = {MediaType.APPLICATION_JSON})
 	public Response addNewMail(@QueryParam("email") String email) {
+		logger.error("Trying to add : ", email);
 		Mailing maillingExists = mailListRepository.findByEmail(email);
 		if(maillingExists == null) {
 			Mailing newMail = new Mailing(email);

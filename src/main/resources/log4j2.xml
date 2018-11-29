@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="WARN" monitorInterval="30" shutdownHook="disable">
+	<Properties>
+		<Property name="logPattern">%d %-5level [%t] %logger{36} - %msg%n</Property>
+		<Property name="filename">$${sys:catalina.base}/logs/monitoring.log</Property>
+		<Property name="filePattern">$${sys:catalina.base}/logs/monitoring-%d{yyyyMMdd}-%i.log</Property>
+	</Properties>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="${logPattern}" />
+		</Console>
+		
+		<RollingFile name="me_wedding_server_log" fileName="${filename}" filePattern="${filePattern}" append="true">
+			<PatternLayout>
+				<Pattern>${logPattern}</Pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10 MB" />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	
+	<Loggers>
+		<logger name="me_wedding" level="DEBUG">
+			<AppenderRef ref="Console" />
+<!-- 			<AppenderRef ref="monitoring_server_log" /> -->
+		</logger>
+	
+		<Root level="DEBUG">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="me_wedding_server_log" />
+		</Root>
+	</Loggers>
+</Configuration>
