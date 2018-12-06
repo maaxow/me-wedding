@@ -1,0 +1,22 @@
+<!-- <div class="card col-lg-5 offset-lg-3"> -->
+<div class="card col-xs-12 col-sm-10 col-md-9 col-lg-8 col-xl-7">
+	
+	<div class="row justify-content-center">
+		<h2 class="title" >Abonnement aux nouvelles du site</h2>
+	</div>
+	<p>En entrant votre adresse email, vous serez notifi&eacute; lorsque le site sera mis &agrave; jour.</p>
+	<form class="form-inline row justify-content-center">
+		
+		<input class="form-control" type="text" data-ng-model="name" placeholder="Votre nom"/>
+		
+		<label for="emailInput"></label>
+		<div class="input-group col-lg-5">
+			<div class="input-group-prepend">
+				<div class="input-group-text">@</div>
+			</div>
+			<input id="emailInput" class="form-control" type="email" data-ng-model="email" placeholder="john.doe@gmail.com"/>
+		</div>
+		<button class="btn btn-success" data-ng-disabled="false" data-ng-click="subscribe()">S'abonner</button>
+	</form>
+	<p data-ng-style="feedBackMessageStyle">{{feedBackMessage}}</p>
+</div>

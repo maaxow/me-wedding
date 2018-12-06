@@ -4,9 +4,10 @@ import java.util.List;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
@@ -29,19 +30,40 @@ public class MailingListRestService {
 		List<Mailing> mailingList = mailListRepository.findAll();
 		return mailingList;
 	}
-	@GET
-	@Path("/add/{email}")
+//	@GET
+//	@Path("/add/{email}")
+//	@Produces(value = {MediaType.APPLICATION_JSON})
+//	public Response addNewMail(@QueryParam("email") String email) {
+//		Mailing maillingExists = mailListRepository.findByEmail(email);
+//		if(maillingExists == null) {
+//			Mailing newMail = new Mailing(email);
+//			mailListRepository.save(newMail);
+//			return Response.ok().build();
+//		} else {
+//			System.out.println("Email " + email + " already exists");
+//			return Response.status(Status.CONFLICT).build();
+//		}
+//	}
+	@POST
+	@Path("/subscribe/{name}/{email}")
 	@Produces(value = {MediaType.APPLICATION_JSON})
-	public Response addNewMail(@QueryParam("email") String email) {
-		Mailing maillingExists = mailListRepository.findByEmail(email);
-		if(maillingExists == null) {
-			Mailing newMail = new Mailing(email);
-			mailListRepository.save(newMail);
-			return Response.ok().build();
-		} else {
-			System.out.println("Email " + email + " already exists");
-			return Response.status(Status.CONFLICT).build();
+	public Response subscribe(@PathParam("name") String name, @PathParam("email") String email) {
+		if(email != null) {
+			Mailing maillingExists = mailListRepository.findByEmail(email);
+			if(maillingExists == null) {
+				if(name != null) {
+					Mailing newMail = new Mailing(name, email);
+					mailListRepository.save(newMail);
+					return Response.ok().build();
+				}
+			} else {
+				System.out.println("Email " + email + " already exists");
+				return Response.status(Status.CONFLICT).build();
+			}
 		}
+		System.out.println("Name or Email is null :" + name + " : " + email);
+		return Response.status(Status.NOT_ACCEPTABLE).build();
+			
 	}
 	
 }

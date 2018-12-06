@@ -4,7 +4,8 @@ angular.module('app', ['ui.router',
 			'app.controllers.admin.family',
 			'app.controllers.admin.gift',
 			'app.controllers.gift',
-			'app.controllers.rsvp'
+			'app.controllers.rsvp',
+			'app.controllers.subscribe'
 		])
 
 .config(['$stateProvider','$locationProvider','$urlRouterProvider', function($stateProvider, $locationProvider,$urlRouterProvider){
@@ -90,6 +91,11 @@ angular.module('app', ['ui.router',
 		templateUrl: 'components/rsvp/rsvp.html',
 		 controller: 'RSVPController'
 	})
+	.state('subscribe', {
+		url: '/subscribe',
+		templateUrl: 'components/subscribe/subscribe.html',
+		controller: 'SubscribeController'
+	})
 	.state('admin', {
 		url: '/admin',
 		templateUrl: 'views/admin.html',
@@ -149,6 +155,9 @@ angular.module('app', ['ui.router',
 		}
 		else if($location.url() === '/rsvp'){
 			$scope.state = 'rsvp';
+		}
+		else if($location.url() === '/subscribe'){
+			$scope.state = 'subscribe';
 		}
 	};
 	initMenuItem();

@@ -13,8 +13,7 @@
 	    http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
 	<context:annotation-config />
-	<context:component-scan
-		base-package="me_wedding" />
+	<context:component-scan base-package="me_wedding" />
 
 	<import resource="classpath:spring/spring-datasource.xml" />
 

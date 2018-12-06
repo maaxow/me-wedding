@@ -6,12 +6,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Mailing {
 
 	private int id;
+	private String name;
 	private String email;
 
 	
 	public Mailing() {
 	}
-	public Mailing(String email) {
+	public Mailing(String name, String email) {
+		this.name = name;
 		this.email = email;
 	}
 	/**
@@ -29,6 +31,14 @@ public class Mailing {
 		this.id = id;
 	}
 
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 	public String getEmail() {
 		return email;
 	}
@@ -39,6 +49,6 @@ public class Mailing {
 
 	@Override
 	public String toString() {
-		return "["+getId()+"]" + getEmail();
+		return "["+getId()+"]" + getName() + " : " +getEmail();
 	}
 }

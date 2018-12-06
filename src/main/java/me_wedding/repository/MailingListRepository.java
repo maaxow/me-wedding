@@ -21,13 +21,13 @@ public class MailingListRepository implements IRepository<Mailing> {
 	@Inject
 	public MailingListService mailingListService;
 	private JdbcTemplate jdbcTemplate;
-	private static final MaillingSQLBuilder userBuilder = new MaillingSQLBuilder();
-	private static final String findByIdQuery = userBuilder.buildFindByIdQuery();
-	private static final String findAllQuery = userBuilder.buildFindAllQuery();
-	private static final String saveQuery = userBuilder.buildSaveQuery();
-	private static final String updateQuery = userBuilder.buildUpdateQuery();
-	private static final String deleteQuery = userBuilder.buildDeleteQuery();
-	private static final String findByEmailQuery = "SELECT * FROM mailing_list WHERE email = ?;";
+	private static final MaillingSQLBuilder mailingBuilder = new MaillingSQLBuilder();
+	private static final String findByIdQuery = mailingBuilder.buildFindByIdQuery();
+	private static final String findAllQuery = mailingBuilder.buildFindAllQuery();
+	private static final String saveQuery = mailingBuilder.buildSaveQuery();
+	private static final String updateQuery = mailingBuilder.buildUpdateQuery();
+	private static final String deleteQuery = mailingBuilder.buildDeleteQuery();
+	private static final String findByEmailQuery = "SELECT * FROM " + mailingBuilder.getTableName() + " WHERE email = ?;";
 
 	@PostConstruct
 	private void postConstruct() {
@@ -67,7 +67,7 @@ public class MailingListRepository implements IRepository<Mailing> {
 	
 	@Override
 	public int save(Mailing t) {
-		int nbRowAffected = jdbcTemplate.update(saveQuery, new Object[] { t.getEmail() });
+		int nbRowAffected = jdbcTemplate.update(saveQuery, new Object[] { t.getName(), t.getEmail() });
 		return nbRowAffected;
 	}
 

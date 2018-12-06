@@ -10,9 +10,9 @@ public abstract class AbstractSQLBuilder<T> {
 	protected String updateQuery;
 	protected String deleteQuery;
 	
-	public String tableName;
-	public String columnPKName;
-	public List<String> columns;
+	protected String tableName;
+	protected String columnPKName;
+	protected List<String> columns;
 	
 	/**
 	 * SELECT * FROM {table} WHERE {propID}=?
@@ -90,5 +90,9 @@ public abstract class AbstractSQLBuilder<T> {
 				+ "` WHERE "
 				+ columnPKName + "=?;";
 		return query;
+	}
+	
+	public String getTableName() {
+		return this.tableName;
 	}
 }
