@@ -4,8 +4,8 @@ angular.module('app.controllers.subscribe', [])
 
 	//DEV VAR
 	
-	$scope.name = "Maxime Rose";
-	$scope.email = "maxime.rs@gmail.com";
+	$scope.name = "";
+	$scope.email = "";
 	
 	// END DEV VAR
 	$scope.feedBackMessage = "";
