@@ -32,6 +32,7 @@
 	<script src="js/family.admin.controller.js" charset="utf-8"></script>
 	<script src="js/gift.admin.controller.js" charset="utf-8"></script>
 	<script src="components/giftList/gift.js" charset="utf-8"></script>
+	<script src="components/lodging/hotel.js" charset="utf-8"></script>
 	<script src="components/rsvp/rsvp.js" charset="utf-8"></script>
 	<script src="components/subscribe/subscribe.js" charset="utf-8"></script>
 	<script src="js/main.js" charset="utf-8"></script>

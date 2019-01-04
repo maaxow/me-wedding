@@ -4,6 +4,7 @@ angular.module('app', ['ui.router',
 			'app.controllers.admin.family',
 			'app.controllers.admin.gift',
 			'app.controllers.gift',
+			'app.controllers.lodging',
 			'app.controllers.rsvp',
 			'app.controllers.subscribe'
 		])
@@ -68,8 +69,8 @@ angular.module('app', ['ui.router',
 	})
 	.state('lodging', {
 		url: "/lodging",
-		templateUrl: 'views/lodging.html',
-		// controller : 'AppController'
+		templateUrl: 'components/lodging/lodging.html',
+		controller : 'LodgingController'
 	})
 	.state('invite', {
 		url: "/invite",
