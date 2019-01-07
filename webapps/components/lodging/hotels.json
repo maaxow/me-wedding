@@ -1,34 +1,98 @@
 [
 {
 	"name": "Ibis Abbeville",
-	"city": "Abbeville",
-	"address": "https://www.google.fr/maps/place/Ibis/@50.0976058,1.8580587,17z/data=!3m1!4b1!4m7!3m6!1s0x47dd8c8f34ff29cd:0xc669957f7890a003!5m1!1s2018-10-30!8m2!3d50.0976058!4d1.8602474",
-	"link": "https://www.booking.com/hotel/fr/ibis-abbeville.fr.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGhNiAEBmAENwgEKd2luZG93cyAxMMgBDNgBAegBAfgBC5ICAXmoAgM;sid=89410e24cef36d86d21b0b674c03a2b8;all_sr_blocks=38334705_94453832_0_2_0;checkin=2019-06-29;checkout=2019-06-30;dest_id=-1406504;dest_type=city;dist=0;group_adults=2;hapos=1;highlighted_blocks=38334705_94453832_0_2_0;hpos=1;room1=A%2CA;sb_price_type=total;srepoch=1539087331;srfid=b52d39c6ed8e0cd81c96427191d21c8ed676f29aX1;srpvid=a7315631fd660187;type=total;ucfs=1&#hotelTmpl",
+	"address": "234 Route d'Amiens, 80100 Abbeville, France",
+	"addressLink": "https://www.google.fr/maps/place/Ibis/@50.0978011,1.8607809,19.25z/data=!4m13!1m7!3m6!1s0x47dd8c88c7a530e5:0x973db9e3e10d5c2a!2s234+Route+d'Amiens,+80100+Abbeville!3b1!8m2!3d50.0977519!4d1.8609871!3m4!1s0x47dd8c8f34ff29cd:0xc669957f7890a003!8m2!3d50.0976056!4d1.8602474",
+	"bookingLink": "https://www.booking.com/hotel/fr/ibis-abbeville.fr.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGhNiAEBmAENwgEKd2luZG93cyAxMMgBDNgBAegBAfgBC5ICAXmoAgM;sid=89410e24cef36d86d21b0b674c03a2b8;all_sr_blocks=38334705_94453832_0_2_0;checkin=2019-06-29;checkout=2019-06-30;dest_id=-1406504;dest_type=city;dist=0;group_adults=2;hapos=1;highlighted_blocks=38334705_94453832_0_2_0;hpos=1;room1=A%2CA;sb_price_type=total;srepoch=1539087331;srfid=b52d39c6ed8e0cd81c96427191d21c8ed676f29aX1;srpvid=a7315631fd660187;type=total;ucfs=1&#hotelTmpl",
 	"distance": 16,
-	"price": 74.0
+	"price": 74
 },
 {
-	"name": "Appartement 60m²",
-	"city": "Abbeville",
+	"name": "Appartement 60m",
 	"address": "47 Chemin du Halage, 80100 Abbeville, France",
-	"link": "https://www.booking.com/hotel/fr/au-bord-de-l-eau-abbeville.fr.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGhNiAEBmAENwgEKd2luZG93cyAxMMgBDNgBAegBAfgBC5ICAXmoAgM;sid=89410e24cef36d86d21b0b674c03a2b8;all_sr_blocks=399416801_124633159_2_0_0;checkin=2019-06-29;checkout=2019-06-30;dest_id=-1406504;dest_type=city;dist=0;group_adults=2;hapos=2;highlighted_blocks=399416801_124633159_2_0_0;hpos=2;room1=A%2CA;sb_price_type=total;srepoch=1539087331;srfid=b52d39c6ed8e0cd81c96427191d21c8ed676f29aX2;srpvid=a7315631fd660187;type=total;ucfs=1&#hotelTmpl",
+	"addressLink": "https://www.google.fr/maps/place/47+Chemin+du+Halage,+80100+Abbeville/@50.1073208,1.8254711,19.5z/data=!4m5!3m4!1s0x47dd8cca003d7937:0x7a29bdf473687ac8!8m2!3d50.1072997!4d1.8258668",
+	"bookingLink": "https://www.booking.com/hotel/fr/au-bord-de-l-eau-abbeville.fr.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGhNiAEBmAENwgEKd2luZG93cyAxMMgBDNgBAegBAfgBC5ICAXmoAgM;sid=89410e24cef36d86d21b0b674c03a2b8;all_sr_blocks=399416801_124633159_2_0_0;checkin=2019-06-29;checkout=2019-06-30;dest_id=-1406504;dest_type=city;dist=0;group_adults=2;hapos=2;highlighted_blocks=399416801_124633159_2_0_0;hpos=2;room1=A%2CA;sb_price_type=total;srepoch=1539087331;srfid=b52d39c6ed8e0cd81c96427191d21c8ed676f29aX2;srpvid=a7315631fd660187;type=total;ucfs=1&#hotelTmpl",
 	"distance": 22,
-	"price": 60.0
+	"price": 60
 },
 {
-	"name": "toto",
-	"city": "toto",
-	"address": "toto",
-	"link": "toto",
-	"distance": 10.0,
-	"price": 50.0
+	"name": "Ibis Budget",
+	"address": "Zi Rene Dingeon Vauchelles Les Quesnoy, 80100 Abbeville, France",
+	"addressLink": "https://www.google.fr/maps/place/Ibis+budget/@50.1032372,1.8660079,17z/data=!4m8!1m2!2m1!1sZi+Ren%C3%A9+Dingeon+Vauchelles+Les+Quesnoy,+80100+Abbeville,+France!3m4!1s0x0:0x425a38be3faba1b0!8m2!3d50.1034062!4d1.8687963",
+	"bookingLink": "https://www.booking.com/hotel/fr/ibis-budget-abbeville.fr.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGhNiAEBmAENwgEKd2luZG93cyAxMMgBDNgBAegBAfgBC5ICAXmoAgM;sid=89410e24cef36d86d21b0b674c03a2b8;all_sr_blocks=66613102_94499954_0_2_0;checkin=2019-06-29;checkout=2019-06-30;dest_id=-1406504;dest_type=city;dist=0;group_adults=2;hapos=5;highlighted_blocks=66613102_94499954_0_2_0;hpos=5;room1=A%2CA;sb_price_type=total;srepoch=1539087331;srfid=b52d39c6ed8e0cd81c96427191d21c8ed676f29aX5;srpvid=a7315631fd660187;type=total;ucfs=1&#hotelTmpl",
+	"distance": 16,
+	"price": 60
 },
 {
-	"name": "toto",
-	"city": "toto",
-	"address": "toto",
-	"link": "toto",
-	"distance": 50.0,
-	"price": 07.0
+	"name": "Le Tulipier",
+	"address": "69 Chaussee Marcadet, 80100 Abbeville, France",
+	"addressLink": "",
+	"bookingLink": "",
+	"distance": 20,
+	"price": 52
+},
+{
+	"name": "B&B Eglot",
+	"address": "4 rue Andre Mauduit Erondelle, 80580 Eaucourt-sur-Somme, France",
+	"addressLink": "",
+	"bookingLink": "",
+	"distance": 17,
+	"price": 65
+},
+{
+	"name": "La Fontainoise",
+	"address": "6 rue de la Carriere, 80510 Fontaine-sur-Somme, France",
+	"addressLink": "",
+	"bookingLink": "",
+	"distance": 14,
+	"price": 55
+},
+{
+	"name": "Ici et La",
+	"address": "239 bis rue des aires, 80670 Canaples, France",
+	"addressLink": "",
+	"bookingLink": "",
+	"distance": 19,
+	"price": 45
+},
+{
+	"name": "Gite de la centrale hydroelectrique (+ 6 personnes)",
+	"address": "Rue de la chasse a vache",
+	"addressLink": "",
+	"bookingLink": "",
+	"distance": 10,
+	"price": 200
+},
+{
+	"name": "Camping du grand pres (Location Mobil-home)",
+	"address": "10 rue du 8 mai 45",
+	"addressLink": "",
+	"bookingLink": "",
+	"distance": 10,
+	"price": 45
+},
+{
+	"name": "Chambre d'hotes numero G20623",
+	"address": "Bray-les-mareuil",
+	"addressLink": "",
+	"bookingLink": "",
+	"distance": 20,
+	"price": 70
+},
+{
+	"name": "Caravane en bord de riviere",
+	"address": "Long",
+	"addressLink": "",
+	"bookingLink": "",
+	"distance": 10,
+	"price": 30
+},
+{
+	"name": "Chambre a deux pas d'Abbeville",
+	"address": "Erondelle",
+	"addressLink": "",
+	"bookingLink": "",
+	"distance": 17,
+	"price": 60
 }
 ]

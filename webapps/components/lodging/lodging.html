@@ -1,10 +1,10 @@
 <div class="card col-lg-8 offset-lg-2">
 
-	<h1 class="title">Les h�bergements</h1>
+	<h1 class="title">Les h&eacute;bergements</h1>
 	
 	<div>
 		<p>
-			Voici une liste non exaustive des h&ecute;bergements aux alentours de la salle de r&ecute;ception.
+			Voici une liste non exaustive des h&eacute;bergements aux alentours de la salle de r&eacute;ception.
 		</p>
 	</div>
 	<br>
@@ -13,25 +13,26 @@
 
 		<div class="row">
 
-			<div class="col-lg-4">
-<!-- 				<img class="gift-img mr-4" ng-if="hotel != null" src="img/gifts/{{gift.meta.img}}" -->
-<!-- 					alt="image"> -->
-			</div>
-
-			<div class="row col-lg-7">
+			<div class="row col-lg-12">
 				<div class="row col-lg-12 align-items-center">
-					<h4 class="title-info col-lg-9 col-sm-6">{{hotel.name}}</h4>
-					<span class="col-lg-3">Prix : {{hotel.total}} €</span>
+					<h4 class="title-info col-lg-5 col-sm-6">{{hotel.name}}</h4>
+					<span class="col-lg-3">Distance de la salle : {{hotel.distance}} min</span>
+					<span class="col-lg-2">Prix : ~{{hotel.price}} €</span>
 				</div>
-				<div class="col-lg-12 align-items-start">
-					<span>{{hotel.description}}</span>
+				<div class="col-lg-12 row">
+					<div class="col-lg-8">
+						<a href="{{hotel.addressLink}}" target="_blank"><i class="material-icons" style="color: #D04B4B">location_on</i> {{ hotel.address }}</a>
+					</div>
+					<div>
+						<a class="btn btn-success" href="{{hotel.link}}" role="button">R&eacute;servation</a>
+					</div>
 				</div>
 
 			</div>
 
 		</div>
-
-		<hr data-ng-if="!$last" class="dotted col-3">
+		<br>
+		<hr data-ng-if="!$last" class="dotted col-8">
 	</div>
 
 </div>
