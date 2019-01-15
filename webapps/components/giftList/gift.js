@@ -1,25 +1,30 @@
 angular.module('app.controllers.gift', [])
 
-.controller('GiftController', ["$scope", "$http", "$timeout", "CONSTANTS", 
-	function($scope, $http, $timeout, CONSTANTS){
+.controller('GiftController', ["$scope", "$http", "$timeout", "REST", 
+	function($scope, $http, $timeout, REST){
 	
 		$scope.gifts = [];
-		$scope.currentAmount = 2000;
+		$scope.currentAmount = 0;
 		$scope.progressBarStyle = {
 				width: '50%'
 		};
-		$scope.totalAmount = 0;
+		$scope.totalAmount = 6000;
 		var _initialize = function(){
-			$scope.calculTotalAmount();
-			$scope.calculWidthProgress();
+			$scope.calculAmount();
 		};
-		$scope.calculTotalAmount = function(){
-			var amount = 0;
-			for(var index in $scope.gifts){
-				amount += $scope.gifts[index].total;
-			}
-			$scope.totalAmount = amount;
-			return amount;
+		$scope.calculAmount = function(){
+			console.log("transaction amount Patah:", REST.transactionAmount);
+			$http.get(REST.transactionAmount).then(function(response){
+				console.log("transaction amount :", response);
+				$scope.currentAmount = response.data;
+				$scope.calculWidthProgress();
+			});
+//			var amount = 0;
+//			for(var index in $scope.gifts){
+//				amount += $scope.gifts[index].total;
+//			}
+//			$scope.totalAmount = amount;
+//			return amount;
 		}
 		$http.get("components/giftList/gifts.json").then(function(gifts){
 			$scope.gifts = gifts.data;
