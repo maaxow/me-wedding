@@ -8,6 +8,7 @@ angular.module('app').constant('CONSTANTS', {
 		mailing_all : restPath + '/mailing',
 		subscribe: restPath + '/mailing/subscribe',
 		transaction: restPath + '/transaction',
-		transactionAmount: restPath + '/transaction/total'
+		transactionAmount: restPath + '/transaction/total',
+		reponse: restPath + '/reponse'
 	}
 );

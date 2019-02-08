@@ -1,4 +1,4 @@
-<div class="card col-lg-8 offset-lg-2">
+<div class="card col-lg-8 offset-lg-1">
 	<h1 class="title">Une Réponse s'il vous plait.</h1>
 	<form class="">
 
@@ -22,10 +22,10 @@
 			</div>
 		</div>
 
+		<p>
+			Attention, ne pas tenir compte de l'&acirc;ge, mais plut&ocirc;t de l'ap&eacute;tit de la personne.
+		</p>
 		<div class="row justify-content-around align-items-end">
-			<p>
-				Attention, ne pas tenir compte de l'&acirc;ge, mais plut&ocirc;t de l'ap&eacute;tit de la personne.
-			</p>
 			<div class="form-group col-3">
 				<label for="">Nombre d'adultes</label>
 				<input class="form-control" data-ng-model="reponse.nbAdult" type="number" name="nbPerson" value="1">
@@ -41,7 +41,8 @@
 		</div>
 
 		<div class="row">
-			<button class="col-lg-2 offset-lg-9 btn btn-success" type="button" name="button" data-ng-click="confirm()">Confirmer</button>
+			<span class="col-lg-2 offset-lg-3" data-ng-style="savingStyle">{{savingMessage}}</span>
+			<button class="col-lg-2 offset-lg-4 btn btn-success" type="button" name="button" data-ng-click="confirm()">Confirmer</button>
 		</div>
 	</form>
 </div>

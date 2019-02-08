@@ -38,18 +38,15 @@ public class ReponseRestService {
 	@Produces(value = {MediaType.APPLICATION_JSON})
 	public Response addReponse(Reponse reponse) {
 		if(reponse != null) {
-			Reponse reponseExists = reponseRepository.findByName(reponse.getName());
-			if(reponseExists == null) {
-				Reponse newReponse = new Reponse();
-				reponseRepository.save(newReponse);
-				logger.info("Adding new reponse : {}", newReponse.getName());
+			if(Reponse.isValid(reponse, true)) {
+				reponseRepository.save(reponse);
+				logger.info("Adding new reponse : {}", reponse);
 				return Response.ok().build();
 			} else {
-				logger.warn("Reponse {} already exists", reponse.getName());
+				logger.warn("Reponse {} is not valid", reponse);
 				return Response.status(Status.CONFLICT).build();
 			}
 		}
-//		logger.warn("Name or Email is null : {} {}", name, email);
 		return Response.status(Status.OK).build();
 			
 	}
