@@ -13,9 +13,9 @@ angular.module('app.controllers.gift', [])
 			$scope.calculAmount();
 		};
 		$scope.calculAmount = function(){
-			console.log("transaction amount Patah:", REST.transactionAmount);
+//			console.log("transaction amount Patah:", REST.transactionAmount);
 			$http.get(REST.transactionAmount).then(function(response){
-				console.log("transaction amount :", response);
+//				console.log("transaction amount :", response);
 				$scope.currentAmount = response.data;
 				$scope.calculWidthProgress();
 			});
