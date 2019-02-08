@@ -4,20 +4,20 @@
 
 		<div class="form-group">
 			<label for="">Nom de la famille : <i class="material-icons" style="font-size: 18px; color: green;" title="ou expression habituellement utilisé pour reconnaitre votre famille">info</i> </label>
-			<input class="form-control" type="text" name="name" placeholder="Nom de Famille">
+			<input class="form-control" data-ng-model="reponse.name" type="text" name="name" placeholder="Nom de Famille">
 		</div>
 		<div class="form-group">
 			<label for="">Email de la famille : <i class="material-icons" style="font-size: 18px; color: green;" title="email du membre de la famille le plus actif">info</i> </label>
-			<input class="form-control" type="text" name="name" placeholder="Email">
+			<input class="form-control" data-ng-model="reponse.email" type="text" name="name" placeholder="Email">
 		</div>
 
 		<div class="row justify-content-between">
 			<div class="form-check col-5 offset-1">
-				<input id="isPresent" class="form-check-input" type="radio" name="isPresent" value="present">
+				<input id="isPresent" data-ng-model="isPresentValue" ng-change="isPresent()" value="true" class="form-check-input" type="radio" name="isPresent">
 				<label for="isPresent">Présent</label>
 			</div>
 			<div class="form-check col-6">
-				<input id="isNotPresent" class="form-check-input" type="radio" name="isPresent" value="notPresent">
+				<input id="isNotPresent" data-ng-model="isPresentValue" ng-change="isPresent()" value="false" class="form-check-input" type="radio" name="isPresent">
 				<label for="isNotPresent">Absent</label>
 			</div>
 		</div>
@@ -28,20 +28,20 @@
 			</p>
 			<div class="form-group col-3">
 				<label for="">Nombre d'adultes</label>
-				<input class="form-control" type="number" name="nbPerson" value="1">
+				<input class="form-control" data-ng-model="reponse.nbAdult" type="number" name="nbPerson" value="1">
 			</div>
 			<div class="form-group col-3">
 				<label for="">Nombre d'adolescents <i class="material-icons" style="font-size: 18px; color: green;" title="Menu Adulte avec plus petite portion">info</i> </label>
-				<input class="form-control" type="number" name="nbPerson" value="0">
+				<input class="form-control" data-ng-model="reponse.nbTeenager" type="number" name="nbPerson" value="0">
 			</div>
 			<div class="form-group col-3">
 				<label for="">Nombre d'enfants<i class="material-icons" style="font-size: 18px; color: green;" title="menu enfant sp�cifique">info</i> </label>
-				<input class="form-control" type="number" name="nbPerson" value="0">
+				<input class="form-control" data-ng-model="reponse.nbChild" type="number" name="nbPerson" value="0">
 			</div>
 		</div>
 
 		<div class="row">
-			<button class="col-lg-2 offset-lg-9 btn btn-success" type="button" name="button" data-ng-click="test()">Confirmer</button>
+			<button class="col-lg-2 offset-lg-9 btn btn-success" type="button" name="button" data-ng-click="confirm()">Confirmer</button>
 		</div>
 	</form>
 </div>
