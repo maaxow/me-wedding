@@ -7,6 +7,7 @@ public class Message {
 
 	private Integer id;
 	private String sender;
+	private Boolean isAnonymous;
 	private Long messageDate;
 	private String message;
 	
@@ -21,6 +22,18 @@ public class Message {
 	}
 	public void setSender(String sender) {
 		this.sender = sender;
+	}
+	/**
+	 * @return the isAnonymous
+	 */
+	public Boolean getIsAnonymous() {
+		return isAnonymous;
+	}
+	/**
+	 * @param isAnonymous the isAnonymous to set
+	 */
+	public void setIsAnonymous(Boolean isAnonymous) {
+		this.isAnonymous = isAnonymous;
 	}
 	public Long getMessageDate() {
 		return messageDate;
@@ -47,6 +60,7 @@ public class Message {
 		try {
 			transaction.setId((Integer) resultSet.getInt("id"));
 			transaction.setSender((String) resultSet.getString("sender"));
+			transaction.setIsAnonymous((Boolean) resultSet.getBoolean("is_anonymous"));
 			transaction.setMessageDate((Long) resultSet.getLong("message_date"));
 			transaction.setMessage((String) resultSet.getString("message"));
 		} catch (SQLException e) {
