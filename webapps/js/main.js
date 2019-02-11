@@ -6,6 +6,7 @@ angular.module('app', ['ui.router',
 			'app.controllers.gift',
 			'app.controllers.lodging',
 			'app.controllers.rsvp',
+			'app.controllers.message',
 			'app.controllers.subscribe'
 		])
 
@@ -91,6 +92,11 @@ angular.module('app', ['ui.router',
 		url: '/rsvp',
 		templateUrl: 'components/rsvp/rsvp.html',
 		 controller: 'RSVPController'
+	})
+	.state('message', {
+		url: '/message',
+		templateUrl: 'components/message/message.html',
+		controller: 'MessageController'
 	})
 	.state('subscribe', {
 		url: '/subscribe',

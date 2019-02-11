@@ -10,5 +10,6 @@ angular.module('app').constant('CONSTANTS', {
 		transaction: restPath + '/transaction',
 		transactionAmount: restPath + '/transaction/total',
 		reponse: restPath + '/reponse'
+		message: restPath + '/message'
 	}
 );
