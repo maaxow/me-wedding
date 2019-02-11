@@ -53,6 +53,7 @@ DROP TABLE IF EXISTS `message`;
 CREATE TABLE IF NOT EXISTS `message` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `sender` varchar(255) NOT NULL,
+  `is_anomymous` tinyint(1) NOT NULL,
   `message_date` date NOT NULL,
   `message` text NOT NULL,
   PRIMARY KEY (`id`)
