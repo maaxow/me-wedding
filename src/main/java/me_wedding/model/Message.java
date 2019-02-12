@@ -2,13 +2,14 @@ package me_wedding.model;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 
 public class Message {
 
 	private Integer id;
 	private String sender;
 	private Boolean isAnonymous;
-	private Long messageDate;
+	private Date messageDate;
 	private String message;
 	
 	public Integer getId() {
@@ -35,10 +36,10 @@ public class Message {
 	public void setIsAnonymous(Boolean isAnonymous) {
 		this.isAnonymous = isAnonymous;
 	}
-	public Long getMessageDate() {
+	public Date getMessageDate() {
 		return messageDate;
 	}
-	public void setMessageDate(Long messageDate) {
+	public void setMessageDate(Date messageDate) {
 		this.messageDate = messageDate;
 	}
 	public String getMessage() {
@@ -61,7 +62,7 @@ public class Message {
 			transaction.setId((Integer) resultSet.getInt("id"));
 			transaction.setSender((String) resultSet.getString("sender"));
 			transaction.setIsAnonymous((Boolean) resultSet.getBoolean("is_anonymous"));
-			transaction.setMessageDate((Long) resultSet.getLong("message_date"));
+			transaction.setMessageDate((Date) resultSet.getDate("message_date"));
 			transaction.setMessage((String) resultSet.getString("message"));
 		} catch (SQLException e) {
 			e.printStackTrace();

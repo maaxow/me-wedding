@@ -13,8 +13,14 @@ angular.module('app.controllers.message', [])
 	_initialize = function(){
 		$scope.isAnonymousValue = "false";
 		$scope.newMessage = new Message();
+		$scope.messages = [];
 		$scope.savingMessage = "";
 		$scope.savingStyle = {'color' : 'black'};
+	},
+	_initMessageList = function(){
+		$http.get(REST.message).then(function(response){
+			$scope.messages = response.data;
+		});
 	},
 	showMessage = function(message, color){
 		$scope.savingMessage = message;
@@ -26,7 +32,7 @@ angular.module('app.controllers.message', [])
 		}, 3000);
 	};
 	// Binded
-	$scope.isPresent = function(){
+	$scope.isAnonymous = function(){
 		if($scope.isAnonymousValue === "true"){
 			$scope.message.isAnonymous = true;
 		} else {
@@ -34,6 +40,7 @@ angular.module('app.controllers.message', [])
 		}
 	}
 	$scope.confirm = function(){
+		console.log("Sending message : ", $scope.newMessage);
 		$http.post(REST.message, $scope.newMessage).then(function(response){
 			showMessage("Message enregistrée", 'green');
 			resetMessage();
@@ -45,5 +52,6 @@ angular.module('app.controllers.message', [])
 	
 	// ### EXECUTION ###
 	_initialize();
+	_initMessageList();
 	
 });

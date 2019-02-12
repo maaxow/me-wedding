@@ -65,7 +65,7 @@ public class MessageRepository implements IRepository<Message> {
 	
 	@Override
 	public int save(Message t) {
-		int nbRowAffected = jdbcTemplate.update(saveQuery, new Object[] { t.getSender(), t.getMessageDate(), t.getMessage() });
+		int nbRowAffected = jdbcTemplate.update(saveQuery, new Object[] { t.getSender(), t.getIsAnonymous(), t.getMessageDate(), t.getMessage() });
 		return nbRowAffected;
 	}
 
@@ -77,7 +77,7 @@ public class MessageRepository implements IRepository<Message> {
 
 	@Override
 	public int update(Message t) {
-		int nbRowAffected = jdbcTemplate.update(updateQuery, new Object[] { t.getSender(), t.getMessageDate(), t.getMessage(), t.getId() });
+		int nbRowAffected = jdbcTemplate.update(updateQuery, new Object[] { t.getSender(), t.getIsAnonymous(), t.getMessageDate(), t.getMessage(), t.getId() });
 		return nbRowAffected;
 	}
 }

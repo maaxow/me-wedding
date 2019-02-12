@@ -1,28 +1,40 @@
 <div class="card col-lg-8 offset-lg-1">
 	<h1 class="title">Une Réponse s'il vous plait.</h1>
-	<form class="">
-
-		<div class="form-group">
-			<label for="">Nom de la famille : <i class="material-icons" style="font-size: 18px; color: green;" title="ou expression habituellement utilisé pour reconnaitre votre famille">info</i> </label>
-			<input class="form-control" data-ng-model="reponse.name" type="text" name="name" placeholder="Nom de Famille">
+	
+	<form class="col-lg-9 align-self-center">
+		<div class="col-lg-4 form-group">
+			<label for="name">Nom de la famille : <i class="material-icons" style="font-size: 18px; color: green;" title="ou expression habituellement utilisé pour reconnaitre votre famille">info</i> </label>
+			<input class="form-control" data-ng-model="reponse.name" type="text" id="name" placeholder="Nom de Famille">
 		</div>
-		<div class="form-group">
-			<label for="">Email de la famille : <i class="material-icons" style="font-size: 18px; color: green;" title="email du membre de la famille le plus actif">info</i> </label>
-			<input class="form-control" data-ng-model="reponse.email" type="text" name="name" placeholder="Email">
+		<div class="col-lg-5 form-group">
+			<label for="email">Email de la famille : <i class="material-icons" style="font-size: 18px; color: green;" title="email du membre de la famille le plus actif">info</i> </label>
+			<input class="form-control" data-ng-model="reponse.email" type="text" id="email" placeholder="Email">
 		</div>
 
-		<div class="row justify-content-between">
-			<div class="form-check col-5 offset-1">
-				<input id="isPresent" data-ng-model="isPresentValue" ng-change="isPresent()" value="true" class="form-check-input" type="radio" name="isPresent">
-				<label for="isPresent">Présent</label>
+		<div class="col-lg-12">
+			<div class="custom-control custom-radio custom-control-inline">
+				<input type="radio" id="present" name="customRadioInline1" class="custom-control-input">
+				<label class="custom-control-label" for="present">Présent</label>
 			</div>
-			<div class="form-check col-6">
-				<input id="isNotPresent" data-ng-model="isPresentValue" ng-change="isPresent()" value="false" class="form-check-input" type="radio" name="isPresent">
-				<label for="isNotPresent">Absent</label>
+			<div class="custom-control custom-radio custom-control-inline">
+				<input type="radio" id="notPresent" name="customRadioInline1" class="custom-control-input">
+				<label class="custom-control-label" for="notPresent">Absent</label>
 			</div>
 		</div>
 
-		<p>
+		
+<!-- 		<div class="row justify-content-between"> -->
+<!-- 			<div class="form-check col-5 offset-1"> -->
+<!-- 				<input id="isPresent" data-ng-model="isPresentValue" ng-change="isPresent()" value="true" class="form-check-input" type="radio" name="isPresent"> -->
+<!-- 				<label for="isPresent">Présent</label> -->
+<!-- 			</div> -->
+<!-- 			<div class="form-check col-6"> -->
+<!-- 				<input id="isNotPresent" data-ng-model="isPresentValue" ng-change="isPresent()" value="false" class="form-check-input" type="radio" name="isPresent"> -->
+<!-- 				<label for="isNotPresent">Absent</label> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+		<br>
+		<p class="col-lg-12">
 			Attention, ne pas tenir compte de l'&acirc;ge, mais plut&ocirc;t de l'ap&eacute;tit de la personne.
 		</p>
 		<div class="row justify-content-around align-items-end">

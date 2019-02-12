@@ -17,6 +17,7 @@ import org.springframework.stereotype.Component;
 
 import me_wedding.model.Message;
 import me_wedding.repository.MessageRepository;
+import me_wedding.service.MessageService;
 
 @Component
 @Path("/message")
@@ -26,11 +27,14 @@ public class MessageRestService {
 	
 	@Inject
 	private MessageRepository messageRepository;
+	@Inject
+	private MessageService messageService;
 	
 	@GET
 	@Produces(value = {MediaType.APPLICATION_JSON})
 	public List<Message> getAll() {
-		return messageRepository.findAll();
+		List<Message> messages = messageRepository.findAll();
+		return messageService.filterAnonymous(messages);
 	}
 	
 	@POST

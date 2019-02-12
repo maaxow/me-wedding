@@ -163,6 +163,9 @@ angular.module('app', ['ui.router',
 		else if($location.url() === '/rsvp'){
 			$scope.state = 'rsvp';
 		}
+		else if($location.url() === '/message'){
+			$scope.state = 'message';
+		}
 		else if($location.url() === '/subscribe'){
 			$scope.state = 'subscribe';
 		}
