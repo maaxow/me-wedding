@@ -13,6 +13,7 @@ angular.module('app.controllers.message', [])
 	_initialize = function(){
 		$scope.isAnonymousValue = "false";
 		$scope.newMessage = new Message();
+		console.log("dates :", $scope.newMessage.messageDate);
 		$scope.messages = [];
 		$scope.savingMessage = "";
 		$scope.savingStyle = {'color' : 'black'};
@@ -20,6 +21,9 @@ angular.module('app.controllers.message', [])
 	_initMessageList = function(){
 		$http.get(REST.message).then(function(response){
 			$scope.messages = response.data;
+			for(var index in $scope.messages){
+				console.log("dates :", $scope.messages[index].sender, $scope.messages[index].messageDate);
+			}
 		});
 	},
 	showMessage = function(message, color){
@@ -40,10 +44,10 @@ angular.module('app.controllers.message', [])
 		}
 	}
 	$scope.confirm = function(){
-		console.log("Sending message : ", $scope.newMessage);
 		$http.post(REST.message, $scope.newMessage).then(function(response){
 			showMessage("Message enregistrée", 'green');
 			resetMessage();
+			_initMessageList();
 		}, function(err){
 			showMessage("Erreur", 'red');
 			resetMessage();
