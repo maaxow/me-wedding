@@ -8,23 +8,15 @@ angular.module('app.controllers.gift', [])
 		$scope.progressBarStyle = {
 				width: '50%'
 		};
-		$scope.totalAmount = 6000;
+		$scope.totalAmount = 5000;
 		var _initialize = function(){
 			$scope.calculAmount();
 		};
 		$scope.calculAmount = function(){
-//			console.log("transaction amount Patah:", REST.transactionAmount);
 			$http.get(REST.transactionAmount).then(function(response){
-//				console.log("transaction amount :", response);
 				$scope.currentAmount = response.data;
 				$scope.calculWidthProgress();
 			});
-//			var amount = 0;
-//			for(var index in $scope.gifts){
-//				amount += $scope.gifts[index].total;
-//			}
-//			$scope.totalAmount = amount;
-//			return amount;
 		}
 		$http.get("components/giftList/gifts.json").then(function(gifts){
 			$scope.gifts = gifts.data;
