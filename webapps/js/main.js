@@ -53,16 +53,16 @@ angular.module('app', ['ui.router',
 					date: '29 Juin 2019',
 					hours: '18h00',
 					title: 'Le Vin d\'Honneur',
-					place: 'Lieu secret pour le moment',
-					mapsLink: 'https://www.google.fr/maps/place/Somme/@49.9676227,1.7309381,9z/data=!3m1!4b1!4m5!3m4!1s0x47e7873951d7aa9f:0x30af13e81612a80!8m2!3d49.914518!4d2.2707095',
+					place: 'Château de Vauchelles',
+					mapsLink: 'https://www.google.fr/maps/place/Chateaux+S%C3%A9minaire+Mariages+Amiens:+Chateau+de+Vauchelles/@50.0524558,2.045802,15.25z/data=!4m5!3m4!1s0x47dd86f12043d46b:0xe659485213605910!8m2!3d50.0527995!4d2.0543203',
 					description: 'Dès que nous avons découvert ce lieu, nous avons eu un déclique, c\'est ici que nous avons décidé de partager ce moment avec vous. Ce lieu vous sera dévoilé prochainement ...'
 				},
 				{
 					date: '29 Juin 2019',
 					hours: '20h00',
 					title: 'Le Diner',
-					place: 'Lieu secret pour le moment',
-					mapsLink: 'https://www.google.fr/maps/place/Somme/@49.9676227,1.7309381,9z/data=!3m1!4b1!4m5!3m4!1s0x47e7873951d7aa9f:0x30af13e81612a80!8m2!3d49.914518!4d2.2707095',
+					place: 'Château de Vauchelles',
+					mapsLink: 'https://www.google.fr/maps/place/Chateaux+S%C3%A9minaire+Mariages+Amiens:+Chateau+de+Vauchelles/@50.0524558,2.045802,15.25z/data=!4m5!3m4!1s0x47dd86f12043d46b:0xe659485213605910!8m2!3d50.0527995!4d2.0543203',
 					description: ''
 				}
 			];
