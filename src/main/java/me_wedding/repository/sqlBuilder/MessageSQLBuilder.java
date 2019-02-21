@@ -15,7 +15,7 @@ public class MessageSQLBuilder extends AbstractSQLBuilder<Message> {
 		this.columns = new ArrayList<String>();
 		this.columns.add("id");
 		this.columns.add("sender");
-		this.columns.add("is_anomymous");
+		this.columns.add("is_anonymous");
 		this.columns.add("message_date");
 		this.columns.add("message");
 	}
