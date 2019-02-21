@@ -7,11 +7,10 @@ angular.module('app.controllers.message', [])
 	var Message = function(){
 		this.sender = '';
 		this.isAnonymous = false;
-		this.messageDate = new Date();
+		this.messageDate = new Date().getTime();
 		this.message = '';
 	},
 	_initialize = function(){
-		$scope.isAnonymousValue = "false";
 		$scope.newMessage = new Message();
 		console.log("dates :", $scope.newMessage.messageDate);
 		$scope.messages = [];
@@ -21,9 +20,6 @@ angular.module('app.controllers.message', [])
 	_initMessageList = function(){
 		$http.get(REST.message).then(function(response){
 			$scope.messages = response.data;
-			for(var index in $scope.messages){
-				console.log("dates :", $scope.messages[index].sender, $scope.messages[index].messageDate);
-			}
 		});
 	},
 	showMessage = function(message, color){
@@ -35,15 +31,8 @@ angular.module('app.controllers.message', [])
 			showMessage('', 'black');
 		}, 3000);
 	};
-	// Binded
-	$scope.isAnonymous = function(){
-		if($scope.isAnonymousValue === "true"){
-			$scope.message.isAnonymous = true;
-		} else {
-			$scope.message.isAnonymous = false;
-		}
-	}
 	$scope.confirm = function(){
+		$scope.newMessage.messageDate = new Date().getTime();
 		$http.post(REST.message, $scope.newMessage).then(function(response){
 			showMessage("Message enregistrée", 'green');
 			resetMessage();

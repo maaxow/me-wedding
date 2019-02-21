@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package me_wedding.repository;
 
 import java.util.List;
@@ -29,12 +32,12 @@ public class MessageRepository implements IRepository<Message> {
 
 	@PostConstruct
 	private void postConstruct() {
-		jdbcTemplate = new JdbcTemplate(dataSource);
+		this.jdbcTemplate = new JdbcTemplate(this.dataSource);
 	}
 
 	@Override
-	public Message findById(long id) {
-		List<Message> messages = jdbcTemplate.query(findByIdQuery, new Object[] { id }, (resultSet, i) -> {
+	public Message findById(final long id) {
+		List<Message> messages = this.jdbcTemplate.query(findByIdQuery, new Object[] { id }, (resultSet, i) -> {
 			return Message.toMessage(resultSet);
 		});
 
@@ -46,14 +49,14 @@ public class MessageRepository implements IRepository<Message> {
 
 	@Override
 	public List<Message> findAll() {
-		List<Message> messages = jdbcTemplate.query(findAllQuery, (resultSet, i) -> {
+		List<Message> messages = this.jdbcTemplate.query(findAllQuery, (resultSet, i) -> {
 			return Message.toMessage(resultSet);
 		});
 		return messages;
 	}
 
-	public Message findBySender(String sender) {
-		List<Message> messages = jdbcTemplate.query(findBySenderQuery, new Object[] { sender }, (resultSet, i) -> {
+	public Message findBySender(final String sender) {
+		List<Message> messages = this.jdbcTemplate.query(findBySenderQuery, new Object[] { sender }, (resultSet, i) -> {
 			return Message.toMessage(resultSet);
 		});
 
@@ -62,22 +65,22 @@ public class MessageRepository implements IRepository<Message> {
 		}
 		return null;
 	}
-	
+
 	@Override
-	public int save(Message t) {
-		int nbRowAffected = jdbcTemplate.update(saveQuery, new Object[] { t.getSender(), t.getIsAnonymous(), t.getMessageDate(), t.getMessage() });
+	public int save(final Message t) {
+		int nbRowAffected = this.jdbcTemplate.update(saveQuery, new Object[] { t.getSender(), t.getIsAnonymous(), t.getMessageDate(), t.getMessage() });
 		return nbRowAffected;
 	}
 
 	@Override
-	public int delete(long id) {
-		int nbRowAffected = jdbcTemplate.update(deleteQuery, new Object[] { id });
+	public int delete(final long id) {
+		int nbRowAffected = this.jdbcTemplate.update(deleteQuery, new Object[] { id });
 		return nbRowAffected;
 	}
 
 	@Override
-	public int update(Message t) {
-		int nbRowAffected = jdbcTemplate.update(updateQuery, new Object[] { t.getSender(), t.getIsAnonymous(), t.getMessageDate(), t.getMessage(), t.getId() });
+	public int update(final Message t) {
+		int nbRowAffected = this.jdbcTemplate.update(updateQuery, new Object[] { t.getSender(), t.getIsAnonymous(), t.getMessageDate(), t.getMessage(), t.getId() });
 		return nbRowAffected;
 	}
 }

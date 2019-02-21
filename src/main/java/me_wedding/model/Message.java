@@ -1,69 +1,74 @@
+/*
+ * 
+ */
 package me_wedding.model;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Date;
 
 public class Message {
 
 	private Integer id;
 	private String sender;
 	private Boolean isAnonymous;
-	private Date messageDate;
+
+	private Long messageDate;
 	private String message;
-	
+
 	public Integer getId() {
-		return id;
+		return this.id;
 	}
-	public void setId(Integer id) {
+	public void setId(final Integer id) {
 		this.id = id;
 	}
 	public String getSender() {
-		return sender;
+		return this.sender;
 	}
-	public void setSender(String sender) {
+	public void setSender(final String sender) {
 		this.sender = sender;
 	}
 	/**
 	 * @return the isAnonymous
 	 */
 	public Boolean getIsAnonymous() {
-		return isAnonymous;
+		return this.isAnonymous;
 	}
 	/**
 	 * @param isAnonymous the isAnonymous to set
 	 */
-	public void setIsAnonymous(Boolean isAnonymous) {
+	public void setIsAnonymous(final Boolean isAnonymous) {
 		this.isAnonymous = isAnonymous;
 	}
-	public Date getMessageDate() {
-		return messageDate;
+
+	public Long getMessageDate() {
+		return this.messageDate;
 	}
-	public void setMessageDate(Date messageDate) {
+
+	public void setMessageDate(final Long messageDate) {
 		this.messageDate = messageDate;
 	}
 	public String getMessage() {
-		return message;
+		return this.message;
 	}
-	public void setMessage(String message) {
+	public void setMessage(final String message) {
 		this.message = message;
 	}
-	
-	
+
+
 	/**
 	 * mapping method, SQL -> Java
 	 * 
 	 * @param resultSet
-	 * @return 
+	 * @return
 	 */
-	public static Message toMessage(ResultSet resultSet) {
+	public static Message toMessage(final ResultSet resultSet) {
 		Message transaction = new Message();
 		try {
-			transaction.setId((Integer) resultSet.getInt("id"));
-			transaction.setSender((String) resultSet.getString("sender"));
-			transaction.setIsAnonymous((Boolean) resultSet.getBoolean("is_anonymous"));
-			transaction.setMessageDate((Date) resultSet.getDate("message_date"));
-			transaction.setMessage((String) resultSet.getString("message"));
+			transaction.setId(resultSet.getInt("id"));
+			transaction.setSender(resultSet.getString("sender"));
+			transaction.setIsAnonymous(resultSet.getBoolean("is_anonymous"));
+			transaction.setMessageDate(resultSet.getLong("message_date"));
+			transaction.setMessage(resultSet.getString("message"));
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
