@@ -47,7 +47,7 @@ angular.module('app', ['ui.router',
 					title: 'La Cérémonie Religieuse',
 					place: 'Eglise de Gamaches, rue de Normandie',
 					mapsLink: 'https://www.google.fr/maps/place/Eglise+de+GAMACHES/@49.986051,1.55554,18.99z/data=!4m13!1m7!3m6!1s0x47e7563ccbb081db:0x40af13e81620bc0!2s80220+Gamaches!3b1!8m2!3d49.985833!4d1.559647!3m4!1s0x47e7566b1af8257f:0x762ce1bbfb397435!8m2!3d49.9860658!4d1.5554935?hl=fr',
-					description: 'C\'est naturellement dans l\'église de Gamaches qui nous voulons ...'
+					description: 'C\'est naturellement dans l\'église de Gamaches que nous voulons célébrer notre union.'
 				},
 				{
 					date: '29 Juin 2019',
@@ -55,7 +55,7 @@ angular.module('app', ['ui.router',
 					title: 'Le Vin d\'Honneur',
 					place: 'Château de Vauchelles',
 					mapsLink: 'https://www.google.fr/maps/place/Chateaux+S%C3%A9minaire+Mariages+Amiens:+Chateau+de+Vauchelles/@50.0524558,2.045802,15.25z/data=!4m5!3m4!1s0x47dd86f12043d46b:0xe659485213605910!8m2!3d50.0527995!4d2.0543203',
-					description: 'Dès que nous avons découvert ce lieu, nous avons eu un déclique, c\'est ici que nous avons décidé de partager ce moment avec vous. Ce lieu vous sera dévoilé prochainement ...'
+					description: 'Dès que nous avons découvert ce lieu, nous avons eu un déclic, c\'est ici que nous avons décidé de partager ce moment avec vous. Ce lieu vous sera dévoilé prochainement ...'
 				},
 				{
 					date: '29 Juin 2019',

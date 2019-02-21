@@ -1,19 +1,24 @@
-<div class="card col-lg-8 offset-lg-1">
+<div class="card col-lg-7">
 	<h1 class="title">Laissez-nous un message.</h1>
 	
-	<div class="col-lg-9 align-self-center">
-		<form>
-			<div class="form-group">
-				<label for="name">Votre nom : <i class="material-icons" style="font-size: 18px; color: green;" title="ou expression habituellement utilisé pour vous reconnaitre">info</i> </label>
-				<input class="form-control" data-ng-model="newMessage.sender" type="text" name="name" placeholder="Nom">
+	<div class="row justify-content-center">
+		<form class="col-lg-10 align-self-center">
+			<div class="row align-items-center">
+				<div class="col-lg-5 form-group">
+					<label for="name">Votre nom : <i class="material-icons" style="font-size: 18px; color: green;" title="ou expression habituellement utilisé pour vous reconnaitre">info</i> </label>
+					<input class="form-control" data-ng-model="newMessage.sender" type="text" name="name" placeholder="Nom">
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input id="anonymous" class="custom-control-input" data-ng-model="newMessage.isAnonymous" type="checkbox">
+					<label for="anonymous" class="custom-control-label">Rester anonyme <i class="material-icons" style="font-size: 18px; color: green;" title="Votre nom ne sera pas affiché">info</i> </label>
+				</div>
 			</div>
-			<div class="custom-control custom-checkbox">
-				<input id="anonymous" class="custom-control-input" data-ng-model="newMessage.isAnonymous" type="checkbox">
-				<label for="anonymous" class="custom-control-label">Rester anonyme <i class="material-icons" style="font-size: 18px; color: green;" title="Votre nom ne sera pas affiché">info</i> </label>
-			</div>
-			<div class="form-group">
-				<label for="message">Votre message : </label>
-				<textarea class="form-control" data-ng-model="newMessage.message" rows="4" id="message" placeholder="Entrez votre message ..."></textarea>
+			
+			<div class="row">
+				<div class="col-lg-12 form-group">
+					<label for="message">Votre message : </label>
+					<textarea class="form-control" data-ng-model="newMessage.message" rows="4" id="message" placeholder="Entrez votre message ..."></textarea>
+				</div>
 			</div>
 			<div class="row">
 				<span class="col-lg-2 offset-lg-3" data-ng-style="savingStyle">{{savingMessage}}</span>
@@ -23,7 +28,7 @@
 	</div>
 </div>
 
-<div class="card col-lg-8 offset-lg-1">
+<div class="card col-lg-7">
 	<h1 class="title">Messages re&ccedil;us</h1>
 	
 	<div data-ng-repeat="message in messages | orderBy: '-messageDate'">
