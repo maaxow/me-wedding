@@ -1,8 +1,4 @@
 angular.module('app', ['ui.router',
-			'app.controllers.admin',
-			'app.controllers.admin.guest',
-			'app.controllers.admin.family',
-			'app.controllers.admin.gift',
 			'app.controllers.gift',
 			'app.controllers.lodging',
 			'app.controllers.rsvp',
@@ -103,29 +99,29 @@ angular.module('app', ['ui.router',
 		templateUrl: 'components/subscribe/subscribe.html',
 		controller: 'SubscribeController'
 	})
-	.state('admin', {
-		url: '/admin',
-		templateUrl: 'views/admin.html',
-		controller: 'AdminController'
+//	.state('admin', {
+//		url: '/admin',
+//		templateUrl: 'views/admin.html',
+//		controller: 'AdminController'
 		/* OnEnter : function()
 			authent
 		*/
-	})
-	.state('admin.guest', {
-		url: '/admin/guest',
-		templateUrl: 'views/admin/guest.admin.html',
-		controller: 'AdminGuestController'
-	})
-	.state('admin.family', {
-		url: '/admin/family',
-		templateUrl: 'views/admin/family.admin.html',
-		controller: 'AdminFamilyController'
-	})
-	.state('admin.gift', {
-		url: '/admin/gift',
-		templateUrl: 'views/admin/gift.admin.html',
-		controller: 'AdminGiftController'
-	})
+//	})
+//	.state('admin.guest', {
+//		url: '/admin/guest',
+//		templateUrl: 'views/admin/guest.admin.html',
+//		controller: 'AdminGuestController'
+//	})
+//	.state('admin.family', {
+//		url: '/admin/family',
+//		templateUrl: 'views/admin/family.admin.html',
+//		controller: 'AdminFamilyController'
+//	})
+//	.state('admin.gift', {
+//		url: '/admin/gift',
+//		templateUrl: 'views/admin/gift.admin.html',
+//		controller: 'AdminGiftController'
+//	})
 
 
 	$urlRouterProvider.otherwise('/');

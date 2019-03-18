@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package me_wedding.model;
 
 import java.sql.ResultSet;
@@ -13,25 +16,25 @@ public class Transaction {
 	public Integer getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(final Integer id) {
 		this.id = id;
 	}
 	public String getName() {
 		return name;
 	}
-	public void setName(String name) {
+	public void setName(final String name) {
 		this.name = name;
 	}
 	public Long getTransactionDate() {
 		return transactionDate;
 	}
-	public void setTransactionDate(Long transactionDate) {
+	public void setTransactionDate(final Long transactionDate) {
 		this.transactionDate = transactionDate;
 	}
 	public Double getAmount() {
 		return amount;
 	}
-	public void setAmount(Double amount) {
+	public void setAmount(final Double amount) {
 		this.amount = amount;
 	}
 	
@@ -42,13 +45,13 @@ public class Transaction {
 	 * @param resultSet
 	 * @return 
 	 */
-	public static Transaction toTransaction(ResultSet resultSet) {
+	public static Transaction toTransaction(final ResultSet resultSet) {
 		Transaction transaction = new Transaction();
 		try {
-			transaction.setId((Integer) resultSet.getInt("id"));
-			transaction.setName((String) resultSet.getString("name"));
-			transaction.setTransactionDate((Long) resultSet.getLong("transaction_date"));
-			transaction.setAmount((Double) resultSet.getDouble("amount"));
+			transaction.setId(resultSet.getInt("id"));
+			transaction.setName(resultSet.getString("name"));
+			transaction.setTransactionDate(resultSet.getLong("transaction_date"));
+			transaction.setAmount(resultSet.getDouble("amount"));
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

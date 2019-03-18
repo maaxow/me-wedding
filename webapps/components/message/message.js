@@ -12,7 +12,6 @@ angular.module('app.controllers.message', [])
 	},
 	_initialize = function(){
 		$scope.newMessage = new Message();
-		console.log("dates :", $scope.newMessage.messageDate);
 		$scope.messages = [];
 		$scope.savingMessage = "";
 		$scope.savingStyle = {'color' : 'black'};

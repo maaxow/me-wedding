@@ -27,10 +27,6 @@
 	<script src="vendor/angular/angular.min.js" charset="utf-8"></script>
 	<script src="vendor/angular-ui-router/angular-ui-router.min.js" charset="utf-8"></script>
 
-	<script src="js/admin.controller.js" charset="utf-8"></script>
-	<script src="js/guest.admin.controller.js" charset="utf-8"></script>
-	<script src="js/family.admin.controller.js" charset="utf-8"></script>
-	<script src="js/gift.admin.controller.js" charset="utf-8"></script>
 	<script src="components/giftList/gift.js" charset="utf-8"></script>
 	<script src="components/lodging/hotel.js" charset="utf-8"></script>
 	<script src="components/rsvp/rsvp.js" charset="utf-8"></script>

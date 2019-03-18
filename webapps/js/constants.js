@@ -1,4 +1,4 @@
-var deployPath = ""; //"/me-wedding";
+var deployPath = "/me-wedding";
 var restPath = deployPath + "/rest";
 angular.module('app').constant('CONSTANTS', {
 	weddingDate: '06-29-2019'

@@ -24,50 +24,26 @@
 	"price": 60
 },
 {
-	"name": "Le Tulipier",
-	"address": "69 Chaussee Marcadet, 80100 Abbeville, France",
-	"addressLink": "",
-	"bookingLink": "",
-	"distance": 20,
-	"price": 52
-},
-{
 	"name": "B&B Eglot",
 	"address": "4 rue Andre Mauduit Erondelle, 80580 Eaucourt-sur-Somme, France",
-	"addressLink": "",
-	"bookingLink": "",
+	"addressLink": "https://www.google.fr/maps/place/4+Rue+Andr%C3%A9+Mauduit,+80580+%C3%89rondelle/@50.0529719,1.8808252,17z/data=!3m1!4b1!4m5!3m4!1s0x47dd8bb70882de65:0xc2ee3bf7ea95389f!8m2!3d50.0529685!4d1.8830139",
+	"bookingLink": "https://www.booking.com/hotel/fr/b-amp-b-egloff.fr.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGhNiAEBmAENwgEKd2luZG93cyAxMMgBDNgBAegBAfgBC5ICAXmoAgM;sid=635815f07770a76cbecd3854551aeec5;all_sr_blocks=115771701_90352520_2_1_0;checkin=2019-06-29;checkout=2019-06-30;dest_id=-1406504;dest_type=city;dist=0;group_adults=2;hapos=14;highlighted_blocks=115771701_90352520_2_1_0;hpos=14;room1=A%2CA;sb_price_type=total;spdest=ci%2F-1406504;sr_order=popularity;srepoch=1552896354;srpvid=90d538f15f1d005e;type=total;ucfs=1&#hotelTmpl",
 	"distance": 17,
 	"price": 65
 },
 {
 	"name": "La Fontainoise",
 	"address": "6 rue de la Carriere, 80510 Fontaine-sur-Somme, France",
-	"addressLink": "",
-	"bookingLink": "",
+	"addressLink": "https://www.google.fr/maps/place/6+Rue+de+la+Carri%C3%A8re,+80510+Fontaine-sur-Somme/@50.0286307,1.9378683,17z/data=!3m1!4b1!4m5!3m4!1s0x47dd89ba2ed24089:0x21cf577e627ebd4c!8m2!3d50.0286273!4d1.940057",
+	"bookingLink": "http://www.lafontainoise.fr/",
 	"distance": 14,
 	"price": 55
 },
 {
-	"name": "Ici et La",
-	"address": "239 bis rue des aires, 80670 Canaples, France",
-	"addressLink": "",
-	"bookingLink": "",
-	"distance": 19,
-	"price": 45
-},
-{
-	"name": "Gite de la centrale hydroelectrique (+ 6 personnes)",
-	"address": "Rue de la chasse a vache",
-	"addressLink": "",
-	"bookingLink": "",
-	"distance": 10,
-	"price": 200
-},
-{
 	"name": "Camping du grand pres (Location Mobil-home)",
-	"address": "10 rue du 8 mai 45",
-	"addressLink": "",
-	"bookingLink": "",
+	"address": "10 rue du 8 mai 45, Long",
+	"addressLink": "https://www.google.fr/maps/place/10+Rue+du+8+Mai,+80510+Long/@50.0365637,1.9759156,17z/data=!3m1!4b1!4m5!3m4!1s0x47dd886760bb86a1:0xdb6ba508c76a5c61!8m2!3d50.0365603!4d1.9781043",
+	"bookingLink": "http://www.campingdugrandpre.com/",
 	"distance": 10,
 	"price": 45
 },

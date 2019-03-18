@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package me_wedding.rest;
 
 import java.util.List;
@@ -22,21 +25,20 @@ import me_wedding.repository.ReponseRepository;
 @Path("/reponse")
 public class ReponseRestService {
 
-	private Logger logger = LogManager.getLogger(this.getClass());
+	private final Logger logger = LogManager.getLogger(this.getClass());
 	@Inject
 	private ReponseRepository reponseRepository;
-	
+
 	@GET
-	@Path("/_all")
 	@Produces(value = {MediaType.APPLICATION_JSON})
-	public List<Reponse> getAllEmail() {
+	public List<Reponse> getAll() {
 		List<Reponse> reponseList = reponseRepository.findAll();
 		return reponseList;
 	}
-	
+
 	@POST
 	@Produces(value = {MediaType.APPLICATION_JSON})
-	public Response addReponse(Reponse reponse) {
+	public Response addReponse(final Reponse reponse) {
 		if(reponse != null) {
 			if(Reponse.isValid(reponse, true)) {
 				reponseRepository.save(reponse);
@@ -48,7 +50,7 @@ public class ReponseRestService {
 			}
 		}
 		return Response.status(Status.OK).build();
-			
+
 	}
-	
+
 }
