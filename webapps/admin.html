@@ -1,0 +1,194 @@
+<script>
+// var angular = require('angular');
+var app = angular.module('app.admin', []);
+
+app.controller("AdminController", ["$scope", "$http", "$interval",
+	function($scope, $http, $interval){
+	var restPath = '/me-wedding/rest',
+	messagePath = restPath + '/message',
+	responsePath = restPath + '/reponse',
+	maillingPath = restPath + '/mailing',
+	transactionPath = restPath + '/transaction';
+	
+	$scope.transactions = [];
+	$scope.reponses = [];
+	$scope.mails = [];
+	$scope.messages = [];
+	$scope.newTransaction = {
+			name : '',
+			amount: 0.0
+	};
+	
+	// Transactions
+	var refreshTransaction = function(){
+		$http.get(transactionPath).then(function(response){
+			$scope.transactions = response.data;
+		});
+	},
+	// Réponses
+	refreshReponse = function(){
+		$http.get(responsePath).then(function(response){
+			$scope.reponses = response.data;
+		});
+	},	
+	// Mails
+	refreshMail = function(){
+		$http.get(maillingPath).then(function(response){
+			$scope.mails = response.data;
+		});
+	},
+	// Messages
+	refreshMessage = function(){
+		$http.get(messagePath).then(function(response){
+			$scope.messages = response.data;
+		});
+	},
+	refreshALL = function(){
+		refreshTransaction();
+		refreshReponse();
+		refreshMail();
+		refreshMessage();
+	};
+	refreshALL();
+	$scope.addTransaction = function(){
+		$http.post(transactionPath + '/add/'+$scope.newTransaction.name + '/' + $scope.newTransaction.amount).then(function(){
+			refreshALL();
+			$scope.newTransaction = {
+					name : '',
+					amount: 0.0
+			};
+		});
+	};
+	$interval(function(){
+		refreshALL();
+	},10000);
+}]);
+</script>
+
+<body ng-app="app.admin" ng-controller="AdminController">
+<!-- 	<div class="column col-5 offset-4"> -->
+<!-- 		<h5 class="">Ajouter une transaction</h5> -->
+<!-- 		<form class="form-inline"> -->
+<!-- 			<div class="row justify-content-between"> -->
+<!-- 				<div class="col-5"> -->
+<!-- 					<input class="form-control" placeholder="Nom de la personne" type="text" data-ng-model="newTransaction.name"> -->
+<!-- 				</div> -->
+<!-- 				<div class="col-5"> -->
+<!-- 					<input id="newAmount" class="form-control" type="number" data-ng-model="newTransaction.amount"> -->
+<!-- 				</div> -->
+<!-- 				<button type="submit" class="btn btn-primary" data-ng-click="addTransaction()">Valider</button> -->
+<!-- 			</div> -->
+<!-- 		</form> -->
+<!-- 	</div> -->
+	<div class="col-5 offset-4">
+		<div class="card text-center">
+			<div class="card-header">
+				<h5 class="card-title">Ajouter une transaction</h5>
+			</div>
+			<div class="card-body">
+				<form class="form-inline">
+<!-- 					<div class=""> -->
+						<div class="">
+							<input class="form-control" placeholder="Nom de la personne" type="text" data-ng-model="newTransaction.name">
+						</div>
+						<div class="">
+							<input id="newAmount" class="form-control" type="number" data-ng-model="newTransaction.amount">
+						</div>
+						<button type="submit" class="btn btn-primary" data-ng-click="addTransaction()">Valider</button>
+<!-- 					</div> -->
+				</form>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row justify-content-center">
+<!-- 		REPONSES -->
+		<table class="table table-striped table-hover col-7">
+			<caption>Réponses</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>#</th>
+					<th>Nom</th>
+					<th>Email</th>
+					<th>Présent</th>
+					<th>Adultes</th>
+					<th>Ados</th>
+					<th>Enfants</th>
+				</tr>
+			</thead>
+			<tbody class="">
+				<tr data-ng-repeat="rsvp in reponses">
+					<td>{{rsvp.id}}</td>
+					<td>{{rsvp.name}}</td>
+					<td>{{rsvp.email}}</td>
+					<td>{{rsvp.isPresent}}</td>
+					<td>{{rsvp.nbAdult}}</td>
+					<td>{{rsvp.nbTeenager}}</td>
+					<td>{{rsvp.nbChild}}</td>
+				</tr>
+			</tbody>
+		</table>
+<!-- 		MAILLING -->
+		<table class="table table-striped table-hover col-3 offset-1">
+			<caption>Abonnements</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>#</th>
+					<th>Nom</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr data-ng-repeat="mail in mails">
+					<td>{{mail.id}}</td>
+					<td>{{mail.name}}</td>
+					<td>{{mail.email}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="row justify-content-center">
+<!-- 		TRANSACTIONS -->
+		<table class="table table-striped table-hover col-5">
+			<caption>Transactions</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>#</th>
+					<th>Nom</th>
+					<th>Date</th>
+					<th>Montant</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr data-ng-repeat="trans in transactions">
+					<td>{{trans.id}}</td>
+					<td>{{trans.name}}</td>
+					<td>{{trans.transactionDate | date:'dd/MM/yyyy'}}</td>
+					<td>{{trans.amount}}</td>
+				</tr>
+			</tbody>
+		</table>
+<!-- 		MESSAGES -->
+		<table class="table table-striped table-hover col-5 offset-1">
+			<caption>Messages</caption>
+			<thead class="thead-light">
+				<tr>
+					<th>#</th>
+					<th>Nom</th>
+					<th>Anonyme</th>
+					<th>Date</th>
+					<th>Message</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr data-ng-repeat="mess in messages">
+					<td>{{mess.id}}</td>
+					<td>{{mess.sender}}</td>
+					<td>{{mess.isAnonymous}}</td>
+					<td>{{mess.messageDate | date:'dd/MM/yyyy'}}</td>
+					<td>{{mess.message}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>

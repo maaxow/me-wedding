@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Properties>
+		<Property name="logPattern">%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%t] %logger{36} - %msg%n</Property>
+		<Property name="filename">$${sys:mew.logs.dir}/mew.log</Property>
+		<Property name="filePattern">$${sys:mew.logs.dir}/mew-%i.log</Property>
+	</Properties>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="${logPattern}" />
+		</Console>
+		<RollingFile name="server_log" fileName="${filename}" filePattern="${filePattern}" append="true">
+			<PatternLayout>
+				<Pattern>${logPattern}</Pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="5MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="10"/>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<logger name="me_wedding" level="INFO">
+			<AppenderRef ref="server_log" />
+		</logger>
+		<Root level="WARN">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="server_log" />
+		</Root>
+	</Loggers>
+</Configuration>
