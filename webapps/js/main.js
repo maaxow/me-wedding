@@ -47,7 +47,7 @@ angular.module('app', ['ui.router',
 				},
 				{
 					date: '29 Juin 2019',
-					hours: '18h00',
+					hours: '17h00',
 					title: 'Le Vin d\'Honneur',
 					place: 'Château de Vauchelles',
 					mapsLink: 'https://www.google.fr/maps/place/Chateaux+S%C3%A9minaire+Mariages+Amiens:+Chateau+de+Vauchelles/@50.0524558,2.045802,15.25z/data=!4m5!3m4!1s0x47dd86f12043d46b:0xe659485213605910!8m2!3d50.0527995!4d2.0543203',
