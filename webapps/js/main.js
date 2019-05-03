@@ -133,7 +133,7 @@ angular.module('app', ['ui.router',
 })
 
 .controller('MainController', function($scope, CONSTANTS, $http, $interval, $location){
-	$scope.weddingDate = new Date(2019,5,29); //Date.parse(CONSTANTS.weddingDate, 'MM-dd-yyyy');
+	$scope.weddingDate = new Date(2019,5,29,14,15); //Date.parse(CONSTANTS.weddingDate, 'MM-dd-yyyy');
 	$scope.version = "0.0.1-SNAPSHOT";
 	$http.get('rest/server/version').then(
 		function(response){
